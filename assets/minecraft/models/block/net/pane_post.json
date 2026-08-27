@@ -1,0 +1,42 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "edge": "block/pink_stained_glass_pane_top",
+    "pane": "block/pink_stained_glass",
+    "particle": "block/pink_stained_glass"
+  },
+  "elements": [
+    {
+      "from": [
+        7.75,
+        0,
+        7.75
+      ],
+      "to": [
+        8.25,
+        16,
+        8.25
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            7.75,
+            15.5,
+            8.25,
+            16
+          ],
+          "texture": "#pane"
+        },
+        "up": {
+          "uv": [
+            7.75,
+            0,
+            8.25,
+            0.5
+          ],
+          "texture": "#pane"
+        }
+      }
+    }
+  ]
+}

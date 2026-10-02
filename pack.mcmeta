@@ -1,13 +1,8 @@
 {
   "pack": {
-    "pack_format": 15,
-    "supported_formats": [15, 255],
-    "min_format": 15,
-    "max_format": 255,
-    "description": "MCME Path of the Dead v1.8.16"
-  },
-  "meta": {
-    "game_version": "26.2"
-
+    "pack_format": 88,
+    "min_format": 88,
+    "max_format": 88,
+    "description": "MCME Path of the Dead v1.8.17"
   }
 }

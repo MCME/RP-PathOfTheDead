@@ -1,8 +1,8 @@
 {
     "parent": "block/vertical_slab",
     "textures": {
-      "bottom": "block/darker_smooth_stone",
-      "top": "block/darker_smooth_stone",
+      "bottom": "block/mud_bricks_darker",
+      "top": "block/mud_bricks_darker",
       "side": "block/stripped_cherry_log_side"
     }
   }

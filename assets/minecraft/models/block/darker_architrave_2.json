@@ -1,0 +1,7 @@
+{
+  "parent": "block/architrave_parent",
+  "textures": {
+    "texture": "block/mud_bricks_darker_2",
+    "side": "block/stripped_cherry_log_side"
+  }
+}

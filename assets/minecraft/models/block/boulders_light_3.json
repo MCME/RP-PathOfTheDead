@@ -1,11 +1,11 @@
 {
   "parent": "block/boulders_3",
   "textures": {
-    "stone": "block/polished_diorite",
+    "stone": "block/yellow_terracotta",
     "stone_1": "block/stone",
-    "stone_2": "block/polished_diorite",
+    "stone_2": "block/yellow_terracotta",
     "stone_3": "block/stone",
-    "stone_4": "block/polished_diorite",
+    "stone_4": "block/yellow_terracotta",
     "stone_5": "block/stone",
     "base": "block/pink_concrete_powder"
   }

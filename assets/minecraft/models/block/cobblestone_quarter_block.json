@@ -1,6 +1,6 @@
 {
-  "parent": "block/quarter_block_parent",
+  "parent": "block/half_slab",
   "textures": {
-    "0": "block/cobblestone"
+    "slab": "block/cobblestone"
   }
 }

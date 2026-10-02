@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "block/pine_leaves_green",
+    "top": "block/pine_leaves_green",
+    "side": "block/pine_leaves_green"
+  }
+}

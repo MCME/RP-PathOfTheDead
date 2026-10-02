@@ -1,0 +1,7 @@
+{
+  "parent": "item/architrave_bottom_quarter_inv_parent",
+  "textures": {
+    "texture": "block/mud_bricks_darker",
+    "side": "block/stripped_cherry_log"
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/spruce_log",
+		"particle": "block/spruce_log"
+	},
+	"elements": [
+		{
+			"from": [5, -2.5, -8],
+			"to": [10, 2.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, -0.5, -8]},
+			"faces": {
+				"north": {"uv": [1, 1, 6, 6], "texture": "#0"},
+				"east": {"uv": [0, 1, 16, 6], "texture": "#0"},
+				"south": {"uv": [1, 1, 6, 6], "texture": "#0"},
+				"west": {"uv": [0, 1, 16, 6], "texture": "#0"},
+				"up": {"uv": [1, 0, 6, 16], "texture": "#0"},
+				"down": {"uv": [1, 0, 6, 16], "texture": "#0"}
+			}
+		}
+	]
+}

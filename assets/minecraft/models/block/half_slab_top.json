@@ -1,6 +1,7 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
+	"ambientocclusion": true,
 	"textures": {
 		"particle": "#slab"
 	},
@@ -35,7 +36,7 @@
 			"scale": [0.57, 0.57, 0.56]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
+			"rotation": [30, -134, 0],
 			"translation": [-4.25, 1.75, 0],
 			"scale": [0.625, 0.625, 0.625]
 		}

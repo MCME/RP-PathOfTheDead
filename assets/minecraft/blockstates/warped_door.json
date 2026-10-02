@@ -1,0 +1,17 @@
+{
+  "variants": {
+	  "facing=west,half=lower,hinge=right,open=true,powered=true": { "model": "block/nether_bricks_quarter_bottom"},
+	  "facing=north,half=lower,hinge=right,open=true,powered=true": { "model": "block/nether_bricks_quarter_bottom", "y": 90},
+	  "facing=east,half=lower,hinge=right,open=true,powered=true": { "model": "block/nether_bricks_quarter_bottom", "y": 180},
+	  "facing=south,half=lower,hinge=right,open=true,powered=true": { "model": "block/nether_bricks_quarter_bottom", "y": 270},
+	  "facing=west,half=lower,hinge=left,open=false,powered=true": { "model": "block/darker_stone_rim", "y": 270},
+	  "facing=north,half=lower,hinge=left,open=false,powered=true": { "model": "block/darker_stone_rim"},
+	  "facing=east,half=lower,hinge=left,open=false,powered=true": { "model": "block/darker_stone_rim", "y": 90},
+	  "facing=south,half=lower,hinge=left,open=false,powered=true": { "model": "block/darker_stone_rim", "y": 180},
+	  "facing=west,half=upper,hinge=left,open=false,powered=true": { "model": "block/iron_bars_edge", "y": 90},
+	  "facing=north,half=upper,hinge=left,open=false,powered=true": { "model": "block/iron_bars_edge", "y": 180},
+	  "facing=east,half=upper,hinge=left,open=false,powered=true": { "model": "block/iron_bars_edge", "y": 270},
+	  "facing=south,half=upper,hinge=left,open=false,powered=true": { "model": "block/iron_bars_edge"}
+
+  }
+}

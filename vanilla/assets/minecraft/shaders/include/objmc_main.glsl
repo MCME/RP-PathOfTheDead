@@ -3,21 +3,53 @@
 
 // This include is intentionally limited to the BLOCK/terrain path. Entity,
 // item, GUI, hand, display, and armor branches are not part of shaders_sort.
+//
+// Shared by vanilla's terrain.vsh and Sodium's block_layer_opaque.vsh (in
+// assets/sodium). Sodium's names are mapped onto vanilla's with #defines;
+// OBJMC_SECTION_OFFSET and OBJMC_UV_BIAS are set there.
+
+#ifndef OBJMC_SECTION_OFFSET
+// From a vertex's section-local position to its place relative to the camera.
+#define OBJMC_SECTION_OFFSET ((ChunkPosition - CameraBlockPos) + CameraOffset)
+#endif
 
 isCustom = 0;
+// The carrier vertex where the client put it, random block offset included.
+vec3 carrierPos = Pos;
 transition = 0;
-int corner = gl_VertexID % 4;
 ivec2 atlasSize = textureSize(Sampler0, 0);
 vec2 onepixel = 1.0 / atlasSize;
+// Which corner of its carrier face this vertex is, from its UV: a carrier's UVs
+// span 0.1 to 0.9 of its pointer pixel, and the client gives face vertex 0 the
+// (min u, min v) corner, 1 (min u, max v), 2 (max u, max v), 3 (max u, min v)
+// (26.2's CuboidFace.UVs). Not gl_VertexID % 4: a section's vertices start
+// wherever its shared buffer had room, so that is off by a different 0-3 per
+// section, changing whenever the section is rebuilt - which keeps the shape
+// but moves the client's per-corner occlusion onto the wrong corners.
+#ifdef OBJMC_UV_BIAS
+// Sodium rounds a texture coordinate and moves it a step towards its face's
+// centre, keeping which side it came from: +1 below the centre, -1 above.
+bvec2 uvHigh = lessThan(OBJMC_UV_BIAS, vec2(0.0));
+#else
+bvec2 uvHigh = greaterThan(fract(UV0 * atlasSize), vec2(0.5));
+#endif
+int corner = uvHigh.x ? (uvHigh.y ? 2 : 3) : (uvHigh.y ? 1 : 0);
 ivec2 uv = ivec2(UV0 * atlasSize);
 vec3 posoffset = vec3(0.0);
 int headerheight = 0;
 ivec4 t[16];
 
 t[0] = ivec4(texelFetch(Sampler0, uv, 0) * 255.0 + 0.5);
-ivec2 uvoffset = ivec2(t[0].r * 256 + t[0].g, t[0].b * 256 + t[0].a);
+// A face pointer holds its own column and row in the bake, 12 bits each in
+// red, green and blue; its alpha is a constant (objmc.py's POINTER_ALPHA).
+ivec2 uvoffset = ivec2(t[0].r * 16 + (t[0].g >> 4), (t[0].g & 15) * 256 + t[0].b);
 ivec2 topleft = uv - uvoffset;
-ivec4 marker = ivec4(texelFetch(Sampler0, topleft, 0) * 255.0 + 0.5);
+// Every texel decodes to some offset, so only a texel with the pointer's alpha
+// counts - no opaque or cutout texture has it - and only one leading to a
+// header's marker.
+ivec4 marker = t[0].a == 254
+    ? ivec4(texelFetch(Sampler0, topleft, 0) * 255.0 + 0.5)
+    : ivec4(0);
 
 if (marker == ivec4(12, 34, 56, 255)) {
     isCustom = 1;
@@ -28,11 +60,15 @@ if (marker == ivec4(12, 34, 56, 255)) {
     ivec2 size = ivec2(t[1].r * 256 + t[1].g, t[1].b * 256 + t[7].r);
     int nvertices = t[2].r * 16777216 + t[2].g * 65536 + t[2].b * 256 + t[7].g;
     int nframes = max(t[3].r * 65536 + t[3].g * 256 + t[3].b, 1);
-    int ntextures = max(t[3].a, 1);
+    // 255 is written for 1, keeping the pixel opaque (objmc.py's POINTER_ALPHA).
+    int ntextures = t[3].a == 255 ? 1 : max(t[3].a, 1);
     float duration = max(t[4].r * 65536 + t[4].g * 256 + t[4].b, 1);
     bool autoplay = getb(t[4].a, 6);
     ivec2 easing = ivec2(getb(t[4].a, 4, 2), getb(t[4].a, 2, 2));
     int vph = t[5].r * 256 + t[5].g;
+    // A bake narrower than 16 texels ends before t[8], which then reads from
+    // whatever sprite lies next to it in the atlas: ignore t[8] and on there.
+    bool wideHeader = size.x >= 16;
     int vth = t[5].b * 256 + t[7].b;
     noshadow = getb(t[6].r, 7, 1);
     bvec3 visibility = bvec3(getb(t[6].r, 4), getb(t[6].r, 3), getb(t[6].r, 2));
@@ -70,7 +106,13 @@ if (marker == ivec4(12, 34, 56, 255)) {
         // texture_layout), so no mip level up to maxLod mixes the data in.
         headerheight = 2 + int(ceil(nvertices * 0.25 / size.x));
         int height = headerheight + size.y * ntextures;
-        if (maxLod > 0) {
+        if (wideHeader && t[8].r == 2) {
+            // Layout 2 (objmc_merge.py): the texture is shared by every model
+            // baked onto this sprite and sits above this model's block, t[8].gb
+            // rows up; the data follows the pointers directly.
+            height = headerheight;
+            headerheight = -(t[8].g * 256 + t[8].b);
+        } else if (maxLod > 0) {
             int block = 1 << maxLod;
             headerheight = (headerheight + 2 * block - 1) / block * block;
             height = (headerheight + size.y * ntextures + block - 1) / block * block + block;
@@ -109,9 +151,9 @@ if (marker == ivec4(12, 34, 56, 255)) {
         texCoord = getuv(topleft, size.x, height + vph, index.y);
     }
 
-    // Every corner of a carrier element sits within a small fraction of a
-    // block from its block's centre (see objmc.py's ELEMENT_SCALE), so the
-    // block's integer cell is identical for all 4 corners of a face. That
+    // Every corner of a carrier element sits strictly inside its block (see
+    // objmc.py's CARRIER_MARGIN), so the block's integer cell is identical
+    // for all 4 corners of a face. That
     // replaces subgroupQuadBroadcast, whose "quad" grouping is only
     // spec-guaranteed for fragment-shader 2x2 pixel quads.
     //
@@ -120,8 +162,14 @@ if (marker == ivec4(12, 34, 56, 255)) {
     // moves the cell boundary every frame the camera moves and the model
     // snaps by a block. Position is camera-independent; the camera-relative
     // terms are whole-block shifts (plus CameraOffset) added afterwards.
-    vec3 blockOrigin = floor(Position) + (ChunkPosition - CameraBlockPos) + CameraOffset;
+    vec3 blockOrigin = floor(Position) + OBJMC_SECTION_OFFSET;
     Pos = blockOrigin + vec3(0.5) + posoffset;
+    // Centred carriers (objmc.py's --centred, t[9].r = 1) sit at the block's
+    // centre plus the random offset the client gives blocks like ferns; the
+    // model goes where the client put its carrier, keeping that offset.
+    if (wideHeader && t[9].r == 1) {
+        Pos = carrierPos + posoffset;
+    }
     vec2 uvjit = vec2(onepixel.x * 0.0001 * corner, onepixel.y * 0.0001 * ((corner + 1) % 4));
     vec2 texuvpx = texCoord * size;
     // A face UV that reaches exactly 0 or `size` rounds, after the fragment
@@ -148,36 +196,6 @@ if (marker == ivec4(12, 34, 56, 255)) {
         texCoord2 = (base2 + texuvpx) / atlasSize + uvjit;
         transition = texFade ? fract(texTime / texFrametime) : 0.0;
     } else {
-        ivec4 aaf = ivec4(texelFetch(Sampler0, topleft + ivec2(5, 1), 0) * 255.0 + 0.5);
-        int nbands = min(aaf.g, 15);
-        if (nbands > 0) {
-            ivec4 m4 = ivec4(texelFetch(Sampler0, topleft + ivec2(4, 1), 0) * 255.0 + 0.5);
-            float ft = max(float(m4.r * 65536 + m4.g * 256 + m4.b), 1.0);
-            float vmid = (subgroupQuadBroadcast(texCoord.y, 0) + subgroupQuadBroadcast(texCoord.y, 2))
-                       * 0.5 * float(size.y);
-            float dy = 0.0;
-            float dy2 = 0.0;
-            bool inBand = false;
-            for (int b = 0; b < nbands; b++) {
-                ivec4 m6 = ivec4(texelFetch(Sampler0, topleft + ivec2(6 + 2 * b, 1), 0) * 255.0 + 0.5);
-                ivec4 m7 = ivec4(texelFetch(Sampler0, topleft + ivec2(7 + 2 * b, 1), 0) * 255.0 + 0.5);
-                int y0 = m6.r * 256 + m6.g;
-                int fH = m6.b * 256 + m7.r;
-                int fc = max(m7.g, 1);
-                if (vmid > float(y0) && vmid < float(y0 + fH)) {
-                    int tf = int(texTime / ft) % fc;
-                    int tn = (tf + 1) % fc;
-                    dy = float(-tf * fH);
-                    dy2 = float(-tn * fH);
-                    inBand = true;
-                    break;
-                }
-            }
-            texCoord = (vec2(topleft.x, topleft.y + headerheight) + texuvpx + vec2(0.0, dy)) / atlasSize + uvjit;
-            texCoord2 = (vec2(topleft.x, topleft.y + headerheight) + texuvpx + vec2(0.0, dy2)) / atlasSize + uvjit;
-            transition = (inBand && ((aaf.r & 1) == 1)) ? fract(texTime / ft) : 0.0;
-        } else {
-            texCoord = (vec2(topleft.x, topleft.y + headerheight) + texuvpx) / atlasSize + uvjit;
-        }
+        texCoord = (vec2(topleft.x, topleft.y + headerheight) + texuvpx) / atlasSize + uvjit;
     }
 }

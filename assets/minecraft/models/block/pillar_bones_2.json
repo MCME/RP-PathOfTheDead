@@ -1,10 +1,10 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
+	"ambientocclusion": true,
 	"textures": {
 		"4": "block/skulls",
-		"5": "block/stripped_dark_oak_log_side"
+		"5": "block/mud_bricks_2"
 	},
 	"elements": [
 		{

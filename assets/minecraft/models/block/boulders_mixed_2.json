@@ -5,7 +5,7 @@
     "stone_1": "block/stone",
     "stone_2": "block/granite",
     "stone_3": "block/polished_andesite",
-    "stone_4": "block/polished_diorite",
+    "stone_4": "block/yellow_terracotta",
     "base": "block/yellow_concrete_powder"
   }
 }

@@ -1,0 +1,88 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "block/spruce_large_sapling_3",
+		"particle": "block/spruce_large_sapling_3"
+	},
+	"elements": [
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"x": 0, "y": 120, "z": 0, "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"},
+				"south": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"x": -180, "y": 120, "z": 0, "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"x": 0, "y": 60, "z": 0, "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"},
+				"south": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"x": -180, "y": 60, "z": 0, "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"},
+				"south": {"uv": [2.45247, 8, 13.54753, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-16, -16, 8],
+			"to": [28.3802, 16, 8],
+			"rotation": {"x": -180, "y": 0, "z": 0, "origin": [6.1901, 16, 8]},
+			"faces": {
+				"north": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [2.45247, 0, 13.54753, 8], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [6.1901, 16, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		},
+		{
+			"name": "group",
+			"origin": [6.1901, 16, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [2, 3]
+		},
+		{
+			"name": "group",
+			"origin": [6.1901, 16, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [4, 5]
+		}
+	]
+}

@@ -1,11 +1,11 @@
 {
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
+	"ambientocclusion": true,
 	"texture_size": [32, 32],
 	"textures": {
-		"4": "block/stripped_dark_oak_log_side",
-		"particle": "block/stripped_dark_oak_log_side"
+		"4": "block/mud_bricks",
+		"particle": "block/mud_bricks"
 	},
 	"elements": [
 		{

@@ -64,15 +64,35 @@
 	{ "model": "block/skulls_full_3", "y":270 }
 	],
 	"down=false,east=false,north=true,south=false,up=false,west=true":[
-	{ "model": "block/pillar_corner" }
+	{ "model": "block/pillar_corner" },
+	{ "model": "block/pillar_corner_2" },
+	{ "model": "block/pillar_corner_3" }
 	],
 	"down=false,east=true,north=true,south=false,up=false,west=false":[
-	{ "model": "block/pillar_corner", "y":90 }
+	{ "model": "block/pillar_corner", "y":90 },
+	{ "model": "block/pillar_corner_2", "y":90 },
+	{ "model": "block/pillar_corner_3", "y":90 }
 	],
 	"down=false,east=true,north=false,south=true,up=false,west=false":[
-	{ "model": "block/pillar_corner", "y":180 }
+	{ "model": "block/pillar_corner", "y":180 },
+	{ "model": "block/pillar_corner_2", "y":180 },
+	{ "model": "block/pillar_corner_3", "y":180 }
 	],
 	"down=false,east=false,north=false,south=true,up=false,west=true":[
-	{ "model": "block/pillar_corner", "y":270 }
-    ]}
+	{ "model": "block/pillar_corner", "y":270 },
+	{ "model": "block/pillar_corner_2", "y":270 },
+	{ "model": "block/pillar_corner_3", "y":270 }
+	],
+	"down=true,east=false,north=true,south=false,up=true,west=true":[
+	{ "model": "block/ghost_pillar_thin_corner"}
+	],
+	"down=true,east=true,north=true,south=false,up=true,west=false":[
+	{ "model": "block/ghost_pillar_thin_corner", "y": 90}
+	],
+	"down=true,east=true,north=true,south=true,up=true,west=false":[
+	{ "model": "block/ghost_pillar_thin_corner", "y": 180}
+	],
+	"down=true,east=false,north=false,south=true,up=true,west=true":[
+	{ "model": "block/ghost_pillar_thin_corner", "y": 270}
+	]}
 }

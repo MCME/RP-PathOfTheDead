@@ -8,12 +8,12 @@
         "open": "false",
         "powered": "false"
       },
-      "apply": [{
-        "model": "block/dark_stone_rim", "y":90
-      },
-	  {
-        "model": "block/dark_stone_rim_2", "y":90
-      }]
+      "apply": [
+        {
+          "model": "block/dark_stone_rim",
+          "y": 90
+        }
+      ]
     },
     {
       "when": {
@@ -23,14 +23,12 @@
         "open": "false",
         "powered": "false"
       },
-      "apply": [{
-        "model": "block/dark_stone_rim",
-        "y": 180
-      },
-	  {
-        "model": "block/dark_stone_rim_2",
-        "y": 180
-      }]
+      "apply": [
+        {
+          "model": "block/dark_stone_rim",
+          "y": 180
+        }
+      ]
     },
     {
       "when": {
@@ -40,14 +38,12 @@
         "open": "false",
         "powered": "false"
       },
-      "apply": [{
-        "model": "block/dark_stone_rim",
-        "y": 270
-      },
-	  {
-        "model": "block/dark_stone_rim_2",
-        "y": 270
-      }]
+      "apply": [
+        {
+          "model": "block/dark_stone_rim",
+          "y": 270
+        }
+      ]
     },
     {
       "when": {
@@ -57,14 +53,12 @@
         "open": "false",
         "powered": "false"
       },
-      "apply": [{
-        "model": "block/dark_stone_rim",
-        "y": 0
-      },
-	  {
-        "model": "block/dark_stone_rim_2",
-        "y": 0
-      }]
+      "apply": [
+        {
+          "model": "block/dark_stone_rim",
+          "y": 0
+        }
+      ]
     },
     {
       "when": {
@@ -75,7 +69,8 @@
         "powered": "false"
       },
       "apply": {
-        "model": "block/trapdoor_dark_gray_brick_open", "y":90
+        "model": "block/trapdoor_dark_gray_brick_open",
+        "y": 90
       }
     },
     {
@@ -165,7 +160,8 @@
         "powered": "false"
       },
       "apply": {
-        "model": "block/bricks_quarter_top", "y":270
+        "model": "block/bricks_quarter_top",
+        "y": 270
       }
     },
     {
@@ -190,7 +186,8 @@
         "powered": "false"
       },
       "apply": {
-        "model": "block/bricks_quarter_bottom", "y":270
+        "model": "block/bricks_quarter_bottom",
+        "y": 270
       }
     },
     {
@@ -267,7 +264,8 @@
         "powered": "true"
       },
       "apply": {
-        "model": "block/nether_bricks_quarter_top", "y":270
+        "model": "block/nether_bricks_quarter_top",
+        "y": 270
       }
     },
     {
@@ -278,10 +276,20 @@
         "open": "true",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/nether_bricks_quarter_bottom",
-        "y": 180
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_3_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_3_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_3_4"
       }
+    ]
     },
     {
       "when": {
@@ -291,9 +299,20 @@
         "open": "true",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/nether_bricks_quarter_bottom", "y":270
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_4"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_4_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_4_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_4_4"
       }
+    ]
     },
     {
       "when": {
@@ -303,10 +322,20 @@
         "open": "true",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/nether_bricks_quarter_bottom",
-        "y": 0
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_1_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_1_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_1_4"
       }
+    ]
     },
     {
       "when": {
@@ -316,25 +345,36 @@
         "open": "true",
         "powered": "true"
       },
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_2_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_2_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_green_vertical_slab_2_4"
+      }
+    ]
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "false"
+      },
       "apply": {
-        "model": "block/nether_bricks_quarter_bottom",
+        "model": "block/trapdoor_cracked_dark_gray_brick_open",
         "y": 90
       }
     },
     {
       "when": {
-        "facing": "east",
-        "half": "upper",
-        "hinge": "left",
-        "open": "false",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_cracked_dark_gray_brick_open", "y":90
-      }
-    },
-    {
-      "when": {
         "facing": "south",
         "half": "upper",
         "hinge": "left",
@@ -381,215 +421,278 @@
         "powered": "false"
       },
       "apply": {
-        "model": "block/dark_architrave_thin", "y":90
-      }
-    },
-    {
-      "when": {
-        "facing": "south",
-        "half": "upper",
-        "hinge": "right",
-        "open": "false",
-        "powered": "false"
-      },
-      "apply": {
         "model": "block/dark_architrave_thin",
-        "y": 180
-      }
-    },
-    {
-      "when": {
-        "facing": "west",
-        "half": "upper",
-        "hinge": "right",
-        "open": "false",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/dark_architrave_thin",
-        "y": 270
-      }
-    },
-    {
-      "when": {
-        "facing": "north",
-        "half": "upper",
-        "hinge": "right",
-        "open": "false",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/dark_architrave_thin",
-        "y": 0
-      }
-    },
-    {
-      "when": {
-        "facing": "east",
-        "half": "upper",
-        "hinge": "left",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_dark_pillar_open",
-        "y": 180
-      }
-    },
-    {
-      "when": {
-        "facing": "south",
-        "half": "upper",
-        "hinge": "left",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_dark_pillar_open",
-        "y": 270
-      }
-    },
-    {
-      "when": {
-        "facing": "west",
-        "half": "upper",
-        "hinge": "left",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_dark_pillar_open",
-        "y": 0
-      }
-    },
-    {
-      "when": {
-        "facing": "north",
-        "half": "upper",
-        "hinge": "left",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_dark_pillar_open", "y":90
-      }
-    },
-    {
-      "when": {
-        "facing": "east",
-        "half": "upper",
-        "hinge": "right",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_stonebrick_chiseled_open",
-        "y": 0
-      }
-    },
-    {
-      "when": {
-        "facing": "south",
-        "half": "upper",
-        "hinge": "right",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_stonebrick_chiseled_open", "y":90
-      }
-    },
-    {
-      "when": {
-        "facing": "west",
-        "half": "upper",
-        "hinge": "right",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_stonebrick_chiseled_open",
-        "y": 180
-      }
-    },
-    {
-      "when": {
-        "facing": "north",
-        "half": "upper",
-        "hinge": "right",
-        "open": "true",
-        "powered": "false"
-      },
-      "apply": {
-        "model": "block/trapdoor_stonebrick_chiseled_open",
-        "y": 270
-      }
-    },
-    {
-      "when": {
-        "facing": "east",
-        "half": "upper",
-        "hinge": "left",
-        "open": "false",
-        "powered": "true"
-      },
-      "apply": {
-        "model": "block/iron_bars_edge",
-		"y": 270
-      }
-    },
-    {
-      "when": {
-        "facing": "south",
-        "half": "upper",
-        "hinge": "left",
-        "open": "false",
-        "powered": "true"
-      },
-      "apply": {
-        "model": "block/iron_bars_edge"
-      }
-    },
-    {
-      "when": {
-        "facing": "west",
-        "half": "upper",
-        "hinge": "left",
-        "open": "false",
-        "powered": "true"
-      },
-      "apply": {
-        "model": "block/iron_bars_edge",
         "y": 90
       }
     },
     {
       "when": {
-        "facing": "north",
+        "facing": "south",
         "half": "upper",
-        "hinge": "left",
+        "hinge": "right",
         "open": "false",
-        "powered": "true"
+        "powered": "false"
       },
       "apply": {
-        "model": "block/iron_bars_edge",
+        "model": "block/dark_architrave_thin",
         "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/dark_architrave_thin",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/dark_architrave_thin",
+        "y": 0
       }
     },
     {
       "when": {
         "facing": "east",
         "half": "upper",
+        "hinge": "left",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": [{
+        "model": "block/trapdoor_dark_pillar_open",
+        "y": 180
+      },{
+        "model": "block/trapdoor_dark_pillar_open_2",
+        "y": 180
+      },{
+        "model": "block/trapdoor_dark_pillar_open_3",
+        "y": 180
+      }]
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": [{
+        "model": "block/trapdoor_dark_pillar_open",
+        "y": 270
+      },{
+        "model": "block/trapdoor_dark_pillar_open_2",
+        "y": 270
+      },{
+        "model": "block/trapdoor_dark_pillar_open_3",
+        "y": 270
+      }]
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": [{
+        "model": "block/trapdoor_dark_pillar_open",
+        "y": 0
+      },{
+        "model": "block/trapdoor_dark_pillar_open_2",
+        "y": 0
+      },{
+        "model": "block/trapdoor_dark_pillar_open_3",
+        "y": 0
+      }]
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "left",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": [{
+        "model": "block/trapdoor_dark_pillar_open",
+        "y": 90
+      },{
+        "model": "block/trapdoor_dark_pillar_open_2",
+        "y": 90
+      },{
+        "model": "block/trapdoor_dark_pillar_open_3",
+        "y": 90
+      }]
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
         "hinge": "right",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/trapdoor_stonebrick_chiseled_open",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "right",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/trapdoor_stonebrick_chiseled_open",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "right",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/trapdoor_stonebrick_chiseled_open",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "right",
+        "open": "true",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "block/trapdoor_stonebrick_chiseled_open",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "left",
         "open": "false",
         "powered": "true"
       },
       "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_4"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_4_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_4_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_4_4"
+      }
+    ]
+    },
+    {
+      "when": {
+        "facing": "south",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      },
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_1_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_1_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_1_4"
+      }
+    ]
+    },
+    {
+      "when": {
+        "facing": "west",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      },
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_2_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_2_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_2_4"
+      }
+    ]
+    },
+    {
+      "when": {
+        "facing": "north",
+        "half": "upper",
+        "hinge": "left",
+        "open": "false",
+        "powered": "true"
+      },
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_3_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_3_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_dark_vertical_slab_3_4"
+      }
+    ]
+    },
+    {
+      "when": {
+        "facing": "east",
+        "half": "upper",
+        "hinge": "right",
+        "open": "false",
+        "powered": "true"
+      },
+      "apply": { "model": "block/darkest_stone_rim", "y": 90 }
     },
     {
       "when": {
@@ -599,12 +702,7 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+      "apply": { "model": "block/darkest_stone_rim", "y": 180 }
     },
     {
       "when": {
@@ -614,12 +712,7 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+      "apply": { "model": "block/darkest_stone_rim", "y": 270 }
     },
     {
       "when": {
@@ -629,12 +722,7 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+      "apply": { "model": "block/darkest_stone_rim" }
     },
     {
       "when": {
@@ -645,10 +733,10 @@
         "powered": "true"
       },
       "apply": [
-	{ "model": "minecraft:block/replace", "y": 180 },
-	{ "model": "minecraft:block/replace", "y": 180 },
-	{ "model": "minecraft:block/replace", "y": 180 }
-	] 
+        { "model": "minecraft:block/replace", "y": 180 },
+        { "model": "minecraft:block/replace", "y": 180 },
+        { "model": "minecraft:block/replace", "y": 180 }
+      ]
     },
     {
       "when": {
@@ -659,10 +747,10 @@
         "powered": "true"
       },
       "apply": [
-	{ "model": "minecraft:block/replace", "y": 270 },
-	{ "model": "minecraft:block/replace", "y": 270 },
-	{ "model": "minecraft:block/replace", "y": 270 }
-	]
+        { "model": "minecraft:block/replace", "y": 270 },
+        { "model": "minecraft:block/replace", "y": 270 },
+        { "model": "minecraft:block/replace", "y": 270 }
+      ]
     },
     {
       "when": {
@@ -673,10 +761,10 @@
         "powered": "true"
       },
       "apply": [
-	{ "model": "minecraft:block/replace"},
-	{ "model": "minecraft:block/replace" },
-	{ "model": "minecraft:block/replace" }
-	]
+        { "model": "minecraft:block/replace" },
+        { "model": "minecraft:block/replace" },
+        { "model": "minecraft:block/replace" }
+      ]
     },
     {
       "when": {
@@ -687,10 +775,10 @@
         "powered": "true"
       },
       "apply": [
-	{ "model": "minecraft:block/replace", "y": 90 },
-	{ "model": "minecraft:block/replace", "y": 90 },
-	{ "model": "minecraft:block/replace", "y": 90 }
-	]
+        { "model": "minecraft:block/replace", "y": 90 },
+        { "model": "minecraft:block/replace", "y": 90 },
+        { "model": "minecraft:block/replace", "y": 90 }
+      ]
     },
     {
       "when": {
@@ -701,11 +789,11 @@
         "powered": "true"
       },
       "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" }
+      ]
     },
     {
       "when": {
@@ -716,11 +804,11 @@
         "powered": "true"
       },
       "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" }
+      ]
     },
     {
       "when": {
@@ -731,11 +819,11 @@
         "powered": "true"
       },
       "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" }
+      ]
     },
     {
       "when": {
@@ -746,13 +834,13 @@
         "powered": "true"
       },
       "apply": [
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"},
-	  { "model": "block/replace"}
-	  ]
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" },
+        { "model": "block/replace" }
+      ]
     },
-	   {
+    {
       "when": {
         "facing": "east",
         "half": "lower",
@@ -803,7 +891,7 @@
         "model": "block/nether_brick_vertical_thin_slab"
       }
     },
-	   {
+    {
       "when": {
         "facing": "west",
         "half": "lower",
@@ -811,9 +899,20 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/replace", "y": 90
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_2_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_2_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_2_4"
       }
+    ]
     },
     {
       "when": {
@@ -823,9 +922,20 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/replace", "y": 180
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_3_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_3_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_3_4"
       }
+    ]
     },
     {
       "when": {
@@ -835,9 +945,20 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/replace", "y": 270
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_4"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_4_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_4_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_4_4"
       }
+    ]
     },
     {
       "when": {
@@ -847,10 +968,20 @@
         "open": "false",
         "powered": "true"
       },
-      "apply": {
-        "model": "block/replace"
+      "apply": [
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_1_2"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_1_3"
+      },
+      {
+        "model": "mcme:block/pine_leaves_brown_vertical_slab_1_4"
       }
+    ]
     }
-
   ]
 }

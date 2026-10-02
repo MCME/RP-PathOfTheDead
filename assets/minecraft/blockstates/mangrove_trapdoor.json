@@ -1,0 +1,29 @@
+{
+  "variants": {
+	  "facing=west,half=bottom,open=false,powered=false,waterlogged=false": [
+	{ "model": "mcme:block/pine_leaves_brown_slab"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_2"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_3"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_4"}
+	],
+	  "facing=east,half=bottom,open=false,powered=false,waterlogged=false": [
+	  {"model": "mcme:block/pine_leaves_green_slab"},
+	  {"model": "mcme:block/pine_leaves_green_slab_2"},
+	  {"model": "mcme:block/pine_leaves_green_slab_3"},
+	  {"model": "mcme:block/pine_leaves_green_slab_4"}
+	],
+    "facing=west,half=top,open=false,powered=false,waterlogged=false": [
+	{ "model": "mcme:block/pine_leaves_brown_slab_upper"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_upper_2"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_upper_3"},
+	{ "model": "mcme:block/pine_leaves_brown_slab_upper_4"}
+	],
+	  "facing=east,half=top,open=false,powered=false,waterlogged=false": [
+	  {"model": "mcme:block/pine_leaves_green_slab_upper"},
+	  {"model": "mcme:block/pine_leaves_green_slab_upper_2"},
+	  {"model": "mcme:block/pine_leaves_green_slab_upper_3"},
+	  {"model": "mcme:block/pine_leaves_green_slab_upper_4"}
+	]
+
+  }
+}

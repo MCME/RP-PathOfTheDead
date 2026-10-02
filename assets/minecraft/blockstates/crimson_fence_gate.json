@@ -390,10 +390,16 @@
           "open": "true",
           "powered": "true"
         },
-        "apply": {
+        "apply": [{
           "model": "block/vertical_slab_dark_pillar",
           "uvlock": false
-        }
+        },{
+          "model": "block/vertical_slab_dark_pillar_2",
+          "uvlock": false
+        },{
+          "model": "block/vertical_slab_dark_pillar_3",
+          "uvlock": false
+        }]
       },
       {
         "when": {
@@ -402,11 +408,19 @@
           "open": "true",
           "powered": "true"
         },
-        "apply": {
+        "apply": [{
           "model": "block/vertical_slab_dark_pillar",
           "uvlock": false,
           "y": 90
-        }
+        },{
+          "model": "block/vertical_slab_dark_pillar_2",
+          "uvlock": false,
+          "y": 90
+        },{
+          "model": "block/vertical_slab_dark_pillar_3",
+          "uvlock": false,
+          "y": 90
+        }]
       },
       {
         "when": {
@@ -415,10 +429,16 @@
           "open": "true",
           "powered": "true"
         },
-        "apply": {
+        "apply": [{
           "model": "block/vertical_slab_dark_pillar",
           "uvlock": false, "y": 180
-        }
+        },{
+          "model": "block/vertical_slab_dark_pillar_2",
+          "uvlock": false, "y": 180
+        },{
+          "model": "block/vertical_slab_dark_pillar_3",
+          "uvlock": false, "y": 180
+        }]
       },
       {
         "when": {
@@ -427,11 +447,19 @@
           "open": "true",
           "powered": "true"
         },
-        "apply": {
+        "apply": [{
           "model": "block/vertical_slab_dark_pillar",
           "uvlock": false,
           "y": 270
-        }
+        },{
+          "model": "block/vertical_slab_dark_pillar_2",
+          "uvlock": false,
+          "y": 270
+        },{
+          "model": "block/vertical_slab_dark_pillar_3",
+          "uvlock": false,
+          "y": 270
+        }]
       }
     ]
   }

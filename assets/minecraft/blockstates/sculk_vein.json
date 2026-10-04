@@ -94,5 +94,13 @@
 	],
 	"down=true,east=false,north=false,south=true,up=true,west=true":[
 	{ "model": "block/ghost_pillar_thin_corner", "y": 270}
-	]}
+	],
+	"down=true,east=false,north=true,south=false,up=true,waterlogged=false,west=false":
+	[{ "model": "block/skeleton_lying_down_slope"},{ "model": "block/skeleton_lying_down_slope_2"},{ "model": "block/skeleton_lying_down_slope_3"}],
+	"down=true,east=true,north=false,south=false,up=true,waterlogged=false,west=false":
+	[{ "model": "block/skeleton_lying_down_slope", "y": 90},{ "model": "block/skeleton_lying_down_slope_2", "y": 90},{ "model": "block/skeleton_lying_down_slope_3", "y": 90}],
+	"down=true,east=false,north=false,south=true,up=true,waterlogged=false,west=false":
+	[{ "model": "block/skeleton_lying_down_slope", "y": 180},{ "model": "block/skeleton_lying_down_slope_2", "y": 180},{ "model": "block/skeleton_lying_down_slope_3", "y": 180}],
+	"down=true,east=false,north=false,south=false,up=true,waterlogged=false,west=true":
+	[{ "model": "block/skeleton_lying_down_slope", "y": 270},{ "model": "block/skeleton_lying_down_slope_2", "y": 270},{ "model": "block/skeleton_lying_down_slope_3", "y": 270}]}
 }

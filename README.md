@@ -1,5 +1,5 @@
-# RP-Gondor
-The official repository for MCME's Gondor pack.
+# RP-PathOfTheDead
+The official repository for MCME's PathOfTheDead pack.
 Created by members of the Minecraft Middle-Earth community.
 
 THIS IS A RESOURCEPACK IN DEVELOPMENT AND THEREFORE SHOULD NOT BE DOWNLOADED AND USED ON OUR SERVERS.

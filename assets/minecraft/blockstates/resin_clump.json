@@ -59,6 +59,14 @@
 	"down=true,east=false,north=false,south=true,up=false,west=false":
 	{ "model": "block/skeleton_sitting", "y": 180},
 	"down=true,east=false,north=false,south=false,up=false,west=true":
-	{ "model": "block/skeleton_sitting", "y": 270}
+	{ "model": "block/skeleton_sitting", "y": 270},
+	"down=true,east=false,north=true,south=false,up=true,waterlogged=false,west=false":
+	{ "model": "block/skeleton_lying_down"},
+	"down=true,east=true,north=false,south=false,up=true,waterlogged=false,west=false":
+	{ "model": "block/skeleton_lying_down", "y": 90},
+	"down=true,east=false,north=false,south=true,up=true,waterlogged=false,west=false":
+	{ "model": "block/skeleton_lying_down", "y": 180},
+	"down=true,east=false,north=false,south=false,up=true,waterlogged=false,west=true":
+	{ "model": "block/skeleton_lying_down", "y": 270}
   }
 }

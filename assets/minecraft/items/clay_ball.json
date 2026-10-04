@@ -8815,6 +8815,13 @@
                     "type": "model",
                     "model": "block/iron_bars_diagonal"
                 }
+            },
+			{
+                "threshold": 1408,
+                "model": {
+                    "type": "model",
+                    "model": "block/skeleton_lying_down"
+                }
             }
         ]
     }

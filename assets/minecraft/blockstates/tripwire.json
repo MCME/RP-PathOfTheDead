@@ -47,8 +47,7 @@
 	{ "model": "block/replace", "y": 90 }
 	],
     "powered=false,disarmed=false,attached=false,north=true,east=true,south=true,west=true": [
-	{ "model": "block/replace"},
-	{ "model": "block/replace"}
+	{ "model": "block/fog" }
 	],
     "powered=false,disarmed=false,attached=true,north=false,east=false,south=false,west=false": [
 	{ "model": "block/trapdoor_ghost_cobblestone_bottom"}

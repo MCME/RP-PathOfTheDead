@@ -1,3 +1,6 @@
 {
-  "modules": []
+  "modules": [],
+  "fluids": {
+    "fog": 5
+  }
 }

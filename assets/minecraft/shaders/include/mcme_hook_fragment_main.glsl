@@ -1,10 +1,11 @@
 // The base has told which fluid the face is (fluid) and where on it
 // (fluidHere), and drawn its water.
-// the fog block: the fog the view passes through in its block, lit by the
-// light alone - no shading of its faces, which would show them
+// the fog blocks and clouds: the fog the view passes through behind the face,
+// lit by the light alone - no shading of its faces, which would show them -
+// and as if under the open sky, as much as FOG_OPEN says
 if (fluid == FOG_BLOCK) {
-    vec4 fog = fogLook(fluidHere, MCME_SECONDS, MCME_FOG_COLOR.rgb);
-    color = vec4(fog.rgb * lightColor.rgb, fog.a);
+    vec4 fog = fogLook(fluidHere, fogEye, Sampler0, MCME_TEXCOORD, MCME_SECONDS, MCME_FOG_COLOR.rgb);
+    color = vec4(fog.rgb * mix(lightColor.rgb, fogLight.rgb, FOG_OPEN), fog.a);
 }
 // ...kept down to 1% opacity, as Sodium keeps every translucent face: vanilla
 // drops translucent terrain under 10% (its translucent_terrain pipeline's

@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "fog": "block/fog",
-        "particle": "block/fog"
+        "fog": "block/fog_thick",
+        "particle": "block/fog_thick"
     },
     "elements": [
         {

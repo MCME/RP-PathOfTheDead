@@ -1,6 +1,6 @@
 {
-  "parent": "block/cube_all_offset",
+  "parent": "block/vertical_half_slab_cull",
   "textures": {
-    	"0": "block/pale_oak_log"
+    	"slab": "block/pale_oak_log"
   }
 }

@@ -8829,6 +8829,27 @@
                     "type": "model",
                     "model": "block/skeleton_lying_down_slope_3"
                 }
+            },
+			{
+                "threshold": 1410,
+                "model": {
+                    "type": "model",
+                    "model": "mcme:block/fog"
+                }
+            },
+			{
+                "threshold": 1411,
+                "model": {
+                    "type": "model",
+                    "model": "mcme:block/dense_fog"
+                }
+            },
+			{
+                "threshold": 1412,
+                "model": {
+                    "type": "model",
+                    "model": "mcme:block/big_fog"
+                }
             }
         ]
     }

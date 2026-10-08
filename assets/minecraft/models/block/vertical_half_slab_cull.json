@@ -1,10 +1,8 @@
 {
-	"format_version": "1.9.0",
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
-	"ambientocclusion": false,
 	"textures": {
-		"particle": "block/cut_copper",
-		"slab": "block/orange_stained_glass"
+		"particle": "#slab"
 	},
 	"elements": [
 		{
@@ -37,7 +35,7 @@
 			"scale": [0.57, 0.57, 0.56]
 		},
 		"gui": {
-			"rotation": [30, -135, 0],
+			"rotation": [30, -134, 0],
 			"translation": [-3.75, 0.25, 0],
 			"scale": [0.625, 0.625, 0.625]
 		}

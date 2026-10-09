@@ -2,7 +2,7 @@
   "pack": {
     "pack_format": 88,
     "min_format": 88,
-    "max_format": 88,
+    "max_format": 97,
     "description": "MCME Path of the Dead v2.0.2"
   },
   "sodium": {
@@ -10,6 +10,15 @@
       "fog.glsl",
       "terrain.fsh",
       "terrain.vsh"
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "min_format": 97,
+        "max_format": 97,
+        "directory": "mc26_3"
+      }
     ]
   }
 }

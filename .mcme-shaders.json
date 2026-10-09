@@ -1,0 +1,8 @@
+{
+  "modules": [],
+  "fluids": {
+    "fog": 5,
+    "fog_thick": 5,
+    "fog_cloud": 5
+  }
+}

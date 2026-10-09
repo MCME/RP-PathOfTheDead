@@ -2,7 +2,6 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
-	"texture_size": [32, 32],
 	"textures": {
 		"4": "block/magenta_stained_glass",
 		"particle": "block/magenta_stained_glass"
@@ -17,8 +16,8 @@
 				"east": {"uv": [4, 0, 12, 16], "texture": "#4"},
 				"south": {"uv": [4, 0, 12, 16], "texture": "#4"},
 				"west": {"uv": [4, 0, 12, 16], "texture": "#4"},
-				"up": {"uv": [0, 0, 4, 4], "texture": "#4", "cullface": "up"},
-				"down": {"uv": [0, 4, 4, 8], "texture": "#4", "cullface": "down"}
+				"up": {"uv": [0, 0, 8, 8], "texture": "#4", "cullface": "up"},
+				"down": {"uv": [0, 4, 8, 12], "texture": "#4", "cullface": "down"}
 			}
 		}
 	],

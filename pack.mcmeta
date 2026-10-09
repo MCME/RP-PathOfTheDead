@@ -3,7 +3,7 @@
     "pack_format": 88,
     "min_format": 88,
     "max_format": 97,
-    "description": "MCME Path of the Dead v2.0.2"
+    "description": "MCME Path of the Dead v2.0.3"
   },
   "sodium": {
     "ignored_shaders": [

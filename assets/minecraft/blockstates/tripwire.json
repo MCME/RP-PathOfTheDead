@@ -250,9 +250,6 @@
     "powered=false,disarmed=true,attached=false,north=false,east=false,south=true,west=true": {
 	  "model": "block/replace", "y":270
 	},
-    ",powered=false,disarmed=true,attached=false,north=false,east=true,south=false,west=false": {
-	  "model": "block/replace", "y":90
-	},
     "powered=false,disarmed=true,attached=false,north=false,east=true,south=false,west=true": {
 	  "model": "block/replace"
 	},

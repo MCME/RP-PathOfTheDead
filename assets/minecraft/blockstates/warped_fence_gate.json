@@ -370,8 +370,8 @@
           "powered": "true"
         },
         "apply": {
-          "model": "block/pillar_top_white_half",
-          "uvlock": false,
+          "model": "minecraft:block/warped_fence_gate_wall_open",
+          "uvlock": true,
           "y": 270
         }
       }

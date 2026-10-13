@@ -785,34 +785,6 @@
                 }
             },
             {
-                "threshold": 182,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay1_s"
-                }
-            },
-            {
-                "threshold": 183,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay1_w"
-                }
-            },
-            {
-                "threshold": 184,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay1_n"
-                }
-            },
-            {
-                "threshold": 185,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay1_e"
-                }
-            },
-            {
                 "threshold": 186,
                 "model": {
                     "type": "model",
@@ -821,13 +793,6 @@
             },
             {
                 "threshold": 187,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay2_w"
-                }
-            },
-            {
-                "threshold": 188,
                 "model": {
                     "type": "model",
                     "model": "minecraft:item/clay_ball"
@@ -844,14 +809,7 @@
                 "threshold": 190,
                 "model": {
                     "type": "model",
-                    "model": "block/repeater_delay3_s"
-                }
-            },
-            {
-                "threshold": 191,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay3_w"
+                    "model": "minecraft:item/clay_ball"
                 }
             },
             {
@@ -879,14 +837,7 @@
                 "threshold": 195,
                 "model": {
                     "type": "model",
-                    "model": "block/repeater_delay4_w"
-                }
-            },
-            {
-                "threshold": 196,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay4_n"
+                    "model": "minecraft:item/clay_ball"
                 }
             },
             {
@@ -956,14 +907,7 @@
                 "threshold": 206,
                 "model": {
                     "type": "model",
-                    "model": "block/powered_repeater_delay3_s"
-                }
-            },
-            {
-                "threshold": 207,
-                "model": {
-                    "type": "model",
-                    "model": "block/powered_repeater_delay3_w"
+                    "model": "minecraft:item/clay_ball"
                 }
             },
             {
@@ -1177,13 +1121,6 @@
                 }
             },
             {
-                "threshold": 278,
-                "model": {
-                    "type": "model",
-                    "model": "block/polished_andesite_slab_double"
-                }
-            },
-            {
                 "threshold": 279,
                 "model": {
                     "type": "model",
@@ -1387,20 +1324,6 @@
                 }
             },
             {
-                "threshold": 332,
-                "model": {
-                    "type": "model",
-                    "model": "block/comparator_powered_subtract_n"
-                }
-            },
-            {
-                "threshold": 333,
-                "model": {
-                    "type": "model",
-                    "model": "block/comparator_powered_subtract_e"
-                }
-            },
-            {
                 "threshold": 334,
                 "model": {
                     "type": "model",
@@ -1576,13 +1499,6 @@
                 }
             },
             {
-                "threshold": 363,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay2_n"
-                }
-            },
-            {
                 "threshold": 364,
                 "model": {
                     "type": "model",
@@ -1724,13 +1640,6 @@
             },
             {
                 "threshold": 429,
-                "model": {
-                    "type": "model",
-                    "model": "block/repeater_delay1_nl"
-                }
-            },
-            {
-                "threshold": 430,
                 "model": {
                     "type": "model",
                     "model": "minecraft:item/clay_ball"

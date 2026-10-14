@@ -4969,6 +4969,55 @@
                     "type": "model",
                     "model": "block/fog_cloud"
                 }
+            },
+            {
+                "threshold": 2500,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy"
+                }
+            },
+            {
+                "threshold": 2501,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy_bucket"
+                }
+            },
+            {
+                "threshold": 2502,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/potion"
+                }
+            },
+            {
+                "threshold": 2503,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/ghost_cauldron"
+                }
+            },
+            {
+                "threshold": 2504,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/bats"
+                }
+            },
+            {
+                "threshold": 2505,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/spider"
+                }
+            },
+            {
+                "threshold": 2506,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy_4"
+                }
             }
         ]
     }

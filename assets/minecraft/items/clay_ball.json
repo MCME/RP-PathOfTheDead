@@ -5011,6 +5011,13 @@
                     "type": "model",
                     "model": "block/halloween/spider"
                 }
+            },
+            {
+                "threshold": 2506,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy_4"
+                }
             }
         ]
     }

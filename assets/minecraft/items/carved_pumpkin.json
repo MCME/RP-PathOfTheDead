@@ -1,54 +1,6 @@
 {
   "model": {
-    "type": "minecraft:range_dispatch",
-    "property": "minecraft:custom_model_data",
-    "fallback": {
-      "type": "minecraft:model",
-      "model": "minecraft:block/carved_pumpkin"
-    },
-    "entries": [
-      {
-        "threshold": 1001,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/deathbound_witchcap"
-        }
-      },
-      {
-        "threshold": 1002,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/dimensional_witchcap"
-        }
-      },
-      {
-        "threshold": 1003,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/haunted_witchcap"
-        }
-      },
-      {
-        "threshold": 1004,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/moonlight_witchcap"
-        }
-      },
-      {
-        "threshold": 1005,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/moonlight_witchcap_pink"
-        }
-      },
-      {
-        "threshold": 1006,
-        "model": {
-          "type": "minecraft:model",
-          "model": "minecraft:item/headgears/watchful_witchcap"
-        }
-      }
-    ]
+    "type": "minecraft:model",
+    "model": "minecraft:item/headgears/deathbound_witchcap"
   }
 }

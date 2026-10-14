@@ -1,6 +1,8 @@
 {
   "variants": {
 	  "distance=2,persistent=true,waterlogged=false": { "model": "block/invisible"}
-
+  },
+    "distance=7,persistent=true,waterlogged=false": {
+    "model": "block/halloween/ghost_cauldron"
   }
 }

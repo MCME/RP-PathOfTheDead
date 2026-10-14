@@ -307,6 +307,20 @@
                     "type": "model",
                     "model": "gui/det_alt"
                 }
+            },
+            {
+                "threshold": 50,
+                "model": {
+                    "type": "model",
+                    "model": "gui/halloween"
+                }
+            },
+            {
+                "threshold": 51,
+                "model": {
+                    "type": "model",
+                    "model": "gui/halloween_alt"
+                }
             }
         ]
     }

@@ -1,0 +1,32 @@
+{
+    "variants": {
+        "facing=north,half=lower,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/grave_stone",
+            "y": 0
+        },
+        "facing=east,half=lower,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/grave_stone",
+            "y": 90
+        },
+        "facing=south,half=lower,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/grave_stone",
+            "y": 180
+        },
+        "facing=west,half=lower,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/grave_stone",
+            "y": 270
+        },
+        "facing=north,half=upper,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/empty"
+        },
+        "facing=east,half=upper,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/empty"
+        },
+        "facing=south,half=upper,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/empty"
+        },
+        "facing=west,half=upper,hinge=left,open=false,powered=false": {
+            "model": "minecraft:block/halloween/empty"
+        }
+    }
+}

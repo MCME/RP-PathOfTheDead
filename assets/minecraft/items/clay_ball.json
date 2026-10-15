@@ -5018,6 +5018,34 @@
                     "type": "model",
                     "model": "block/halloween/candy_4"
                 }
+            },
+            {
+                "threshold": 2507,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/witch_broom"
+                }
+            },
+            {
+                "threshold": 2508,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/witch_broom_2"
+                }
+            },
+            {
+                "threshold": 2509,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_stone"
+                }
+            },
+            {
+                "threshold": 2510,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_names"
+                }
             }
         ]
     }

@@ -18,12 +18,12 @@
       "apply": { "model": "block/halloween/spider", "y": 270 }
     },
     {
-      "when": { "face": "wall", "facing": "north" },
-      "apply": { "model": "block/halloween/spider", "x": 90 }
-    },
-    {
       "when": { "face": "wall", "facing": "east" },
       "apply": { "model": "block/halloween/spider", "x": 90, "y": 90 }
+    },
+    {
+      "when": { "face": "wall", "facing": "north" },
+      "apply": { "model": "block/halloween/spider", "x": 90, "y": 0 }
     },
     {
       "when": { "face": "wall", "facing": "south" },

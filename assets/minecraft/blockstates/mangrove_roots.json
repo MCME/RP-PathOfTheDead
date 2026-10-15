@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "waterlogged=false": {
+      "model": "minecraft:block/halloween/ghost_cauldron"
+    }
+  }
+}

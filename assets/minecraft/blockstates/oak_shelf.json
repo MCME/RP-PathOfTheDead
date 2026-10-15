@@ -1,0 +1,21 @@
+
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft:block/halloween/grave_stone",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "minecraft:block/halloween/grave_stone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft:block/halloween/grave_stone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft:block/halloween/grave_stone",
+      "y": 270
+    }
+  }
+}

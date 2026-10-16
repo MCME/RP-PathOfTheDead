@@ -1,6 +1,7 @@
 {
   "variants": {
     "face=wall,facing=north,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_sauron"},
         {"model": "minecraft:block/halloween/grave_names/grave_serbia"},
         {"model": "minecraft:block/halloween/grave_names/grave_shen"},
         {"model": "minecraft:block/halloween/grave_names/grave_silver"},
@@ -9,6 +10,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_swe"} 
     ],
     "face=wall,facing=east,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_sauron", "y": 90},
         {"model": "minecraft:block/halloween/grave_names/grave_serbia", "y": 90},
         {"model": "minecraft:block/halloween/grave_names/grave_shen", "y": 90},
         {"model": "minecraft:block/halloween/grave_names/grave_silver", "y": 90},
@@ -17,6 +19,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_swe", "y": 90}
     ],
     "face=wall,facing=south,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_sauron", "y": 180},
         {"model": "minecraft:block/halloween/grave_names/grave_serbia", "y": 180},
         {"model": "minecraft:block/halloween/grave_names/grave_shen", "y": 180},
         {"model": "minecraft:block/halloween/grave_names/grave_silver", "y": 180},
@@ -25,6 +28,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_swe", "y": 180}
     ],
     "face=wall,facing=west,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_sauron", "y": 270},
         {"model": "minecraft:block/halloween/grave_names/grave_serbia", "y": 270},
         {"model": "minecraft:block/halloween/grave_names/grave_shen", "y": 270},
         {"model": "minecraft:block/halloween/grave_names/grave_silver", "y": 270},

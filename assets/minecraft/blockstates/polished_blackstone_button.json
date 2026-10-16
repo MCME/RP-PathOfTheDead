@@ -3,6 +3,10 @@
     "face=floor,facing=north,powered=false": {"model": "minecraft:block/halloween/witch_broom", "y": 0},
     "face=floor,facing=east,powered=false": {"model": "minecraft:block/halloween/witch_broom", "y": 90},
     "face=floor,facing=south,powered=false": {"model": "minecraft:block/halloween/witch_broom", "y": 180},
-    "face=floor,facing=west,powered=false": {"model": "minecraft:block/halloween/witch_broom", "y": 270}
+    "face=floor,facing=west,powered=false": {"model": "minecraft:block/halloween/witch_broom", "y": 270},
+     "face=floor,facing=north,powered=true": {"model": "minecraft:block/halloween/witch_broom_2", "y": 0},
+    "face=floor,facing=east,powered=true": {"model": "minecraft:block/halloween/witch_broom_2", "y": 90},
+    "face=floor,facing=south,powered=true": {"model": "minecraft:block/halloween/witch_broom_2", "y": 180},
+    "face=floor,facing=west,powered=true": {"model": "minecraft:block/halloween/witch_broom_2", "y": 270}
   }
 }

@@ -1,32 +1,32 @@
 {
   "variants": {
     "face=wall,facing=north,powered=false": [
-        {"model": "minecraft:block/halloween/grave_names/grave_baj"},
-        {"model": "minecraft:block/halloween/grave_names/grave_bart"},
-        {"model": "minecraft:block/halloween/grave_names/grave_cheezy"},
-        {"model": "minecraft:block/halloween/grave_names/grave_cherry"},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo"}
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl"},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen"},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom"},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao"},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz"}
     ],
-     "face=wall,facing=east,powered=false": [
-        {"model": "minecraft:block/halloween/grave_names/grave_baj", "y": 90},
-        {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 90},
-        {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 90},
-        {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 90},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 90}
+    "face=wall,facing=east,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 90}
     ],
     "face=wall,facing=south,powered=false": [
-        {"model": "minecraft:block/halloween/grave_names/grave_baj", "y": 180},
-        {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 180},
-        {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 180},
-        {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 180},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 180}
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 180}
     ],
     "face=wall,facing=west,powered=false": [
-        {"model": "minecraft:block/halloween/grave_names/grave_baj", "y": 270},
-        {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 270},
-        {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 270},
-        {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 270},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 270}
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 270}
     ]
   }
 }

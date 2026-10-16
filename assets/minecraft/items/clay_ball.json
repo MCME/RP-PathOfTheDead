@@ -4971,6 +4971,55 @@
                 }
             },
             {
+                "threshold": 2500,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy"
+                }
+            },
+            {
+                "threshold": 2501,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy_bucket"
+                }
+            },
+            {
+                "threshold": 2502,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/potion"
+                }
+            },
+            {
+                "threshold": 2503,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/ghost_cauldron"
+                }
+            },
+            {
+                "threshold": 2504,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/bats"
+                }
+            },
+            {
+                "threshold": 2505,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/spider"
+                }
+            },
+            {
+                "threshold": 2506,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/candy_4"
+                }
+            },
+            {
                 "threshold": 2507,
                 "model": {
                     "type": "model",
@@ -4981,84 +5030,70 @@
                 "threshold": 2508,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/witch_broom_2"
+                    "model": "block/halloween/grave_stone"
                 }
             },
             {
                 "threshold": 2509,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_stone"
+                    "model": "block/halloween/grave_names/grave_name"
                 }
             },
             {
                 "threshold": 2510,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name"
+                    "model": "block/halloween/grave_names/grave_name_2"
                 }
             },
             {
                 "threshold": 2511,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_2"
+                    "model": "block/halloween/grave_names/grave_name_3"
                 }
             },
             {
                 "threshold": 2512,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_3"
+                    "model": "block/halloween/grave_names/grave_name_4"
                 }
             },
             {
                 "threshold": 2513,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_4"
+                    "model": "block/halloween/grave_names/grave_name_5"
                 }
             },
             {
                 "threshold": 2514,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_5"
+                    "model": "block/halloween/grave_names/grave_name_6"
                 }
             },
             {
                 "threshold": 2515,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_6"
+                    "model": "block/halloween/grave_names/grave_name_7"
                 }
             },
             {
                 "threshold": 2516,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_7"
+                    "model": "block/halloween/grave_names/grave_name_8"
                 }
             },
             {
                 "threshold": 2517,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_8"
-                }
-            },
-            {
-                "threshold": 2518,
-                "model": {
-                    "type": "model",
                     "model": "block/halloween/grave_names/grave_name_9"
-                }
-            },
-            {
-                "threshold": 2519,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/eye_jar"
                 }
             }
         ]

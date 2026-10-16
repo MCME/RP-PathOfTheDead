@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "face=wall,facing=north,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl"},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen"},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom"},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao"},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz"},
+        {"model": "minecraft:block/halloween/grave_names/grave_eggo"}
+    ],
+    "face=wall,facing=east,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_eggo", "y": 90}
+    ],
+    "face=wall,facing=south,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_eggo", "y": 180}
+    ],
+    "face=wall,facing=west,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_dahl", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_dahllen", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_daom", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_drao", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_drayz", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_eggo", "y": 270}
+    ]
+  }
+}

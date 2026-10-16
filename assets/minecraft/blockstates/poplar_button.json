@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "face=wall,facing=north,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_tedo"},
+        {"model": "minecraft:block/halloween/grave_names/grave_thomas"},
+        {"model": "minecraft:block/halloween/grave_names/grave_toti"},
+        {"model": "minecraft:block/halloween/grave_names/grave_visas"},
+        {"model": "minecraft:block/halloween/grave_names/grave_wyatt"}
+    ],
+    "face=wall,facing=east,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_tedo", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_thomas", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_toti", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_visas", "y": 90},
+        {"model": "minecraft:block/halloween/grave_names/grave_wyatt", "y": 90}
+    ],
+    "face=wall,facing=south,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_tedo", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_thomas", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_toti", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_visas", "y": 180},
+        {"model": "minecraft:block/halloween/grave_names/grave_wyatt", "y": 180}
+    ],
+    "face=wall,facing=west,powered=false": [
+        {"model": "minecraft:block/halloween/grave_names/grave_tedo", "y": 270},    
+        {"model": "minecraft:block/halloween/grave_names/grave_thomas", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_toti", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_visas", "y": 270},
+        {"model": "minecraft:block/halloween/grave_names/grave_wyatt", "y": 270}
+    ]
+  }
+}

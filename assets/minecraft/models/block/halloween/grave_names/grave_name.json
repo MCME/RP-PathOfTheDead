@@ -2,23 +2,61 @@
 	"format_version": "26.3",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"names": "block/halloween/grave_names/base_name",
-		"1": "block/halloween/grave_names/ghost_stone",
-		"particle": "block/halloween/grave_names/ghost_stone"
+		"2": "block/halloween/grave_names/gravestone",
+		"names": "block/halloween/grave_names/grave_name",
+		"particle": "#2"
 	},
 	"elements": [
 		{
-			"from": [8, 5.65, 11.5],
-			"to": [8.6, 12.25, 21.9],
-			"rotation": {"x": 0, "y": 89, "z": 0, "origin": [8, 8.1, 16.7]},
+			"from": [7.9, 6.05, 10.7],
+			"to": [8.5, 12.65, 21.1],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [8, 8.5, 15.9]},
 			"faces": {
-				"north": {"uv": [7.70846, 7.0105, 8.30846, 8.57072], "texture": "#1"},
-				"east": {"uv": [7.07202, 7.28326, 8.84546, 9.25361], "texture": "#names"},
-				"south": {"uv": [7.6924, 7.11921, 8.2924, 8.51143], "texture": "#1"},
-				"west": {"uv": [7.09179, 7.28326, 8.86523, 9.24373], "texture": "#names"},
-				"up": {"uv": [7.78135, 7.1155, 8.38135, 8.54107], "texture": "#1"},
-				"down": {"uv": [7.04015, 8.00494, 9.00395, 8.56084], "texture": "#1"}
+				"north": {"uv": [7.70846, 7.0105, 8.30846, 8.57072], "texture": "#2"},
+				"east": {"uv": [7.15602, 7.10933, 8.82471, 9.25361], "texture": "#names"},
+				"south": {"uv": [7.6924, 7.11921, 8.2924, 8.51143], "texture": "#2"},
+				"west": {"uv": [7.16295, 7.10933, 8.81483, 9.24373], "texture": "#names"},
+				"up": {"uv": [7.78135, 7.1155, 8.38135, 8.54107], "texture": "#2"},
+				"down": {"uv": [7.04015, 8.00494, 9.00395, 8.56084], "texture": "#2"}
 			}
 		}
-	]
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 3.25, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 3.25, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 23.5, 0],
+			"translation": [-1.5, 2.25, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 23.5, 0],
+			"translation": [-1.5, 2.25, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [6.75, -5, 0],
+			"scale": [1.18, 1.18, 1.18]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"on_shelf": {
+			"rotation": [0, -180, 0]
+		}
+	}
 }

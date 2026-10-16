@@ -5044,7 +5044,70 @@
                 "threshold": 2510,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/grave_names/grave_names"
+                    "model": "block/halloween/grave_names/grave_name"
+                }
+            },
+            {
+                "threshold": 2511,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_2"
+                }
+            },
+            {
+                "threshold": 2512,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_3"
+                }
+            },
+            {
+                "threshold": 2513,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_4"
+                }
+            },
+            {
+                "threshold": 2514,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_5"
+                }
+            },
+            {
+                "threshold": 2515,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_6"
+                }
+            },
+            {
+                "threshold": 2516,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_7"
+                }
+            },
+            {
+                "threshold": 2517,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_8"
+                }
+            },
+            {
+                "threshold": 2518,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/grave_names/grave_name_9"
+                }
+            },
+            {
+                "threshold": 2519,
+                "model": {
+                    "type": "model",
+                    "model": "block/halloween/eye_jar"
                 }
             }
         ]

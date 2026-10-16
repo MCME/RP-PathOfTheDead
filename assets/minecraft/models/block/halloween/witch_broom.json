@@ -119,5 +119,14 @@
 			"translation": [0, -4.75, 0],
 			"scale": [0.6, 0.6, 0.6]
 		}
-	}
+	},
+	"groups": [
+		{
+			"name": "broom",
+			"origin": [0, 0, 0],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
 }

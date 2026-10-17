@@ -2,6 +2,6 @@
 {
   "parent": "minecraft:block/halloween/grave_names/grave_name",
   "textures": {
-    "names": "minecraft:block/halloween/grave_names/grave_silver"
+    "names": "minecraft:block/halloween/grave_names/grave_snowfox"
   }
 }

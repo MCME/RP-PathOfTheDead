@@ -14,7 +14,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_bart"},
         {"model": "minecraft:block/halloween/grave_names/grave_cheezy"},
         {"model": "minecraft:block/halloween/grave_names/grave_cherry"},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo"}
+        {"model": "minecraft:block/halloween/grave_names/grave_credoo"}
      ]
     },
     {
@@ -31,7 +31,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 90},
         {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 90},
         {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 90},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 90}
+        {"model": "minecraft:block/halloween/grave_names/grave_credoo", "y": 90}
       ]
     },
     {
@@ -48,7 +48,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 180},
         {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 180},
         {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 180},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 180}
+        {"model": "minecraft:block/halloween/grave_names/grave_credoo", "y": 180}
       ]
     },
     {
@@ -65,7 +65,7 @@
         {"model": "minecraft:block/halloween/grave_names/grave_bart", "y": 270},
         {"model": "minecraft:block/halloween/grave_names/grave_cheezy", "y": 270},
         {"model": "minecraft:block/halloween/grave_names/grave_cherry", "y": 270},
-        {"model": "minecraft:block/halloween/grave_names/grave_creedo", "y": 270}
+        {"model": "minecraft:block/halloween/grave_names/grave_credoo", "y": 270}
       ]
     }
   ]

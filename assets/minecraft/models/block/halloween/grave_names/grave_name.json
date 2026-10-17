@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"2": "block/halloween/grave_names/gravestone",
-		"names": "block/halloween/grave_names/grave_name",
-		"particle": "#2"
+		"particle": "block/halloween/grave_names/gravestone",
+		"names": "block/halloween/grave_names/grave_name"
 	},
 	"elements": [
 		{
@@ -48,8 +48,8 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, -135, 0],
-			"translation": [6.75, -5, 0],
+			"rotation": [-169.27, -40.82, 178.89],
+			"translation": [6.5, -3.25, 0],
 			"scale": [1.18, 1.18, 1.18]
 		},
 		"fixed": {

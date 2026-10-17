@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "minecraft:block/halloween/grave_names/grave_stone"
+    "model": "minecraft:block/halloween/grave_stone"
   }
 }

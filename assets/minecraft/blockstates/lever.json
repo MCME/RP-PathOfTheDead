@@ -6,7 +6,7 @@
     },
     {
       "when": { "face": "floor", "facing": "east" },
-      "apply": { "model": "block/halloween/spider", "y": 0 }
+      "apply": { "model": "block/halloween/spider", "y": 270 }
     },
     {
       "when": { "face": "floor", "facing": "south" },

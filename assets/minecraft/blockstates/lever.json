@@ -2,19 +2,19 @@
   "multipart": [
     {
       "when": { "face": "floor", "facing": "north" },
-      "apply": { "model": "block/halloween/spider" }
+      "apply": { "model": "block/halloween/spider", "y": 180 }
     },
     {
       "when": { "face": "floor", "facing": "east" },
-      "apply": { "model": "block/halloween/spider"}
+      "apply": { "model": "block/halloween/spider", "y": 0 }
     },
     {
       "when": { "face": "floor", "facing": "south" },
-      "apply": { "model": "block/halloween/spider"}
+      "apply": { "model": "block/halloween/spider", "y": 0 }
     },
     {
       "when": { "face": "floor", "facing": "west" },
-      "apply": { "model": "block/halloween/spider"}
+      "apply": { "model": "block/halloween/spider", "y": 90 }
     },
     {
       "when": { "face": "wall", "facing": "north" },

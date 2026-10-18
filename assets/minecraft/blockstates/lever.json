@@ -2,19 +2,19 @@
   "multipart": [
     {
       "when": { "face": "floor", "facing": "north" },
-      "apply": { "model": "block/halloween/spider", "y": 180 }
+      "apply": { "model": "block/halloween/spider", "y": 180}
     },
     {
       "when": { "face": "floor", "facing": "east" },
-      "apply": { "model": "block/halloween/spider", "y": 270 }
+      "apply": { "model": "block/halloween/spider", "y": 270}
     },
     {
       "when": { "face": "floor", "facing": "south" },
-      "apply": { "model": "block/halloween/spider", "y": 0 }
+      "apply": { "model": "block/halloween/spider"}
     },
     {
       "when": { "face": "floor", "facing": "west" },
-      "apply": { "model": "block/halloween/spider", "y": 90 }
+      "apply": { "model": "block/halloween/spider", "y": 90}
     },
     {
       "when": { "face": "wall", "facing": "north" },
@@ -34,7 +34,7 @@
     },
     {
       "when": { "face": "ceiling", "facing": "north" },
-      "apply": { "model": "block/halloween/spider", "x": 180, "y": 90 }
+      "apply": { "model": "block/halloween/spider", "x": 180 }
     },
     {
       "when": { "face": "ceiling", "facing": "east" },

@@ -4992,6 +4992,13 @@
                 }
             },
             {
+                "threshold": 1416,
+                "model": {
+                    "type": "model",
+                    "model": "block/darkest_bricks_side_stairs"
+                }
+            },
+            {
                 "threshold": 1417,
                 "model": {
                     "type": "model",

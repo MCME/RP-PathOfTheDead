@@ -61,7 +61,9 @@
       "apply": [
 		{ "model": "block/vertical_slab_granite", "uvlock": true },
 		{ "model": "block/vertical_slab_granite_2", "uvlock": true },
-		{ "model": "block/vertical_slab_granite_3", "uvlock": true }
+		{ "model": "block/vertical_slab_granite_3", "uvlock": true },
+		{ "model": "block/vertical_slab_granite_4", "uvlock": true },
+		{ "model": "block/vertical_slab_granite_5", "uvlock": true }
 		]
     },
     {
@@ -74,7 +76,9 @@
       "apply": [
 		{ "model": "block/vertical_slab_granite", "uvlock": true, "y":90 },
 		{ "model": "block/vertical_slab_granite_2", "uvlock": true, "y":90 },
-		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":90 }
+		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":90 },
+		{ "model": "block/vertical_slab_granite_4", "uvlock": true, "y":90 },
+		{ "model": "block/vertical_slab_granite_5", "uvlock": true, "y":90 }
 		]
     },
     {
@@ -87,7 +91,9 @@
       "apply": [
 		{ "model": "block/vertical_slab_granite", "uvlock": true, "y":180 },
 		{ "model": "block/vertical_slab_granite_2", "uvlock": true, "y":180 },
-		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":180 }
+		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":180 },
+		{ "model": "block/vertical_slab_granite_4", "uvlock": true, "y":180 },
+		{ "model": "block/vertical_slab_granite_5", "uvlock": true, "y":180 }
 		]
     },
     {
@@ -100,7 +106,9 @@
       "apply": [
 		{ "model": "block/vertical_slab_granite", "uvlock": true, "y":270 },
 		{ "model": "block/vertical_slab_granite_2", "uvlock": true, "y":270 },
-		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":270 }
+		{ "model": "block/vertical_slab_granite_3", "uvlock": true, "y":270 },
+		{ "model": "block/vertical_slab_granite_4", "uvlock": true, "y":270 },
+		{ "model": "block/vertical_slab_granite_5", "uvlock": true, "y":270 }
 		]
     },
     {

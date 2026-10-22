@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "facing=north,in_wall=false,open=false,powered=false": {
+        "model": "minecraft:block/halloween/candy_bucket",
+        "y": 90
+        },
+        "facing=east,in_wall=false,open=false,powered=false": {
+        "model": "minecraft:block/halloween/candy_bucket",
+        "y": 180
+        },
+        "facing=south,in_wall=false,open=false,powered=false": {
+        "model": "minecraft:block/halloween/candy_bucket",
+        "y": 270
+        },
+        "facing=west,in_wall=false,open=false,powered=false": {
+        "model": "minecraft:block/halloween/candy_bucket",
+        "y": 0
+        }
+    }
+}

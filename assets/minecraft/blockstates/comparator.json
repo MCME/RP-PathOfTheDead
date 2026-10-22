@@ -48,10 +48,12 @@
     { "model": "block/comparator_powered_subtract_w_6"}
     ],
     "facing\u003dnorth,mode\u003dsubtract,powered\u003dtrue": {
-      "model": "block/comparator_powered_subtract_n"
+      "model": "minecraft:block/comparator_on_subtract",
+      "y": 180
     },
     "facing\u003deast,mode\u003dsubtract,powered\u003dtrue": {
-      "model": "block/comparator_powered_subtract_e"
+      "model": "minecraft:block/comparator_on_subtract",
+      "y": 270
     }
   }
 }

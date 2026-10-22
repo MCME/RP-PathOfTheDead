@@ -1,7 +1,9 @@
 {
   "variants": {
     "down=true,east=false,north=false,south=false,up=true,west=true": [
-      { "model": "block/stripped_dark_oak_log" }
+      {
+        "model": "block/stripped_dark_oak_log"
+      }
     ]
   }
 }

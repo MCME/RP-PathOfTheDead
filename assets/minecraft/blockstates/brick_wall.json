@@ -3,6 +3,14 @@
 	   "up=false,north=none,east=none,south=tall,west=tall": { "model": "block/dark_bricks_side_stairs" },
 	   "up=false,north=tall,east=none,south=none,west=tall": { "model": "block/dark_bricks_side_stairs", "y":90 },
 	   "up=false,north=tall,east=tall,south=none,west=none": { "model": "block/dark_bricks_side_stairs", "y":180  },
-	   "up=false,north=none,east=tall,south=tall,west=none": { "model": "block/dark_bricks_side_stairs", "y":270 }
+	   "up=false,north=none,east=tall,south=tall,west=none": { "model": "block/dark_bricks_side_stairs", "y":270 },
+	   "up=true,north=none,east=none,south=low,west=low": { "model": "block/darker_bricks_side_stairs" },
+	   "up=true,north=low,east=none,south=none,west=low": { "model": "block/darker_bricks_side_stairs", "y":90 },
+	   "up=true,north=low,east=low,south=none,west=none": { "model": "block/darker_bricks_side_stairs", "y":180  },
+	   "up=true,north=none,east=low,south=low,west=none": { "model": "block/darker_bricks_side_stairs", "y":270 },
+	   "up=false,north=none,east=none,south=low,west=low": { "model": "block/darkest_bricks_side_stairs" },
+	   "up=false,north=low,east=none,south=none,west=low": { "model": "block/darkest_bricks_side_stairs", "y":90 },
+	   "up=false,north=low,east=low,south=none,west=none": { "model": "block/darkest_bricks_side_stairs", "y":180  },
+	   "up=false,north=none,east=low,south=low,west=none": { "model": "block/darkest_bricks_side_stairs", "y":270 }
 	}
 }

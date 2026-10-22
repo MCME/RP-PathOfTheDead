@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "type=bottom": [
+			{ "model": "block/granite_slab" },
+			{ "model": "block/granite_slab_2" },
+			{ "model": "block/granite_slab_3" },
+			{ "model": "block/granite_slab_4" },
+			{ "model": "block/granite_slab_5" }
+			],
+        "type=top": [
+			{ "model": "block/granite_slab", "x": 180 },
+			{ "model": "block/granite_slab_2", "x": 180 },
+			{ "model": "block/granite_slab_3", "x": 180 },
+			{ "model": "block/granite_slab_4", "x": 180 },
+			{ "model": "block/granite_slab_5", "x": 180 }
+			]
+    }
+}

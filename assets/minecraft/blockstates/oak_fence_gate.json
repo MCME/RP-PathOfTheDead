@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,open=false": { "model": "minecraft:block/halloween/witch_broom", "y": 0 },
+    "facing=east,open=false": { "model": "minecraft:block/halloween/witch_broom", "y": 90 },
+    "facing=south,open=false": { "model": "minecraft:block/halloween/witch_broom", "y": 180 },
+    "facing=west,open=false": { "model": "minecraft:block/halloween/witch_broom", "y": 270 },
+    "facing=north,open=true": { "model": "minecraft:block/halloween/witch_broom_2", "y": 0 },
+    "facing=east,open=true": { "model": "minecraft:block/halloween/witch_broom_2", "y": 90 },
+    "facing=south,open=true": { "model": "minecraft:block/halloween/witch_broom_2", "y": 180 },
+    "facing=west,open=true": { "model": "minecraft:block/halloween/witch_broom_2", "y": 270 }
+  }
+}

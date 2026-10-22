@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "type=bottom": [
+			{ "model": "block/polished_tuff_slab" },
+			{ "model": "block/polished_tuff_slab_2" },
+			{ "model": "block/polished_tuff_slab_3" },
+			{ "model": "block/polished_tuff_slab_4" },
+			{ "model": "block/polished_tuff_slab_5" }
+			],
+        "type=top": [
+			{ "model": "block/polished_tuff_slab", "x": 180 },
+			{ "model": "block/polished_tuff_slab_2", "x": 180 },
+			{ "model": "block/polished_tuff_slab_3", "x": 180 },
+			{ "model": "block/polished_tuff_slab_4", "x": 180 },
+			{ "model": "block/polished_tuff_slab_5", "x": 180 }
+			]
+    }
+}

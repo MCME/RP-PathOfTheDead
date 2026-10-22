@@ -1,6 +1,7 @@
 {
   "variants": {
-	  "distance=2,persistent=true,waterlogged=false": { "model": "block/invisible"}
-
+    "distance=2,persistent=true,waterlogged=false": {
+      "model": "block/invisible"
+    }
   }
 }

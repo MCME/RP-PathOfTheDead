@@ -18,12 +18,12 @@
 // tilt on being hurt move it in the camera's matrices. fogEye is the eye's
 // place in Pos's terms - where the view's matrices bring every ray together:
 // the point that ProjMat * ModelViewMat sends to x = y = w = 0.
-layout(location = 18) flat out vec3 fogEye;
+layout(location = 21) flat out vec3 fogEye;
 
 // ...and lit as if under the open sky, by the day's light and any lamp's, so
 // that it doesn't darken in the shade - under an overhang, in a cave - as
 // its faces would, each lit by the block beside it (FOG_OPEN).
-layout(location = 19) out vec4 fogLight;
+layout(location = 22) out vec4 fogLight;
 
 vec3 fogEyeOf(mat4 m) {
     vec4 r0 = vec4(m[0][0], m[1][0], m[2][0], m[3][0]);

@@ -7,8 +7,8 @@
 // block builds on, is imported.
 
 // the fog blocks and clouds, traced from the eye (mcme_hook_vertex_globals.glsl)
-layout(location = 18) flat in vec3 fogEye;
-layout(location = 19) in vec4 fogLight;
+layout(location = 21) flat in vec3 fogEye;
+layout(location = 22) in vec4 fogLight;
 #include <minecraft:fog_block_config.glsl>
 #include <minecraft:fog_block.glsl>
 #endif

@@ -1,21 +1,10 @@
 {
+	"format_version": "26.3",
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
-    "display": {
-        "gui": {
-            "rotation": [ 30, 225, 0 ],
-            "translation": [ 0, 5, 0],
-            "scale":[ 0.625, 0.625, 0.625 ]
-        }
+	"textures": {
+		"particle": "#stone"
 	},
-  "textures": {
-    "stone": "#stone",
-    "stone_1": "#stone_1",
-    "stone_2": "#stone_2",
-    "stone_3": "#stone_3",
-    "base": "#base",
-    "particle": "#stone"
-  },
 	"elements": [
 		{
 			"name": "Small",
@@ -67,19 +56,13 @@
 				"west": {"uv": [0, 0, 7, 4], "texture": "#stone_3"},
 				"up": {"uv": [0, 0, 5, 7], "texture": "#stone_3"}
 			}
-		},
-    {
-      "name": "Baseplate",
-      "from": [ 0, -8, 0 ],
-      "to": [ 16, -6, 16 ],
-      "rotation": { "angle": 0, "axis": "y", "origin": [ 8, 0, 8 ]},
-      "faces": {
-        "north": { "uv": [ 0, 0, 16, 2 ], "texture": "#base", "cullface": "down" },
-        "east": { "uv": [ 0, 0, 16, 2 ], "texture": "#base", "cullface": "down" },
-        "south": { "uv": [ 0, 0, 16, 2 ], "texture": "#base", "cullface": "down" },
-        "west": { "uv": [ 0, 0, 16, 2 ], "texture": "#base", "cullface": "down" },
-        "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#base", "cullface": "down" }
-      }
-    }
-	]
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 5, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
 }

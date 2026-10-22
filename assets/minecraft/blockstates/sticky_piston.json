@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "extended=true,facing=down": {
+      "model": "minecraft:block/brick_threequarter",
+      "x": 90
+    },
+    "extended=true,facing=east": {
+      "model": "minecraft:block/brick_threequarter",
+      "y": 90
+    },
+    "extended=true,facing=north": {
+      "model": "minecraft:block/brick_threequarter"
+    },
+    "extended=true,facing=south": {
+      "model": "minecraft:block/brick_threequarter",
+      "y": 180
+    },
+    "extended=true,facing=up": {
+      "model": "minecraft:block/brick_threequarter",
+      "x": 270
+    },
+    "extended=true,facing=west": {
+      "model": "minecraft:block/brick_threequarter",
+      "y": 270
+    }
+  }
+}

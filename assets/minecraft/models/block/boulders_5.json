@@ -1,13 +1,7 @@
 {
+	"format_version": "26.3",
 	"credit": "Made with Blockbench",
 	"textures": {
-    "stone": "#stone",
-    "stone_1": "#stone_1",
-    "stone_2": "#stone_2",
-    "stone_3": "#stone_3",
-    "stone_4": "#stone_4",
-    "stone_5": "#stone_5",
-    "base": "#base",
 		"particle": "#stone"
 	},
 	"elements": [
@@ -80,18 +74,6 @@
 				"west": {"uv": [0, 0, 6, 2], "texture": "#stone_5"},
 				"up": {"uv": [0, 0, 8, 6], "texture": "#stone_5"},
 				"down": {"uv": [0, 0, 8, 6], "texture": "#stone_5"}
-			}
-		},
-		{
-			"from": [0, -8, 0],
-			"to": [16, -6, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
-			"faces": {
-				"north": {"uv": [0, 0, 16, 2], "texture": "#base", "cullface": "down"},
-				"east": {"uv": [0, 0, 16, 2], "texture": "#base", "cullface": "down"},
-				"south": {"uv": [0, 0, 16, 2], "texture": "#base", "cullface": "down"},
-				"west": {"uv": [0, 0, 16, 2], "texture": "#base", "cullface": "down"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#base", "cullface": "down"}
 			}
 		}
 	]

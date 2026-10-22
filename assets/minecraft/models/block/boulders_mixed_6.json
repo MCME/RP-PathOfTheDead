@@ -6,6 +6,6 @@
     "stone_2": "block/yellow_terracotta",
     "stone_3": "block/stone",
     "stone_4": "block/polished_granite",
-    "base": "block/yellow_concrete_powder"
+    "base": "block/polished_granite"
   }
 }

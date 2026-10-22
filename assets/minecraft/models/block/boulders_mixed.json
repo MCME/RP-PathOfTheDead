@@ -5,6 +5,6 @@
     "stone_1": "block/stone",
     "stone_2": "block/granite",
     "stone_3": "block/stone",
-    "base": "block/yellow_concrete_powder"
+    "base": "block/polished_granite"
   }
 }

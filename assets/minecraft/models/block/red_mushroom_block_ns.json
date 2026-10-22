@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_all_no_cull",
   "textures": {
 	"all": "block/red_mushroom_block_ns"
   }

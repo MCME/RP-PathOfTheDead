@@ -1,0 +1,11 @@
+{
+  "parent": "block/boulders_slab_6",
+  "textures": {
+    "stone": "block/yellow_terracotta",
+    "stone_1": "block/granite",
+    "stone_2": "block/yellow_terracotta",
+    "stone_3": "block/stone",
+    "stone_4": "block/polished_granite",
+    "base": "block/polished_granite"
+  }
+}

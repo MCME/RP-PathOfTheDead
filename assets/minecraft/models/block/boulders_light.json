@@ -5,6 +5,6 @@
     "stone_1": "block/stone",
     "stone_2": "block/yellow_terracotta",
     "stone_3": "block/stone",
-    "base": "block/pink_concrete_powder"
+    "base": "block/stone"
   }
 }

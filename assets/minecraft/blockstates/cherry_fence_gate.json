@@ -15,6 +15,11 @@
     "facing=south,in_wall=true,open=true,powered=true": { "model": "block/darker_architrave_half", "y": 180, "x":180},
     "facing=west,in_wall=true,open=true,powered=true": { "model": "block/darker_architrave_half", "y":270, "x":180},
     "facing=north,in_wall=true,open=true,powered=true": { "model": "block/darker_architrave_half", "y":0, "x":180},
-    "facing=east,in_wall=true,open=true,powered=true": { "model": "block/darker_architrave_half", "y":90, "x":180}
+    "facing=east,in_wall=true,open=true,powered=true": { "model": "block/darker_architrave_half", "y":90, "x":180},
+    "facing=south,in_wall=false,open=false,powered=true": [{"model": "block/vertical_slab_mixed_darker_brick" },{"model": "block/vertical_slab_mixed_darker_brick_2" },{"model": "block/vertical_slab_mixed_darker_brick_3" }],
+    "facing=west,in_wall=false,open=false,powered=true": [{"model": "block/vertical_slab_mixed_darker_brick", "y": 90 },{"model": "block/vertical_slab_mixed_darker_brick_2", "y": 90 },{"model": "block/vertical_slab_mixed_darker_brick_3", "y": 90 }],
+    "facing=north,in_wall=false,open=false,powered=true": [{"model": "block/vertical_slab_mixed_darker_brick", "y": 180 },{"model": "block/vertical_slab_mixed_darker_brick_2", "y": 180 },{"model": "block/vertical_slab_mixed_darker_brick_3", "y": 180 }],
+    "facing=east,in_wall=false,open=false,powered=true": [{"model": "block/vertical_slab_mixed_darker_brick", "y": 270 },{"model": "block/vertical_slab_mixed_darker_brick_2", "y": 270 },{"model": "block/vertical_slab_mixed_darker_brick_3", "y": 270 }]
+
   }
 }

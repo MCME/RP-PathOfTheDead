@@ -61,10 +61,10 @@
 	  {"model": "minecraft:block/replace", "y":270}
 	  ],
     "facing=south,half=bottom,open=false,powered=false": [
-	  {"model": "minecraft:block/replace"}
+	  {"model": "minecraft:block/trapdoor_deepslate_bricks_bottom"}
 	  ],
     "facing=south,half=top,open=false,powered=false": [
-	  {"model": "minecraft:block/replace", "x":180}
+	  {"model": "minecraft:block/trapdoor_deepslate_bricks_bottom", "x": 180}
 	  ],
     "facing=west,half=bottom,open=false,powered=false": [
 	  {"model": "minecraft:block/replace"}
@@ -85,10 +85,10 @@
 	  {"model": "minecraft:block/replace", "x":180 }
 	  ],
     "facing=south,half=bottom,open=false,powered=true": [
-	  {"model": "minecraft:block/replace"}
+	  {"model": "minecraft:block/trapdoor_nether_bricks_bottom"}
 	  ],
     "facing=south,half=top,open=false,powered=true": [
-	  {"model": "minecraft:block/replace", "x":180}
+	  {"model": "minecraft:block/trapdoor_nether_bricks_bottom", "x":180}
 	  ],
     "facing=west,half=bottom,open=false,powered=true": [
 	  {"model": "minecraft:block/replace"},

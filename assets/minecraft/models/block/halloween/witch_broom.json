@@ -93,14 +93,14 @@
 			"translation": [0, -8, -1.25]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [32, 0, 0],
-			"translation": [0, -8, -1.25]
+			"rotation": [15.5, 0, 0],
+			"translation": [-6, -16.75, -3.25]
 		},
 		"firstperson_righthand": {
 			"translation": [3.5, -7.5, 0]
 		},
 		"firstperson_lefthand": {
-			"translation": [3.5, -7.5, 0]
+			"translation": [-9, -15, 5.75]
 		},
 		"ground": {
 			"translation": [0, 2.25, 0]

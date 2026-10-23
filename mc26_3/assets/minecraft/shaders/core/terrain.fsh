@@ -36,6 +36,9 @@ layout(location = 14) in vec3 fluidWorld;
 layout(location = 15) in vec4 waterLights;
 layout(location = 16) in vec4 waterWeights;
 layout(location = 17) in vec4 waterHeights;
+layout(location = 18) in vec4 waterWarps;
+layout(location = 19) in vec4 waterGusts;
+layout(location = 20) in float waterWindSet;
 
 #ifndef OIT_ALPHA_ONLY
 layout(location = 0) out vec4 fragColor;
@@ -89,6 +92,7 @@ void main() {
     // before branching, as it needs derivatives
     FluidFrame fluidHere = fluidFrame(fluidWorld, Pos, texCoord);
     WaterShore shore = waterShore(waterLights, waterWeights, waterHeights);
+    waterWindGiven(waterWarps, waterGusts, waterWindSet);
 #ifdef MCME_LITE
     int fluid = -1;     // the Lite zip: fluids as their textures
 #else

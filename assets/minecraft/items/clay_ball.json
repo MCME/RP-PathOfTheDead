@@ -4960,14 +4960,14 @@
                 "threshold": 1411,
                 "model": {
                     "type": "model",
-                    "model": "block/fog_thick"
+                    "model": "item/fog"
                 }
             },
             {
                 "threshold": 1412,
                 "model": {
                     "type": "model",
-                    "model": "block/fog_cloud"
+                    "model": "item/fog"
                 }
             },
             {

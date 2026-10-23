@@ -4953,7 +4953,7 @@
                 "threshold": 1410,
                 "model": {
                     "type": "model",
-                    "model": "block/fog"
+                    "model": "item/fog"
                 }
             },
             {

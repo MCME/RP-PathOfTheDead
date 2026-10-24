@@ -21,19 +21,20 @@
 #define WEB_SLIME 0.55               // how much of the silk is slimed over, 0 to 1...
 #define WEB_SLIME_TINT vec3(0.9, 0.98, 0.66)   // ...and its colour there, times the silk's
 #define WEB_SHEEN 0.3                // its wet sheen, seen at a slant
-#define WEB_GLINTS 0.3               // the share of its texels with a bead on them, which glints where the view lines up with it...
+#define WEB_GLINTS 0.2               // the share of its texels with a bead on them, which glints where the view lines up with it...
 #define WEB_GLINT 1.1                // ...how bright...
 #define WEB_GLINT_SHARP 0.985        // ...and how seldom: the nearer 1, the fewer at once and the briefer
 #define WEB_EYE_LIGHT 0.12           // the light that the sheen and glints catch up close, even in the dark, as if from the eye...
 #define WEB_EYE_REACH 7.0            // ...within this, in blocks
 // slime sliding slowly down the strands, where their texture runs downwards
-#define WEB_DRIPS 0.3                // the share of the texture's columns slime runs down
-#define WEB_DRIP_SPEED 2.0           // in texels a second (a 32px texture's: 1/16 block): it divides into the day's 1200 x WEB_DRIP_PERIOD
-#define WEB_DRIP_PERIOD 40.0         // how far apart the beads come down a column, in texels
-#define WEB_DRIP_COLOR vec3(0.86, 0.9, 0.62)
+#define WEB_DRIPS 0.2                // the share of the texture's columns slime runs down
+#define WEB_DRIP_SPEED 1.0           // in texels a second (1/16 block): 1200 x this, over WEB_DRIP_PERIOD, a whole number
+#define WEB_DRIP_PERIOD 24.0         // how far apart the beads come down a column, in texels
+#define WEB_DRIP_TINT vec3(0.7, 0.76, 0.48)    // the slime: the silk's colour, darkened and yellowed by this...
+#define WEB_DRIP_GLOSS 0.06          // ...and a little gloss on each bead, as much as this of the light
 
 // ---- the slime's pools
-#define SLIME_PIXEL (1.0 / 32.0)     // its pixels' size, in blocks, as the webs' 32px textures'
+#define SLIME_PIXEL (1.0 / 16.0)     // its pixels' size, in blocks, as the webs' 16px textures'
 #define SLIME_COLOR vec3(0.44, 0.47, 0.3)      // a sickly, yellowed grey-green
 #define SLIME_SWIRL 0.55             // how much its slow swirls lighten and darken it
 #define SLIME_CHURN 2                // how fast they creep, in whole steps of 64 blocks a day

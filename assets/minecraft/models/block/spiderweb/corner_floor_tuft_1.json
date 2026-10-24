@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/spiderweb/corner_floor_tuft",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_tuft_a",
+    "t1": "minecraft:block/spiderweb_tuft_b"
+  }
+}

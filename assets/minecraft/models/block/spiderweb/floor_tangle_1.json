@@ -2,6 +2,7 @@
   "parent": "minecraft:block/spiderweb/floor_tangle",
   "textures": {
     "t0": "minecraft:block/spiderweb_mat_tangle_a",
-    "t1": "minecraft:block/spiderweb_tilt_net_a"
+    "t1": "minecraft:block/spiderweb_tuft_a",
+    "t2": "minecraft:block/spiderweb_tuft_b"
   }
 }

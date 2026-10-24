@@ -124,9 +124,6 @@
       },
       {
         "model": "minecraft:block/spiderweb/sheet_diagonal_1x2_2"
-      },
-      {
-        "model": "minecraft:block/spiderweb/sheet_diagonal_1x2_3"
       }
     ],
     "age=13": [
@@ -136,10 +133,6 @@
       },
       {
         "model": "minecraft:block/spiderweb/sheet_diagonal_1x2_2",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/spiderweb/sheet_diagonal_1x2_3",
         "y": 90
       }
     ],

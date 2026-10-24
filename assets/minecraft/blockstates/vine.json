@@ -1,0 +1,357 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_2"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_3"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_4"
+        }
+      ]
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_2",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_3",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_4",
+          "y": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_2",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_3",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_4",
+          "y": 180
+        }
+      ]
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_1",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_2",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_3",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_side_4",
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "true",
+        "west": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_2"
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_2",
+          "y": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "east": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_2",
+          "y": 180
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "west": "true",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_1",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_inside_2",
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "false",
+        "west": "false",
+        "up": "false"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_tuft_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_tuft_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_tuft_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_ceiling_tuft_1",
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_2"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_3"
+        }
+      ]
+    },
+    {
+      "when": {
+        "east": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_2",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_3",
+          "y": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_2",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_3",
+          "y": 180
+        }
+      ]
+    },
+    {
+      "when": {
+        "west": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_1",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_2",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_side_3",
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "true",
+        "west": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_2"
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_2",
+          "y": 90
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "east": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_2",
+          "y": 180
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "true",
+        "west": "true",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_1",
+          "y": 270
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_inside_2",
+          "y": 270
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "false",
+        "west": "false",
+        "up": "true"
+      },
+      "apply": [
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_tuft_1"
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_tuft_1",
+          "y": 90
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_tuft_1",
+          "y": 180
+        },
+        {
+          "model": "minecraft:block/spiderweb/corner_floor_tuft_1",
+          "y": 270
+        }
+      ]
+    }
+  ]
+}

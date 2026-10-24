@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/corner_ceiling_inside",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_inner_net_a"
+  }
+}

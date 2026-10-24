@@ -1,8 +1,8 @@
 {
-  "parent": "minecraft:block/spiderweb/corner_floor",
+  "parent": "minecraft:block/spiderweb/corner_ceiling_side",
   "textures": {
     "t0": "minecraft:block/spiderweb_fan_1_b",
     "t1": "minecraft:block/spiderweb_fan_1_c",
-    "t2": "minecraft:block/spiderweb_tilt_net_a"
+    "t2": "minecraft:block/spiderweb_tilt_net_b"
   }
 }

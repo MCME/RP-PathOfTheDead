@@ -3,6 +3,6 @@
   "textures": {
     "t0": "minecraft:block/spiderweb_fan_2_m1",
     "t1": "minecraft:block/spiderweb_fan_2_a",
-    "t2": "minecraft:block/spiderweb_tilt_net_a"
+    "t2": "minecraft:block/spiderweb_tilt_net_large_a"
   }
 }

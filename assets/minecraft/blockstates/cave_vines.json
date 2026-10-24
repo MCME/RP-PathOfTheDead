@@ -2,138 +2,90 @@
   "variants": {
     "age=0,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3"
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=0,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3"
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=1,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=1,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=2,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=2,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=3,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 270
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=3,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_ceiling_3",
-        "y": 270
-      },
-      {
-        "model": "minecraft:block/spiderweb/corner_ceiling_4",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=4,berries=false": [
@@ -320,214 +272,178 @@
     ],
     "age=12,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=12,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=13,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=13,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=14,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=14,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=15,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=15,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_room_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_room_3",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=16,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=16,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3"
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=17,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=17,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 90
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=18,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=18,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 180
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=19,berries=false": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=19,berries=true": [
       {
-        "model": "minecraft:block/spiderweb/corner_floor_1",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_1"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_2",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_2"
       },
       {
-        "model": "minecraft:block/spiderweb/corner_floor_3",
-        "y": 270
+        "model": "minecraft:block/spiderweb/corner_ceiling_large_3"
       }
     ],
     "age=20,berries=false": [

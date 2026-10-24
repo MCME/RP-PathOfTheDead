@@ -1,6 +1,6 @@
 // Shelob's webs, and the slime in her lair. The webs - strands, sheets, the
-// webs in corners and on floors, cocoons - are placed as the vines (weeping,
-// twisting and cave vines, which have no collision and let one climb), their
+// webs in corners and on floors, cocoons - are placed as the vines (plain,
+// weeping, twisting and cave vines, which have no collision and let one climb), their
 // models planes of silk cut into pieces, and their textures painted with
 // RP-PathOfTheDead's .tools/spiderwebs, which see. In these shaders:
 //
@@ -127,7 +127,8 @@ vec4 webLook(vec4 color, FluidFrame f, vec2 uv, vec2 atlasSize, float time, vec3
 
     // slime creeping down the strands: where the texture runs downwards, a
     // bead in some of its columns, a texel's worth, now and then, a fainter
-    // trail behind it
+    // trail behind it - wet, so darker and yellower than the silk, lit as it
+    // is, a little gloss on the bead from the light alone
     vec3 flow = fluidFlow(f);
     float down = -flow.y / max(length(flow), 1.0e-6);
     if (down > 0.6 && color.a > 0.4) {
@@ -136,8 +137,9 @@ vec4 webLook(vec4 color, FluidFrame f, vec2 uv, vec2 atlasSize, float time, vec3
         if (float(hc & 0xFFFFu) / 65535.0 < WEB_DRIPS) {
             float at = mod(time * WEB_DRIP_SPEED + float(hc >> 16) / 65535.0 * WEB_DRIP_PERIOD, WEB_DRIP_PERIOD);
             float behind = mod(at - floor(mod(tc.y, WEB_DRIP_PERIOD)), WEB_DRIP_PERIOD);
-            float bead = behind < 1.0 ? 1.0 : behind < 4.0 ? 0.35 * (4.0 - behind) / 3.0 : 0.0;
-            rgb = mix(rgb, WEB_DRIP_COLOR * (light + shine * 0.6), bead * 0.85);
+            float bead = behind < 1.0 ? 1.0 : behind < 3.0 ? 0.4 * (3.0 - behind) / 2.0 : 0.0;
+            vec3 drip = color.rgb * WEB_DRIP_TINT + light * (WEB_DRIP_GLOSS * step(behind, 1.0));
+            rgb = mix(rgb, drip, bead * 0.8);
         }
     }
     return vec4(rgb, color.a);

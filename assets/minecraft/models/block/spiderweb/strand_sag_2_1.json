@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/strand_sag_2",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_sag_2_a"
+  }
+}

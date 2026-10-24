@@ -1,0 +1,325 @@
+  # Shelob's webs (RP-PathOfTheDead/.tools/spiderwebs/build.py)
+  spiderweb_strand_drop_1:
+    itemMaterial: CLAY_BALL
+    cmd: 2518
+    display: Web Strand
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=0]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_drop_2:
+    itemMaterial: CLAY_BALL
+    cmd: 2519
+    display: Web Strand (2 Tall)
+    category: Det
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=1]
+    collection:
+      A2: spiderweb_strand_drop_1
+      A0: spiderweb_strand_drop_2
+      B2: spiderweb_strand_extension
+      C2: spiderweb_strand_tangle
+      D2: spiderweb_strand_slime
+      E2: spiderweb_strand_sag_2
+      F2: spiderweb_strand_sag_3
+      G2: spiderweb_strand_sag_diagonal
+      H2: spiderweb_strand_guy
+      I2: spiderweb_strand_torn
+      A3: spiderweb_sheet_1x1
+      B3: spiderweb_sheet_1x2
+      C3: spiderweb_sheet_2x2
+      D3: spiderweb_sheet_3x2
+      E3: spiderweb_sheet_torn_2x2
+      F3: spiderweb_sheet_frayed_3x2
+      G3: spiderweb_sheet_diagonal_1x2
+      H3: spiderweb_sheet_diagonal_2x2
+      I3: spiderweb_sheet_canopy
+      A4: spiderweb_corner_ceiling
+      B4: spiderweb_corner_ceiling_large
+      C4: spiderweb_corner_wall
+      D4: spiderweb_corner_room
+      E4: spiderweb_corner_floor
+      F4: spiderweb_floor_mat
+      G4: spiderweb_floor_tangle
+      H4: spiderweb_wall_drape
+      A1: spiderweb_cocoon
+      E1: spiderweb_egg_sac
+      F1: spiderweb_slime_pool
+  spiderweb_strand_extension:
+    itemMaterial: CLAY_BALL
+    cmd: 2520
+    display: Web Strand Extension (below a strand)
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=2]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_tangle:
+    itemMaterial: CLAY_BALL
+    cmd: 2521
+    display: Web Strand Tangle
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=3]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_slime:
+    itemMaterial: CLAY_BALL
+    cmd: 2522
+    display: Slime-Laden Strand
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=4]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_sag_2:
+    itemMaterial: CLAY_BALL
+    cmd: 2523
+    display: Web Strand Slung (2 Wide)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:weeping_vines[age=5]
+    blockDataEast: minecraft:weeping_vines[age=6]
+    blockDataSouth: minecraft:weeping_vines[age=7]
+    blockDataWest: minecraft:weeping_vines[age=8]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_sag_3:
+    itemMaterial: CLAY_BALL
+    cmd: 2524
+    display: Web Strand Slung (3 Wide)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:weeping_vines[age=9]
+    blockDataEast: minecraft:weeping_vines[age=10]
+    blockDataSouth: minecraft:weeping_vines[age=9]
+    blockDataWest: minecraft:weeping_vines[age=10]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_sag_diagonal:
+    itemMaterial: CLAY_BALL
+    cmd: 2525
+    display: Web Strand Slung Diagonally
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:weeping_vines[age=11]
+    blockDataEast: minecraft:weeping_vines[age=12]
+    blockDataSouth: minecraft:weeping_vines[age=13]
+    blockDataWest: minecraft:weeping_vines[age=14]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_guy:
+    itemMaterial: CLAY_BALL
+    cmd: 2526
+    display: Web Guy Line (to the floor ahead)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:weeping_vines[age=15]
+    blockDataEast: minecraft:weeping_vines[age=16]
+    blockDataSouth: minecraft:weeping_vines[age=17]
+    blockDataWest: minecraft:weeping_vines[age=18]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_strand_torn:
+    itemMaterial: CLAY_BALL
+    cmd: 2527
+    display: Torn Web Strands
+    type: BLOCK
+    blockData: minecraft:weeping_vines[age=19]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_1x1:
+    itemMaterial: CLAY_BALL
+    cmd: 2528
+    display: Web Sheet
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=0]
+    blockDataEast: minecraft:twisting_vines[age=1]
+    blockDataSouth: minecraft:twisting_vines[age=0]
+    blockDataWest: minecraft:twisting_vines[age=1]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_1x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2529
+    display: Web Sheet (2 Tall)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=2]
+    blockDataEast: minecraft:twisting_vines[age=3]
+    blockDataSouth: minecraft:twisting_vines[age=2]
+    blockDataWest: minecraft:twisting_vines[age=3]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_2x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2530
+    display: Web Sheet (2x2)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=4]
+    blockDataEast: minecraft:twisting_vines[age=5]
+    blockDataSouth: minecraft:twisting_vines[age=4]
+    blockDataWest: minecraft:twisting_vines[age=5]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_3x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2531
+    display: Web Sheet (3 Wide)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=6]
+    blockDataEast: minecraft:twisting_vines[age=7]
+    blockDataSouth: minecraft:twisting_vines[age=6]
+    blockDataWest: minecraft:twisting_vines[age=7]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_torn_2x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2532
+    display: Torn Web Sheet
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=8]
+    blockDataEast: minecraft:twisting_vines[age=9]
+    blockDataSouth: minecraft:twisting_vines[age=8]
+    blockDataWest: minecraft:twisting_vines[age=9]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_frayed_3x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2533
+    display: Frayed Web Curtain
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=10]
+    blockDataEast: minecraft:twisting_vines[age=11]
+    blockDataSouth: minecraft:twisting_vines[age=10]
+    blockDataWest: minecraft:twisting_vines[age=11]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_diagonal_1x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2534
+    display: Web Sheet Diagonal
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=12]
+    blockDataEast: minecraft:twisting_vines[age=13]
+    blockDataSouth: minecraft:twisting_vines[age=12]
+    blockDataWest: minecraft:twisting_vines[age=13]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_diagonal_2x2:
+    itemMaterial: CLAY_BALL
+    cmd: 2535
+    display: Web Sheet Diagonal (2x2)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:twisting_vines[age=14]
+    blockDataEast: minecraft:twisting_vines[age=15]
+    blockDataSouth: minecraft:twisting_vines[age=14]
+    blockDataWest: minecraft:twisting_vines[age=15]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_sheet_canopy:
+    itemMaterial: CLAY_BALL
+    cmd: 2536
+    display: Web Canopy (under a ceiling)
+    type: BLOCK
+    blockData: minecraft:twisting_vines[age=16]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_corner_ceiling:
+    itemMaterial: CLAY_BALL
+    cmd: 2537
+    display: Corner Web (wall to ceiling)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=0,berries=false]
+    blockDataEast: minecraft:cave_vines[age=1,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=2,berries=false]
+    blockDataWest: minecraft:cave_vines[age=3,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_corner_ceiling_large:
+    itemMaterial: CLAY_BALL
+    cmd: 2538
+    display: Corner Web Large (wall to ceiling)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=4,berries=false]
+    blockDataEast: minecraft:cave_vines[age=5,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=6,berries=false]
+    blockDataWest: minecraft:cave_vines[age=7,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_corner_wall:
+    itemMaterial: CLAY_BALL
+    cmd: 2539
+    display: Corner Web (between walls, front left)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=8,berries=false]
+    blockDataEast: minecraft:cave_vines[age=9,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=10,berries=false]
+    blockDataWest: minecraft:cave_vines[age=11,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_corner_room:
+    itemMaterial: CLAY_BALL
+    cmd: 2540
+    display: Room Corner Web (front left, at the ceiling)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=12,berries=false]
+    blockDataEast: minecraft:cave_vines[age=13,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=14,berries=false]
+    blockDataWest: minecraft:cave_vines[age=15,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_corner_floor:
+    itemMaterial: CLAY_BALL
+    cmd: 2541
+    display: Corner Web (wall to floor)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=16,berries=false]
+    blockDataEast: minecraft:cave_vines[age=17,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=18,berries=false]
+    blockDataWest: minecraft:cave_vines[age=19,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_floor_mat:
+    itemMaterial: CLAY_BALL
+    cmd: 2542
+    display: Web Mat (floor)
+    type: BLOCK
+    blockData: minecraft:cave_vines[age=20,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_floor_tangle:
+    itemMaterial: CLAY_BALL
+    cmd: 2543
+    display: Web Tangle (floor)
+    type: BLOCK
+    blockData: minecraft:cave_vines[age=21,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_wall_drape:
+    itemMaterial: CLAY_BALL
+    cmd: 2544
+    display: Web Drape (on the wall in front)
+    type: FOUR_DIRECTIONS
+    blockDataNorth: minecraft:cave_vines[age=22,berries=false]
+    blockDataEast: minecraft:cave_vines[age=23,berries=false]
+    blockDataSouth: minecraft:cave_vines[age=24,berries=false]
+    blockDataWest: minecraft:cave_vines[age=25,berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_cocoon:
+    itemMaterial: CLAY_BALL
+    cmd: 2545
+    display: Cocoon (a victim, wrapped)
+    type: BLOCK
+    blockData: minecraft:cave_vines_plant[berries=false]
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_egg_sac:
+    itemMaterial: CLAY_BALL
+    cmd: 2546
+    display: Egg Sacs (under a ceiling)
+    type: BLOCK
+    blockData: minecraft:weeping_vines_plant
+    collection:
+      indirect: spiderweb_strand_drop_2
+  spiderweb_slime_pool:
+    itemMaterial: CLAY_BALL
+    cmd: 2547
+    display: Slime Pool
+    type: BLOCK
+    blockData: minecraft:twisting_vines_plant
+    collection:
+      indirect: spiderweb_strand_drop_2

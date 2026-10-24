@@ -11,4 +11,8 @@ layout(location = 21) flat in vec3 fogEye;
 layout(location = 22) in vec4 fogLight;
 #include <minecraft:fog_block_config.glsl>
 #include <minecraft:fog_block.glsl>
+
+// Shelob's webs and the slime of her lair
+#include <minecraft:spiderweb_config.glsl>
+#include <minecraft:spiderweb.glsl>
 #endif

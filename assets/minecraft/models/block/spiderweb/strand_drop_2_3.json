@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/strand_drop_2",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_drop_2_c"
+  }
+}

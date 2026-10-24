@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "berries=false": [
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 270
+      }
+    ],
+    "berries=true": [
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/cocoon_1",
+        "y": 270
+      }
+    ]
+  }
+}

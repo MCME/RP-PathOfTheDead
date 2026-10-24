@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/spiderweb_sheet_diagonal_1x2"
+  }
+}

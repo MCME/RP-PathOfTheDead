@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/floor_mat",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_mat_b"
+  }
+}

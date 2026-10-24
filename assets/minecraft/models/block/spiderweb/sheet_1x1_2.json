@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/sheet_1x1",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_sheet_1x1_b"
+  }
+}

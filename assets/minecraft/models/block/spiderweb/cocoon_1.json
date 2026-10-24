@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/spiderweb/cocoon",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_cocoon",
+    "t1": "minecraft:block/spiderweb_drop_1_c"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/spiderweb/corner_wall",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_corner_net_a",
+    "t1": "minecraft:block/spiderweb_corner_net_b"
+  }
+}

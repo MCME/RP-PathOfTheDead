@@ -8,3 +8,7 @@ flat in vec3 fogEye;
 in vec4 fogLight;
 #moj_import <minecraft:fog_block_config.glsl>
 #moj_import <minecraft:fog_block.glsl>
+
+// Shelob's webs and the slime of her lair
+#moj_import <minecraft:spiderweb_config.glsl>
+#moj_import <minecraft:spiderweb.glsl>

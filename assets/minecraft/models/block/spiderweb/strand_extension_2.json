@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/strand_extension",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_extension_b"
+  }
+}

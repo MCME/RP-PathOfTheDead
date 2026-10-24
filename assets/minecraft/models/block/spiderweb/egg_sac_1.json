@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/egg_sac",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_egg_sac"
+  }
+}

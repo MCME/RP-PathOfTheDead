@@ -1,0 +1,617 @@
+{
+  "variants": {
+    "age=0": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=1": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_2_3",
+        "y": 270
+      }
+    ],
+    "age=2": [
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_extension_2",
+        "y": 270
+      }
+    ],
+    "age=3": [
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_tangle_2",
+        "y": 270
+      }
+    ],
+    "age=4": [
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_slime_2",
+        "y": 270
+      }
+    ],
+    "age=5": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_2"
+      }
+    ],
+    "age=6": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_2",
+        "y": 90
+      }
+    ],
+    "age=7": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_2",
+        "y": 180
+      }
+    ],
+    "age=8": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_2_2",
+        "y": 270
+      }
+    ],
+    "age=9": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_3_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_3_2"
+      }
+    ],
+    "age=10": [
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_3_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_sag_3_2",
+        "y": 90
+      }
+    ],
+    "age=11": {
+      "model": "minecraft:block/spiderweb/strand_sag_diagonal_1"
+    },
+    "age=12": {
+      "model": "minecraft:block/spiderweb/strand_sag_diagonal_1",
+      "y": 90
+    },
+    "age=13": {
+      "model": "minecraft:block/spiderweb/strand_sag_diagonal_1",
+      "y": 180
+    },
+    "age=14": {
+      "model": "minecraft:block/spiderweb/strand_sag_diagonal_1",
+      "y": 270
+    },
+    "age=15": [
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_2"
+      }
+    ],
+    "age=16": [
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_2",
+        "y": 90
+      }
+    ],
+    "age=17": [
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_2",
+        "y": 180
+      }
+    ],
+    "age=18": [
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_guy_2",
+        "y": 270
+      }
+    ],
+    "age=19": [
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_torn_2",
+        "y": 270
+      }
+    ],
+    "age=20": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=21": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=22": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=23": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=24": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ],
+    "age=25": [
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_2",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3"
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/strand_drop_1_3",
+        "y": 270
+      }
+    ]
+  }
+}

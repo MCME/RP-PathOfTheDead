@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/spiderweb/corner_room",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_fan_1_b",
+    "t1": "minecraft:block/spiderweb_fan_1_m3",
+    "t2": "minecraft:block/spiderweb_corner_net_a"
+  }
+}

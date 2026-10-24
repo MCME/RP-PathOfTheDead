@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/wall_drape",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_drape_b"
+  }
+}

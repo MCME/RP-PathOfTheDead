@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/slime_pool_2",
+        "y": 270
+      }
+    ]
+  }
+}

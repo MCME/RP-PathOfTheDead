@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/slime_pool",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_slime_pool_a"
+  }
+}

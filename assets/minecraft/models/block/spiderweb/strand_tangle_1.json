@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/spiderweb/strand_tangle",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_tangle_a",
+    "t1": "minecraft:block/spiderweb_tangle_b"
+  }
+}

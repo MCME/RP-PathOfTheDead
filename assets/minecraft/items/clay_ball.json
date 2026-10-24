@@ -5158,6 +5158,216 @@
                     "type": "model",
                     "model": "block/halloween/grave_names/grave_name_9"
                 }
+            },
+            {
+                "threshold": 2518,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_drop_1"
+                }
+            },
+            {
+                "threshold": 2519,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_drop_2"
+                }
+            },
+            {
+                "threshold": 2520,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_extension"
+                }
+            },
+            {
+                "threshold": 2521,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_tangle"
+                }
+            },
+            {
+                "threshold": 2522,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_slime"
+                }
+            },
+            {
+                "threshold": 2523,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_sag_2"
+                }
+            },
+            {
+                "threshold": 2524,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_sag_3"
+                }
+            },
+            {
+                "threshold": 2525,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_sag_diagonal"
+                }
+            },
+            {
+                "threshold": 2526,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_guy"
+                }
+            },
+            {
+                "threshold": 2527,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/strand_torn"
+                }
+            },
+            {
+                "threshold": 2528,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_1x1"
+                }
+            },
+            {
+                "threshold": 2529,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_1x2"
+                }
+            },
+            {
+                "threshold": 2530,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_2x2"
+                }
+            },
+            {
+                "threshold": 2531,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_3x2"
+                }
+            },
+            {
+                "threshold": 2532,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_torn_2x2"
+                }
+            },
+            {
+                "threshold": 2533,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_frayed_3x2"
+                }
+            },
+            {
+                "threshold": 2534,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_diagonal_1x2"
+                }
+            },
+            {
+                "threshold": 2535,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_diagonal_2x2"
+                }
+            },
+            {
+                "threshold": 2536,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/sheet_canopy"
+                }
+            },
+            {
+                "threshold": 2537,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/corner_ceiling"
+                }
+            },
+            {
+                "threshold": 2538,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/corner_ceiling_large"
+                }
+            },
+            {
+                "threshold": 2539,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/corner_wall"
+                }
+            },
+            {
+                "threshold": 2540,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/corner_room"
+                }
+            },
+            {
+                "threshold": 2541,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/corner_floor"
+                }
+            },
+            {
+                "threshold": 2542,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/floor_mat"
+                }
+            },
+            {
+                "threshold": 2543,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/floor_tangle"
+                }
+            },
+            {
+                "threshold": 2544,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/wall_drape"
+                }
+            },
+            {
+                "threshold": 2545,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/cocoon"
+                }
+            },
+            {
+                "threshold": 2546,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/egg_sac"
+                }
+            },
+            {
+                "threshold": 2547,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/slime_pool"
+                }
             }
         ]
     }

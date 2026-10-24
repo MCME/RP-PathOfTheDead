@@ -17,6 +17,11 @@
 // the point that ProjMat * ModelViewMat sends to x = y = w = 0.
 flat out vec3 fogEye;
 
+// RP-PathOfTheDead: Shelob's webs, which sway (spiderweb.glsl, its vertex
+// half: FLUID_VERTEX is defined)
+#moj_import <minecraft:spiderweb_config.glsl>
+#moj_import <minecraft:spiderweb.glsl>
+
 // ...and lit as if under the open sky, by the day's light and any lamp's, so
 // that it doesn't darken in the shade - under an overhang, in a cave - as
 // its faces would, each lit by the block beside it (FOG_OPEN).

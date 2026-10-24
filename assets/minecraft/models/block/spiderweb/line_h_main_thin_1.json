@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/spiderweb/line_h_main_thin",
+  "textures": {
+    "t0": "minecraft:block/spiderweb_line_h"
+  }
+}

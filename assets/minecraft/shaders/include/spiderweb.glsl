@@ -10,10 +10,9 @@
 //   in each texel (below); and shiver while someone is among them. Moved in
 //   the vertex shaders, the corners of their faces;
 // - their silk is wet: slimed over here and there, sheened at a slant, beads
-//   on it glinting where the view lines up with one, and slime creeping down
-//   its strands. The sheen and glints catch the light, and up close a little
-//   even in the dark (WEB_EYE_LIGHT), so that the webs show before one walks
-//   into them;
+//   on it glinting faintly where the view lines up with one, and slime
+//   creeping down its strands. None of it gives light: it only brightens the
+//   silk by a share of how it's lit;
 // - the slime pools (block/spiderweb_slime_pool_*) are drawn over their
 //   texture's shape as a fluid, as RP-Mordor's tar: slow, swirling, glossy,
 //   bubbles swelling and bursting on it.
@@ -108,27 +107,29 @@ vec4 webLook(vec4 color, FluidFrame f, vec2 uv, vec2 atlasSize, float time, vec3
     float slimy = smoothstep(0.55, 0.8, fluidNoise(f.world.xz + f.world.y * 0.7, vec2(0.25), pixel, 963));
     rgb = mix(rgb, rgb * WEB_SLIME_TINT, slimy * WEB_SLIME);
 
-    // what its wetness catches: the light, and up close a little more
-    vec3 shine = light + vec3(WEB_EYE_LIGHT * (1.0 - smoothstep(0.0, WEB_EYE_REACH, dist)));
+    // Its wetness only ever brightens the silk as it's lit - a share of its
+    // own colour, never light of its own - so that nothing on it shines
+    // brighter than what's round it, nor shows in the dark.
 
     // a sheen at a slant
     float slant = 1.0 - abs(dot(n, view));
-    rgb += shine * WEB_SHEEN * slant * slant * slant * color.a * (0.6 + 0.4 * slimy);
+    rgb *= 1.0 + WEB_SHEEN * slant * slant * slant * (0.6 + 0.4 * slimy);
 
-    // beads glinting: some texels have one, each catching the light from its
-    // own way, so that as the view moves, now this one, now that one flashes
+    // beads glinting, faintly: a few texels have one, each catching the light
+    // from its own way, so that as the view moves, now this one, now that one
+    // is a little brighter
     ivec2 t = ivec2(floor(uv * atlasSize));
     uint h = fluidHash(ivec4(t, 0, 964));
     if (color.a > 0.5 && float(h & 0xFFFFu) / 65535.0 < WEB_GLINTS) {
         vec3 way = normalize(vec3(float((h >> 16) & 255u), float((h >> 24) & 255u), float(fluidHash(ivec4(t, 1, 964)) & 255u)) / 127.5 - 1.0 + 1.0e-3);
         float glint = smoothstep(WEB_GLINT_SHARP, 1.0, abs(dot(view, way)));
-        rgb += shine * glint * WEB_GLINT;
+        rgb *= 1.0 + glint * WEB_GLINT;
     }
 
     // slime creeping down the strands: where the texture runs downwards, a
     // bead in some of its columns, a texel's worth, now and then, a fainter
     // trail behind it - wet, so darker and yellower than the silk, lit as it
-    // is, a little gloss on the bead from the light alone
+    // is, the bead a little glossier than its trail
     vec3 flow = fluidFlow(f);
     float down = -flow.y / max(length(flow), 1.0e-6);
     if (down > 0.6 && color.a > 0.4) {
@@ -138,7 +139,7 @@ vec4 webLook(vec4 color, FluidFrame f, vec2 uv, vec2 atlasSize, float time, vec3
             float at = mod(time * WEB_DRIP_SPEED + float(hc >> 16) / 65535.0 * WEB_DRIP_PERIOD, WEB_DRIP_PERIOD);
             float behind = mod(at - floor(mod(tc.y, WEB_DRIP_PERIOD)), WEB_DRIP_PERIOD);
             float bead = behind < 1.0 ? 1.0 : behind < 3.0 ? 0.4 * (3.0 - behind) / 2.0 : 0.0;
-            vec3 drip = color.rgb * WEB_DRIP_TINT + light * (WEB_DRIP_GLOSS * step(behind, 1.0));
+            vec3 drip = color.rgb * WEB_DRIP_TINT * (1.0 + WEB_DRIP_GLOSS * step(behind, 1.0));
             rgb = mix(rgb, drip, bead * 0.8);
         }
     }
@@ -187,9 +188,9 @@ vec4 slimeLook(vec4 color, FluidFrame f, float time, vec3 lit, vec3 light) {
     float swirl = fluidNoise(q, vec2(1.0), pixel, 971) * 0.65 + fluidNoise(q + 13.0, vec2(4.0), pixel, 972) * 0.35;
     float ridge = 1.0 - abs(2.0 * swirl - 1.0);
     vec3 rgb = SLIME_COLOR * (1.0 + (swirl - 0.5) * 2.0 * SLIME_SWIRL) * lit;
+    // its gloss, as the silk's wetness, only as bright as it's lit
     float gloss = smoothstep(0.9, 0.99, ridge) * SLIME_GLOSS + slimeBubble(here, time) * SLIME_GLOSS;
-    vec3 shine = light + vec3(WEB_EYE_LIGHT * (1.0 - smoothstep(0.0, WEB_EYE_REACH, length(f.pos))));
-    rgb += shine * gloss * vec3(0.92, 0.96, 0.78);
+    rgb += lit * gloss * vec3(0.32, 0.34, 0.26);
     return vec4(rgb, SLIME_ALPHA * smoothstep(0.3, 0.6, color.a));
 }
 #endif

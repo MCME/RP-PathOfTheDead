@@ -1,0 +1,442 @@
+{
+  "variants": {
+    "face=ceiling,facing=east,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=east,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=north,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=north,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=south,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=south,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=west,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=ceiling,facing=west,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=east,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=east,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_tangle_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=north,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=north,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_1",
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2"
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/floor_mat_2",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=south,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=south,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=west,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=floor,facing=west,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=east,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=east,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=north,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=north,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=south,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=south,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=west,powered=false": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ],
+    "face=wall,facing=west,powered=true": [
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1"
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/spiderweb/sheet_canopy_1",
+        "y": 270
+      }
+    ]
+  }
+}

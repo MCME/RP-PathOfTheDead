@@ -5361,6 +5361,48 @@
                     "type": "model",
                     "model": "item/spiderweb/slime_pool"
                 }
+            },
+            {
+                "threshold": 2547,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_horizontal"
+                }
+            },
+            {
+                "threshold": 2548,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_diagonal"
+                }
+            },
+            {
+                "threshold": 2549,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_steep"
+                }
+            },
+            {
+                "threshold": 2550,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_vertical"
+                }
+            },
+            {
+                "threshold": 2551,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_vertical_thick"
+                }
+            },
+            {
+                "threshold": 2552,
+                "model": {
+                    "type": "model",
+                    "model": "item/spiderweb/line_end"
+                }
             }
         ]
     }

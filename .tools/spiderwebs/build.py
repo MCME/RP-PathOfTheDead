@@ -67,6 +67,9 @@ def span(u, v, w, h):   # held at the left and right, and a little at the top
 
 
 WEIGHTS = [
+    # the web lines: held at their joints - both ends - so that the lines
+    # chained there stay joined; the anchors not at all
+    ("line_end", lambda u, v, w, h: 0.0), ("line_", lambda u, v, w, h: min(u, 1 - u) * w),
     ("extension_", hang(2.0)),                      # below a 2-block strand
     ("drop_", hang()), ("tangle_", hang()), ("slime_strand_", hang()), ("torn_", hang()),
     ("tuft_hang_", hang()), ("cocoon_strand", hang()), ("sheet_", hang()),
@@ -214,6 +217,83 @@ def across_corner(tex, length, y, n=(1, 4)):
     return plane("z", a / 2, (0, a), y, tex, n=n, rot=turn("y", 45, (a / 2, 0, a / 2)))
 
 
+# -------------------------------------------------------------------- cords
+# The web lines are cords: boxes 1 unit thick (thin) or 2 (thick), turned to
+# run from one point to the next, which the game's models can, about every
+# axis at once ("x", "y", "z": a vertex turned about x, then y, then z). Each
+# line is a few of them, so that it can sag; their texture is wound along
+# them, a texel a unit, its row 0 a thin cord's faces, rows 2 and 3 a thick
+# one's.
+
+def cord(a, b, tex, width, size, sag=0.0, parts=3, s0=0.0):
+    """A cord from a to b, sagging by sag units at its middle, in parts boxes
+    - its texture (size, in texels) wound along it from s0 texels on."""
+    a, b = np.array(a, float), np.array(b, float)
+    pts = [a + (b - a) * t - np.array([0.0, sag * 4.0 * t * (1.0 - t), 0.0]) for t in np.linspace(0, 1, parts + 1)]
+    su, sv = 16.0 / size[0], 16.0 / size[1]
+    row = 0 if width == 1 else 2
+    out = []
+    s = s0
+    for p, q in zip(pts, pts[1:]):
+        d = q - p
+        length = float(np.linalg.norm(d))
+        mid = (p + q) / 2.0
+        ext = width / 2.0                    # each box runs on into the next, to close the bend
+        u = (d / length).tolist()
+        # +x onto u: about y by -asin(u.z), then about z by atan2(u.y, u.x)
+        beta = -math.degrees(math.asin(max(-1.0, min(1.0, u[2]))))
+        gamma = math.degrees(math.atan2(u[1], u[0])) if abs(u[2]) < 0.9999 else 0.0
+        half = length / 2.0 + ext
+        frm = [mid[0] - half, mid[1] - width / 2.0, mid[2] - width / 2.0]
+        to = [mid[0] + half, mid[1] + width / 2.0, mid[2] + width / 2.0]
+        # its stretch of the texture, as long as the box, slid back onto the
+        # texture where the box runs on past its ends
+        span = min(length + 2.0 * ext, float(size[0]))
+        u0 = min(max(0.0, s - ext), size[0] - span)
+        u1 = u0 + span
+        along = [round(u0 * su, 4), round(row * sv, 4), round(u1 * su, 4), round((row + width) * sv, 4)]
+        cap = [round(u0 * su, 4), round(row * sv, 4), round((u0 + width) * su, 4), round((row + width) * sv, 4)]
+        faces = {f: {"uv": along, "texture": tex} for f in ("north", "south", "up", "down")}
+        faces.update({f: {"uv": cap, "texture": tex} for f in ("east", "west")})
+        out.append({"from": [round(c, 4) for c in frm], "to": [round(c, 4) for c in to], "shade": False, "faces": faces,
+                    "rotation": {"origin": [round(c, 4) for c in mid], "x": 0, "y": round(beta, 4), "z": round(gamma, 4)}})
+        s += length
+    return out
+
+
+# The web lines' joints, as Architect's branches chain them (IBranch): every
+# one at the middle of a block's top or bottom face. A line placed facing
+# south (or south-east) runs from its lower end, in the block its lower
+# shift says, to its upper end, at the top of the block its upper shift says:
+# level lines (BRANCH_HORIZONTAL) along the bottom of their block and the
+# next, 45-degree ones (BRANCH_DIAGONAL) up a block over one, steep ones
+# (BRANCH_STEEP) up two over one, vertical ones (BRANCH_TWIGS, shifts of 0)
+# up their own block.
+LINES = {   # class: (lower end, upper end) facing south, and south-east, its texture each, sag, parts
+    "h": (((8, 0, 8), (8, 0, 24)), None, ("line_h", None), 1.5, 3),
+    "d": (((8, 0, 8), (8, 16, -8)), ((24, 0, 24), (8, 16, 8)), ("line_d", "line_dd"), 1.0, 3),
+    "s": (((8, -16, 24), (8, 16, 8)), ((24, -16, 24), (8, 16, 8)), ("line_s", "line_sd"), 0.6, 4),
+    "v": (((8, 0, 8), (8, 16, 8)), None, ("line_v", None), 0.0, 2),
+}
+
+
+def line_model(cls, diag, width):
+    ends, ends_diag, textures, sag, parts = LINES[cls]
+    a, b = ends_diag if diag else ends
+    tex = textures[1] if diag else textures[0]
+    return [[tex]], lambda: cord(a, b, T(0), width, Image.open(TEXTURES / f"spiderweb_{tex}.png").size, sag, parts)
+
+
+def anchor_model(up):
+    """A line's end, fixed to what's there: cords splayed out from its joint
+    - at the bottom of its block, up to the ceiling above it (up), or at the
+    top, down to the floor - and one to the wall it's faced towards."""
+    j = (8, 0, 8) if up else (8, 16, 8)
+    y = 16 if up else 0
+    ends = [(3, y, 5), (13, y, 4), (7, y, 13), (8, 11 if up else 5, 16)]
+    return [["line_end"]], lambda: [e for p in ends for e in cord(j, p, T(0), 1, (40, 4), 0.4, 2)]
+
+
 # ------------------------------------------------------------------- models
 # id: the textures each takes (lists of variants, paired up: variant k takes
 # the k-th of each, round again where a list is shorter), its elements - in
@@ -284,13 +364,23 @@ MODELS = {
                                          box((5, 5, 9), (10, 11, 14), T(0), (32, 32))]),
     "slime_pool": ([["slime_pool_a", "slime_pool_b"]], lambda: plane("y", 0.1, (-6, 22), (-6, 22), T(0), faces=("up",))),
 }
+# ...and the web lines': each class, as placed facing south and south-east,
+# thin and thick, and their anchors
+for _cls, (_ends, _ends_diag, *_) in LINES.items():
+    for _diag in (False, True) if _ends_diag else (False,):
+        for _width, _name in ((1, "thin"), (2, "thick")):
+            MODELS[f"line_{_cls}_{'diag' if _diag else 'main'}_{_name}"] = line_model(_cls, _diag, _width)
+MODELS["line_end_up"] = anchor_model(True)
+MODELS["line_end_down"] = anchor_model(False)
 
 # ---------------------------------------------------------------- catalogue
-# id: display name, block, how it's placed - its ages (one for a web placed
-# as itself, four for one placed by the way the builder faces: north, east,
-# south, west - two for one along either axis: north-south, east-west),
-# None for a block of one state, or "ceiling"/"floor" for the corner webs on
-# vines - and its model (the same id, unless said).
+# id: display name, block, how it's placed - its states (one for a web
+# placed as itself, four for one placed by the way the builder faces: north,
+# east, south, west - two for one along either axis: north-south, east-west),
+# None for a block of one state, "ceiling"/"floor" for the corner webs on
+# vines, or a web line's class ("line": its states are LINE_STATES') - and
+# its model (the same id, unless said). A state is an age of a vine, or for
+# a button its face and facing (state_key).
 
 CATALOGUE = [
     # ---- strands: weeping vines, hanging from the ceiling
@@ -313,42 +403,108 @@ CATALOGUE = [
     ("sheet_frayed_3x2", "Frayed Web Curtain", "twisting_vines", [10, 11]),
     ("sheet_diagonal_1x2", "Web Sheet Diagonal", "twisting_vines", [12, 13]),
     ("sheet_diagonal_2x2", "Web Sheet Diagonal (2x2)", "twisting_vines", [14, 15]),
-    ("sheet_canopy", "Web Canopy (under a ceiling)", "twisting_vines", [16]),
+    ("sheet_canopy", "Web Canopy (under a ceiling)", "jungle_button", [2]),
     # ---- corner webs: vines, a side at a time (shift+right-click the others)
     ("corner_ceiling", "Corner Webs (ceiling, shift+right-click a side)", "vine", "ceiling"),
     ("corner_floor", "Corner Webs (floor, shift+right-click a side)", "vine", "floor"),
-    # ---- more corners, and floors: cave vines, against the wall in front
-    ("corner_ceiling_large", "Corner Web Large (wall to ceiling)", "cave_vines", [4, 5, 6, 7]),
-    ("corner_wall", "Corner Web (between walls, front left)", "cave_vines", [8, 9, 10, 11]),
-    ("floor_mat", "Web Mat (floor)", "cave_vines", [20]),
-    ("floor_tangle", "Web Tangle (floor)", "cave_vines", [21]),
-    ("wall_drape", "Web Drape (on the wall in front)", "cave_vines", [22, 23, 24, 25]),
+    # ---- more corners, and floors: buttons, against the wall in front
+    ("corner_ceiling_large", "Corner Web Large (wall to ceiling)", "birch_button", [0, 1, 2, 3]),
+    ("corner_wall", "Corner Web (between walls, front left)", "birch_button", [4, 5, 6, 7]),
+    ("floor_mat", "Web Mat (floor)", "jungle_button", [0]),
+    ("floor_tangle", "Web Tangle (floor)", "jungle_button", [1]),
+    ("wall_drape", "Web Drape (on the wall in front)", "birch_button", [8, 9, 10, 11]),
     # ---- the rest: the vines' stems, one state each
     ("cocoon", "Cocoon (a victim, wrapped)", "cave_vines_plant", None),
     ("egg_sac", "Egg Sacs (under a ceiling)", "weeping_vines_plant", None),
     ("slime_pool", "Slime Pool", "twisting_vines_plant", None),
+    # ---- web lines, chained and forked as Human's branches: click a line's
+    # end to go on from it, shift+right-click one to make it thin or thick
+    ("line_horizontal", "Web Line (level)", "line", "h"),
+    ("line_diagonal", "Web Line (45 degrees)", "line", "d"),
+    ("line_steep", "Web Line (steep)", "line", "s"),
+    ("line_vertical", "Web Line (vertical, built upwards)", "line", "v_thin"),
+    ("line_vertical_thick", "Web Line (vertical, thick)", "line", "v_thick"),
+    ("line_end", "Web Line Anchor (to the ceiling above, or the floor below)", "line", "end"),
 ]
 
-# ...where in the inventory's collection each goes: strands, sheets, corners
-# and floors a row each, the rest on the row above
-SLOTS = {
-    "strand_drop_2": "A0", "strand_drop_1": "A2", "strand_extension": "B2", "strand_tangle": "C2", "strand_slime": "D2",
-    "strand_sag_2": "E2", "strand_sag_3": "F2", "strand_sag_diagonal": "G2", "strand_guy": "H2", "strand_torn": "I2",
-    "sheet_1x1": "A3", "sheet_1x2": "B3", "sheet_2x2": "C3", "sheet_3x2": "D3", "sheet_torn_2x2": "E3",
-    "sheet_frayed_3x2": "F3", "sheet_diagonal_1x2": "G3", "sheet_diagonal_2x2": "H3", "sheet_canopy": "I3",
-    "corner_ceiling": "A4", "corner_floor": "B4", "corner_ceiling_large": "C4", "corner_wall": "D4",
-    "floor_mat": "E4", "floor_tangle": "F4", "wall_drape": "G4", "cocoon": "A1", "egg_sac": "E1", "slime_pool": "F1",
+# ...where in the inventory each goes: the webs' collection, strands, sheets,
+# corners and floors a row each, the rest on the row above; and the web
+# lines' own, each with the way to the other
+COLLECTIONS = {
+    "strand_drop_2": {
+        "strand_drop_2": "A0", "strand_drop_1": "A2", "strand_extension": "B2", "strand_tangle": "C2", "strand_slime": "D2",
+        "strand_sag_2": "E2", "strand_sag_3": "F2", "strand_sag_diagonal": "G2", "strand_guy": "H2", "strand_torn": "I2",
+        "line_diagonal": "J2",
+        "sheet_1x1": "A3", "sheet_1x2": "B3", "sheet_2x2": "C3", "sheet_3x2": "D3", "sheet_torn_2x2": "E3",
+        "sheet_frayed_3x2": "F3", "sheet_diagonal_1x2": "G3", "sheet_diagonal_2x2": "H3", "sheet_canopy": "I3",
+        "corner_ceiling": "A4", "corner_floor": "B4", "corner_ceiling_large": "C4", "corner_wall": "D4",
+        "floor_mat": "E4", "floor_tangle": "F4", "wall_drape": "G4", "cocoon": "A1", "egg_sac": "E1", "slime_pool": "F1",
+    },
+    "line_diagonal": {
+        "line_diagonal": "A0", "line_horizontal": "A2", "line_steep": "B2", "line_vertical": "C2",
+        "line_vertical_thick": "D2", "line_end": "E2", "strand_drop_2": "A3",
+    },
 }
-HEAD = "strand_drop_2"
 ICONS = {"corner_ceiling": "corner_ceiling_side", "corner_floor": "corner_floor_side"}
+# the web lines' icons: their cords drawn flat, on 16x16, as ((x, y) to (x, y), width)
+LINE_ICONS = {
+    "line_horizontal": [((1, 9), (14, 9), 1)], "line_diagonal": [((2, 13), (13, 2), 1)],
+    "line_steep": [((5, 15), (10, 0), 1)], "line_vertical": [((8, 0), (8, 15), 1)],
+    "line_vertical_thick": [((7, 0), (7, 15), 2)],
+    "line_end": [((8, 8), (2, 0), 1), ((8, 8), (13, 0), 1), ((8, 8), (8, 0), 1), ((8, 8), (3, 15), 1), ((8, 8), (12, 15), 1)],
+}
 
 AGES = 26
 SIDES = ("north", "east", "south", "west")
 TURNS = {"north": 0, "east": 90, "south": 180, "west": 270}
+BUTTON_FACES = ("floor", "wall", "ceiling")
+
+# The web lines go on states whose blocks are big enough to click - the
+# cave vines' all but whole block, the twisting and weeping vines' heads -
+# as a line is gone on from by clicking its end; their anchors, which nothing
+# goes on from, on a button's
+LINE_POOL = ([("cave_vines", n) for n in range(26)] + [("twisting_vines", n) for n in range(16, 26)]
+             + [("weeping_vines", n) for n in range(20, 26)])
+ORIENT4 = (("North", (0, -1)), ("East", (1, 0)), ("South", (0, 1)), ("West", (-1, 0)))
+ORIENT8 = (("North", (0, -1)), ("NorthEast", (1, -1)), ("East", (1, 0)), ("SouthEast", (1, 1)),
+           ("South", (0, 1)), ("SouthWest", (-1, 1)), ("West", (-1, 0)), ("NorthWest", (-1, -1)))
+# how far a model facing south (or south-east) is turned to face each way
+LINE_TURNS = {"South": 0, "West": 90, "North": 180, "East": 270, "SouthEast": 0, "SouthWest": 90, "NorthWest": 180, "NorthEast": 270}
 
 
-def state_key(block, age):
-    return f"age={age},berries=false" if block == "cave_vines" else f"age={age}"
+def line_states():
+    """Each web line's states, as Architect's keys name them - blockData +
+    Thin or Thick (or Lower or Upper) + its facing - with the block state,
+    model and turn each shows."""
+    pool = iter(LINE_POOL)
+    out = {}
+    for wid, _, block, how in CATALOGUE:
+        if block != "line":
+            continue
+        table = out[wid] = {}
+        if how in ("h", "d", "s"):
+            for variant, width in (("Thin", "thin"), ("Thick", "thick")):
+                for name, (dx, dz) in (ORIENT4 if how == "h" else ORIENT8):
+                    diag = dx != 0 and dz != 0
+                    table[f"{variant}{name}"] = (*next(pool), f"line_{how}_{'diag' if diag else 'main'}_{width}", LINE_TURNS[name])
+        elif how.startswith("v_"):
+            state = next(pool)   # every facing, above or below, the same: a vertical line is one
+            for variant in ("Lower", "Upper"):
+                for name, _ in ORIENT4:
+                    table[f"{variant}{name}"] = (*state, f"line_v_main_{how[2:]}", 0)
+        else:
+            for k, (variant, model) in enumerate((("Upper", "line_end_up"), ("Lower", "line_end_down"))):
+                for i, (name, _) in enumerate(ORIENT4):
+                    table[f"{variant}{name}"] = ("oak_button", k * 4 + i, model, LINE_TURNS[name])
+    return out
+
+
+def state_key(block, n):
+    if block == "cave_vines":
+        return f"age={n},berries=false"
+    if block.endswith("_button"):
+        return f"face={BUTTON_FACES[n // 4]},facing={SIDES[n % 4]},powered=false"
+    return f"age={n}"
 
 
 def vine_state(sides, floor):
@@ -427,7 +583,7 @@ def build():
 
     states = {}   # block -> {key: [variants]}
     for wid, _, block, how in CATALOGUE:
-        if block == "vine":
+        if block in ("vine", "line"):
             continue
         table = states.setdefault(block, {})
         if how is None:
@@ -437,10 +593,19 @@ def build():
         else:
             for age, y in zip(how, (0, 90, 180, 270) if len(how) == 4 else (0, 90)):
                 table[state_key(block, age)] = turned(wid, y)
+    for table in line_states().values():
+        for block, n, mid, y in table.values():
+            states.setdefault(block, {})[state_key(block, n)] = turned(mid, y)
 
-    # every state a vine can be in has a model: the ages no web has yet show
-    # the first of the block's, and the cave vines' berries (which glow) the same
-    # as without them
+    # every state a vine or button can be in has a model: those no web has
+    # yet show the first of the block's, the cave vines' berries (which glow)
+    # the same as without them, and a button pressed the same as not
+    for block, table in states.items():
+        if block.endswith("_button"):
+            fallback = next(iter(table.values()))
+            for n in range(12):
+                table.setdefault(state_key(block, n), fallback)
+                table[state_key(block, n).replace("powered=false", "powered=true")] = table[state_key(block, n)]
     for block in ("weeping_vines", "twisting_vines", "cave_vines"):
         table = states[block]
         fallback = next(iter(table.values()))
@@ -486,10 +651,22 @@ def icon(wid, texture):
     small = image.resize((max(1, round(image.width * scale)), max(1, round(image.height * scale))), Image.BOX)
     a = np.array(small).astype(np.float64)
     a[..., 3] = np.where(a[..., 3] < 24, 0, np.minimum(255, a[..., 3] * 1.6))
+    # without the signature's bits: a copy that kept them would be drawn as a web
+    a[..., :3] = (a[..., :3].astype(np.int32) & ~3).astype(np.float64)
     out = Image.new("RGBA", (16, 16))
     small = Image.fromarray(a.astype(np.uint8), "RGBA")
     out.alpha_composite(small, ((16 - small.width) // 2, (16 - small.height) // 2))
     out.save(ASSETS / f"textures/item/spiderweb_{wid}.png")
+
+
+def line_icon(wid, cords):
+    """A web line's icon: its cords, drawn flat."""
+    from paint import Canvas
+    c = Canvas(16, 16, f"spiderweb_icon_{wid}")
+    for p, q, width in cords:
+        for k in range(width):
+            c.cord([(p[0] + k, p[1]), (q[0] + k, q[1])], alpha=1.0, shade=1.05 - 0.15 * k)
+    c.image().save(ASSETS / f"textures/item/spiderweb_{wid}.png")
 
 
 ENTRY = ('{nl}            {{{nl}                "threshold": {cmd},{nl}                "model": {{{nl}'
@@ -502,7 +679,10 @@ def write_items():
     FIRST_CMD on - written over its own earlier ones, the rest of the file
     left as it is."""
     for wid, *_ in CATALOGUE:
-        icon(wid, MODELS[ICONS.get(wid, wid)][0][0][0])
+        if wid in LINE_ICONS:
+            line_icon(wid, LINE_ICONS[wid])
+        else:
+            icon(wid, MODELS[ICONS.get(wid, wid)][0][0][0])
         write_json(ASSETS / f"models/item/spiderweb/{wid}.json",
                    {"parent": "minecraft:item/generated", "textures": {"layer0": f"minecraft:item/spiderweb_{wid}"}})
     path = ASSETS / "items/clay_ball.json"
@@ -524,14 +704,30 @@ EDIT_KEYS = ["N", "E", "S", "W", "NW", "WS", "SE", "EN", "NS", "WE", "NWS", "WSE
 
 def write_inventory():
     """The webs' entries for RP-Inventories' Paths of the Dead inventory, in
-    its det.yml: one collection, headed by the 2-block strand."""
+    its det.yml: the webs' collection, headed by the 2-block strand, and the
+    web lines', by the 45-degree line."""
     lines = ["  # Shelob's webs (RP-PathOfTheDead/.tools/spiderwebs/build.py)"]
+    lined = line_states()
     for k, (wid, display, block, how) in enumerate(CATALOGUE):
+        if ": " in display or display.endswith(":"):
+            raise ValueError(f"{wid}: a colon in its display name breaks the YAML")
         lines += [f"  spiderweb_{wid}:", "    itemMaterial: CLAY_BALL", f"    cmd: {FIRST_CMD + k}",
                   f"    display: {display}"]
-        if wid == HEAD:
+        if wid in COLLECTIONS:
             lines.append("    category: Det")
-        if block == "vine":
+        if block == "line":
+            # Architect's branches: each facing's state, thin and thick - or a
+            # twig's, above and below: the vertical lines and the anchors, at
+            # the joint they're placed on (upperShift), or, below one, in the
+            # block under it (lowerShift)
+            kind = {"h": "BRANCH_HORIZONTAL", "d": "BRANCH_DIAGONAL", "s": "BRANCH_STEEP"}.get(how, "BRANCH_TWIGS")
+            lines.append(f"    type: {kind}")
+            for key, (b, n, _, _) in lined[wid].items():
+                lines.append(f"    blockData{key}: minecraft:{b}[{state_key(b, n)}]")
+            if kind == "BRANCH_TWIGS":
+                lines += ["    upperShift:", "      x: 0", "      y: 0", "      z: 0",
+                          "    lowerShift:", "      x: 0", "      y: 1", "      z: 0"]
+        elif block == "vine":
             # placed with the side faced webbed; each side shift+right-clicked
             # webbed or cleared: Architect turns the north table for the rest
             floor = how == "floor"
@@ -555,10 +751,11 @@ def write_inventory():
             for side, age in zip(SIDES, picks):
                 lines.append(f"    blockData{side.capitalize()}: minecraft:{block}[{state_key(block, age)}]")
         lines.append("    collection:")
-        if wid == HEAD:
-            lines += [f"      {SLOTS[w]}: spiderweb_{w}" for w, *_ in CATALOGUE]
+        if wid in COLLECTIONS:
+            lines += [f"      {slot}: spiderweb_{w}" for w, slot in COLLECTIONS[wid].items()]
         else:
-            lines.append(f"      indirect: spiderweb_{HEAD}")
+            head = "line_diagonal" if block == "line" else "strand_drop_2"
+            lines.append(f"      indirect: spiderweb_{head}")
     (Path(__file__).parent / "inventory.yml").write_bytes(("\n".join(lines) + "\n").encode("utf-8"))
 
 

@@ -337,6 +337,19 @@ def pool(c):
         c.a = np.maximum(c.a, (np.hypot(xs + 0.5 - sx, ys + 0.5 - sy) < c.rng.uniform(0.8, 1.5)) * 0.8)
 
 
+def cord_strip(c):
+    """The web lines' cords, wound along the texture: row 0 a thin one's
+    faces, rows 2 and 3 a thick one's - lit above, darker below, slime beading
+    on it here and there."""
+    for x in range(c.w):
+        v = 0.86 + 0.14 * math.sin(x * 0.9 + c.rng.random()) + 0.06 * c.rng.random()
+        c.plot(x, 0, SILK * v, 0.95)
+        c.plot(x, 2, SILK * v * 1.02, 0.97)
+        c.plot(x, 3, SILK_DARK * v * 1.05, 0.97)
+        if c.rng.random() < 0.08:
+            c.bead(x, 2 + (c.rng.random() < 0.5))
+
+
 # ---------------------------------------------------------------- the textures
 # name: (width, height in texels - the faces' size in model units - painter)
 
@@ -358,6 +371,12 @@ TEXTURES = {
     "guy_a": (24, 32, guy), "guy_b": (24, 32, guy),
     "torn_a": (24, 16, strand(3, reach=(0.2, 0.7), main=False)), "torn_b": (24, 16, strand(2, reach=(0.3, 0.9), main=False, slime=0.3)),
     "tuft_hang_a": (24, 8, strand(2, reach=(0.5, 1.0), main=False)),
+    # the web lines' cords (build.py's cords): each as long as its line, in
+    # units - level 16, 45 degrees 22.6 or 27.7 on a diagonal, steep 35.8 or
+    # 39.2, vertical 16 - and the anchors' (any length up to 40)
+    "line_h": (16, 4, cord_strip), "line_d": (24, 4, cord_strip), "line_dd": (28, 4, cord_strip),
+    "line_s": (36, 4, cord_strip), "line_sd": (40, 4, cord_strip), "line_v": (16, 4, cord_strip),
+    "line_end": (40, 4, cord_strip),
     # sheets (twisting_vines)
     "sheet_1x1_a": (16, 16, lambda c: net(c, 1.2)), "sheet_1x1_b": (16, 16, lambda c: net(c, 1.0)),
     "sheet_1x2_a": (16, 32, lambda c: net(c, 1.0)), "sheet_1x2_b": (16, 32, lambda c: net(c, 1.2, reach=(0.5, 0.95))),

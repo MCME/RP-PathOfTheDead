@@ -15,8 +15,8 @@
     type: BLOCK
     blockData: minecraft:weeping_vines[age=1]
     collection:
-      A2: spiderweb_strand_drop_1
       A0: spiderweb_strand_drop_2
+      A2: spiderweb_strand_drop_1
       B2: spiderweb_strand_extension
       C2: spiderweb_strand_tangle
       D2: spiderweb_strand_slime
@@ -25,6 +25,7 @@
       G2: spiderweb_strand_sag_diagonal
       H2: spiderweb_strand_guy
       I2: spiderweb_strand_torn
+      J2: spiderweb_line_diagonal
       A3: spiderweb_sheet_1x1
       B3: spiderweb_sheet_1x2
       C3: spiderweb_sheet_2x2
@@ -213,7 +214,7 @@
     cmd: 2536
     display: Web Canopy (under a ceiling)
     type: BLOCK
-    blockData: minecraft:twisting_vines[age=16]
+    blockData: minecraft:jungle_button[face=floor,facing=south,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_corner_ceiling:
@@ -275,10 +276,10 @@
     cmd: 2539
     display: Corner Web Large (wall to ceiling)
     type: FOUR_DIRECTIONS
-    blockDataNorth: minecraft:cave_vines[age=4,berries=false]
-    blockDataEast: minecraft:cave_vines[age=5,berries=false]
-    blockDataSouth: minecraft:cave_vines[age=6,berries=false]
-    blockDataWest: minecraft:cave_vines[age=7,berries=false]
+    blockDataNorth: minecraft:birch_button[face=floor,facing=north,powered=false]
+    blockDataEast: minecraft:birch_button[face=floor,facing=east,powered=false]
+    blockDataSouth: minecraft:birch_button[face=floor,facing=south,powered=false]
+    blockDataWest: minecraft:birch_button[face=floor,facing=west,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_corner_wall:
@@ -286,10 +287,10 @@
     cmd: 2540
     display: Corner Web (between walls, front left)
     type: FOUR_DIRECTIONS
-    blockDataNorth: minecraft:cave_vines[age=8,berries=false]
-    blockDataEast: minecraft:cave_vines[age=9,berries=false]
-    blockDataSouth: minecraft:cave_vines[age=10,berries=false]
-    blockDataWest: minecraft:cave_vines[age=11,berries=false]
+    blockDataNorth: minecraft:birch_button[face=wall,facing=north,powered=false]
+    blockDataEast: minecraft:birch_button[face=wall,facing=east,powered=false]
+    blockDataSouth: minecraft:birch_button[face=wall,facing=south,powered=false]
+    blockDataWest: minecraft:birch_button[face=wall,facing=west,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_floor_mat:
@@ -297,7 +298,7 @@
     cmd: 2541
     display: Web Mat (floor)
     type: BLOCK
-    blockData: minecraft:cave_vines[age=20,berries=false]
+    blockData: minecraft:jungle_button[face=floor,facing=north,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_floor_tangle:
@@ -305,7 +306,7 @@
     cmd: 2542
     display: Web Tangle (floor)
     type: BLOCK
-    blockData: minecraft:cave_vines[age=21,berries=false]
+    blockData: minecraft:jungle_button[face=floor,facing=east,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_wall_drape:
@@ -313,10 +314,10 @@
     cmd: 2543
     display: Web Drape (on the wall in front)
     type: FOUR_DIRECTIONS
-    blockDataNorth: minecraft:cave_vines[age=22,berries=false]
-    blockDataEast: minecraft:cave_vines[age=23,berries=false]
-    blockDataSouth: minecraft:cave_vines[age=24,berries=false]
-    blockDataWest: minecraft:cave_vines[age=25,berries=false]
+    blockDataNorth: minecraft:birch_button[face=ceiling,facing=north,powered=false]
+    blockDataEast: minecraft:birch_button[face=ceiling,facing=east,powered=false]
+    blockDataSouth: minecraft:birch_button[face=ceiling,facing=south,powered=false]
+    blockDataWest: minecraft:birch_button[face=ceiling,facing=west,powered=false]
     collection:
       indirect: spiderweb_strand_drop_2
   spiderweb_cocoon:
@@ -343,3 +344,140 @@
     blockData: minecraft:twisting_vines_plant
     collection:
       indirect: spiderweb_strand_drop_2
+  spiderweb_line_horizontal:
+    itemMaterial: CLAY_BALL
+    cmd: 2547
+    display: Web Line (level)
+    type: BRANCH_HORIZONTAL
+    blockDataThinNorth: minecraft:cave_vines[age=0,berries=false]
+    blockDataThinEast: minecraft:cave_vines[age=1,berries=false]
+    blockDataThinSouth: minecraft:cave_vines[age=2,berries=false]
+    blockDataThinWest: minecraft:cave_vines[age=3,berries=false]
+    blockDataThickNorth: minecraft:cave_vines[age=4,berries=false]
+    blockDataThickEast: minecraft:cave_vines[age=5,berries=false]
+    blockDataThickSouth: minecraft:cave_vines[age=6,berries=false]
+    blockDataThickWest: minecraft:cave_vines[age=7,berries=false]
+    collection:
+      indirect: spiderweb_line_diagonal
+  spiderweb_line_diagonal:
+    itemMaterial: CLAY_BALL
+    cmd: 2548
+    display: Web Line (45 degrees)
+    category: Det
+    type: BRANCH_DIAGONAL
+    blockDataThinNorth: minecraft:cave_vines[age=8,berries=false]
+    blockDataThinNorthEast: minecraft:cave_vines[age=9,berries=false]
+    blockDataThinEast: minecraft:cave_vines[age=10,berries=false]
+    blockDataThinSouthEast: minecraft:cave_vines[age=11,berries=false]
+    blockDataThinSouth: minecraft:cave_vines[age=12,berries=false]
+    blockDataThinSouthWest: minecraft:cave_vines[age=13,berries=false]
+    blockDataThinWest: minecraft:cave_vines[age=14,berries=false]
+    blockDataThinNorthWest: minecraft:cave_vines[age=15,berries=false]
+    blockDataThickNorth: minecraft:cave_vines[age=16,berries=false]
+    blockDataThickNorthEast: minecraft:cave_vines[age=17,berries=false]
+    blockDataThickEast: minecraft:cave_vines[age=18,berries=false]
+    blockDataThickSouthEast: minecraft:cave_vines[age=19,berries=false]
+    blockDataThickSouth: minecraft:cave_vines[age=20,berries=false]
+    blockDataThickSouthWest: minecraft:cave_vines[age=21,berries=false]
+    blockDataThickWest: minecraft:cave_vines[age=22,berries=false]
+    blockDataThickNorthWest: minecraft:cave_vines[age=23,berries=false]
+    collection:
+      A0: spiderweb_line_diagonal
+      A2: spiderweb_line_horizontal
+      B2: spiderweb_line_steep
+      C2: spiderweb_line_vertical
+      D2: spiderweb_line_vertical_thick
+      E2: spiderweb_line_end
+      A3: spiderweb_strand_drop_2
+  spiderweb_line_steep:
+    itemMaterial: CLAY_BALL
+    cmd: 2549
+    display: Web Line (steep)
+    type: BRANCH_STEEP
+    blockDataThinNorth: minecraft:cave_vines[age=24,berries=false]
+    blockDataThinNorthEast: minecraft:cave_vines[age=25,berries=false]
+    blockDataThinEast: minecraft:twisting_vines[age=16]
+    blockDataThinSouthEast: minecraft:twisting_vines[age=17]
+    blockDataThinSouth: minecraft:twisting_vines[age=18]
+    blockDataThinSouthWest: minecraft:twisting_vines[age=19]
+    blockDataThinWest: minecraft:twisting_vines[age=20]
+    blockDataThinNorthWest: minecraft:twisting_vines[age=21]
+    blockDataThickNorth: minecraft:twisting_vines[age=22]
+    blockDataThickNorthEast: minecraft:twisting_vines[age=23]
+    blockDataThickEast: minecraft:twisting_vines[age=24]
+    blockDataThickSouthEast: minecraft:twisting_vines[age=25]
+    blockDataThickSouth: minecraft:weeping_vines[age=20]
+    blockDataThickSouthWest: minecraft:weeping_vines[age=21]
+    blockDataThickWest: minecraft:weeping_vines[age=22]
+    blockDataThickNorthWest: minecraft:weeping_vines[age=23]
+    collection:
+      indirect: spiderweb_line_diagonal
+  spiderweb_line_vertical:
+    itemMaterial: CLAY_BALL
+    cmd: 2550
+    display: Web Line (vertical, built upwards)
+    type: BRANCH_TWIGS
+    blockDataLowerNorth: minecraft:weeping_vines[age=24]
+    blockDataLowerEast: minecraft:weeping_vines[age=24]
+    blockDataLowerSouth: minecraft:weeping_vines[age=24]
+    blockDataLowerWest: minecraft:weeping_vines[age=24]
+    blockDataUpperNorth: minecraft:weeping_vines[age=24]
+    blockDataUpperEast: minecraft:weeping_vines[age=24]
+    blockDataUpperSouth: minecraft:weeping_vines[age=24]
+    blockDataUpperWest: minecraft:weeping_vines[age=24]
+    upperShift:
+      x: 0
+      y: 0
+      z: 0
+    lowerShift:
+      x: 0
+      y: 1
+      z: 0
+    collection:
+      indirect: spiderweb_line_diagonal
+  spiderweb_line_vertical_thick:
+    itemMaterial: CLAY_BALL
+    cmd: 2551
+    display: Web Line (vertical, thick)
+    type: BRANCH_TWIGS
+    blockDataLowerNorth: minecraft:weeping_vines[age=25]
+    blockDataLowerEast: minecraft:weeping_vines[age=25]
+    blockDataLowerSouth: minecraft:weeping_vines[age=25]
+    blockDataLowerWest: minecraft:weeping_vines[age=25]
+    blockDataUpperNorth: minecraft:weeping_vines[age=25]
+    blockDataUpperEast: minecraft:weeping_vines[age=25]
+    blockDataUpperSouth: minecraft:weeping_vines[age=25]
+    blockDataUpperWest: minecraft:weeping_vines[age=25]
+    upperShift:
+      x: 0
+      y: 0
+      z: 0
+    lowerShift:
+      x: 0
+      y: 1
+      z: 0
+    collection:
+      indirect: spiderweb_line_diagonal
+  spiderweb_line_end:
+    itemMaterial: CLAY_BALL
+    cmd: 2552
+    display: Web Line Anchor (to the ceiling above, or the floor below)
+    type: BRANCH_TWIGS
+    blockDataUpperNorth: minecraft:oak_button[face=floor,facing=north,powered=false]
+    blockDataUpperEast: minecraft:oak_button[face=floor,facing=east,powered=false]
+    blockDataUpperSouth: minecraft:oak_button[face=floor,facing=south,powered=false]
+    blockDataUpperWest: minecraft:oak_button[face=floor,facing=west,powered=false]
+    blockDataLowerNorth: minecraft:oak_button[face=wall,facing=north,powered=false]
+    blockDataLowerEast: minecraft:oak_button[face=wall,facing=east,powered=false]
+    blockDataLowerSouth: minecraft:oak_button[face=wall,facing=south,powered=false]
+    blockDataLowerWest: minecraft:oak_button[face=wall,facing=west,powered=false]
+    upperShift:
+      x: 0
+      y: 0
+      z: 0
+    lowerShift:
+      x: 0
+      y: 1
+      z: 0
+    collection:
+      indirect: spiderweb_line_diagonal

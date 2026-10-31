@@ -5319,6 +5319,13 @@
                     "type": "model",
                     "model": "block/halloween/grave_names/grave_name_9"
                 }
+            },
+            {
+                "threshold": 2553,
+                "model": {
+                    "type": "model",
+                    "model": "block/half_mud_bricks_smooth_ghost_stone"
+                }
             }
         ]
     }

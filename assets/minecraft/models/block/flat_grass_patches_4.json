@@ -2,7 +2,8 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "block/grass_patches_4"
+		"1": "block/grass_patches_4",
+		"particle": "block/grass_patches_4"
 	},
 	"elements": [
 		{

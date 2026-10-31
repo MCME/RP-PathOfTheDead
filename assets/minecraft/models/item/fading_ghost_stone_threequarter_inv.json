@@ -1,0 +1,8 @@
+{
+	"parent": "block/fading_ghost_stone_threequarter",
+	"textures": {
+		"bottom": "block/magenta_stained_glass_inv",
+		"side": "block/magenta_stained_glass_inv",
+		"inside": "block/magenta_stained_glass_inv"
+	}
+}

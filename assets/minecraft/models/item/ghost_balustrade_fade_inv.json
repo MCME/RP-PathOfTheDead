@@ -1,0 +1,6 @@
+{
+	"parent": "block/ghost_balustrade_fade",
+	"textures": {
+		"side": "block/magenta_stained_glass_inv"
+	}
+}

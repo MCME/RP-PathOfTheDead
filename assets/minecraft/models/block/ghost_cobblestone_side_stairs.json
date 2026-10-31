@@ -1,0 +1,6 @@
+{
+  "parent": "block/side_stairs",
+  "textures": {
+    "side": "block/cyan_stained_glass"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/ghost_fence_fade_inventory",
+  "textures": {
+    "texture": "minecraft:block/magenta_stained_glass_inv"
+  }
+}

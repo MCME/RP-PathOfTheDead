@@ -1,0 +1,7 @@
+{
+  "parent": "block/half_pillar_ghost_parent",
+  "textures": {
+    "ghost": "block/cyan_stained_glass",
+    "pillar": "block/stripped_cherry_log_side"
+  }
+}

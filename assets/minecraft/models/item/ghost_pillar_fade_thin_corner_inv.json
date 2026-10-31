@@ -1,0 +1,7 @@
+{
+	"parent": "block/ghost_pillar_fade_thin_corner",
+	"textures": {
+		"4": "block/magenta_stained_glass_inv",
+		"particle": "block/magenta_stained_glass_inv"
+	}
+}

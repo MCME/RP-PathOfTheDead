@@ -10,6 +10,15 @@ if (fluid == FOG_BLOCK) {
     vec4 fog = fogLook(fluidHere, fogEye, Sampler0, MCME_TEXCOORD, MCME_SECONDS, MCME_FOG_COLOR.rgb);
     color = vec4(fog.rgb * mix(lightColor.rgb, fogLight.rgb, FOG_OPEN), fog.a);
 }
+// the fading ghost blocks: their textures, lit as any block's, but clearer
+// where the shimmer's patches churn through them (ghost_shimmer.glsl)
+if (fluid == GHOST_SHIMMER && MCME_PASS_HAS(GHOST_SHIMMER)) {
+    color.a *= ghostShimmer(fluidHere, MCME_SECONDS);
+}
+// ...and the other ghost blocks, the same patches, less widened and less clear (stone_shimmer.glsl)
+if (fluid == STONE_SHIMMER && MCME_PASS_HAS(STONE_SHIMMER)) {
+    color.a *= stoneShimmer(fluidHere, MCME_SECONDS);
+}
 // ...kept down to 1% opacity, as Sodium keeps every translucent face: vanilla
 // drops translucent terrain under 10% (its translucent_terrain pipeline's
 // ALPHA_CUTOUT), which would cut this thin fog's soft edges away, face by

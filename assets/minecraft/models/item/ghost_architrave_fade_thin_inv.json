@@ -1,0 +1,8 @@
+{
+	"parent": "block/ghost_architrave_fade_thin",
+	"textures": {
+		"3": "block/magenta_stained_glass_inv",
+		"4": "block/architrave_base_fade_inv",
+		"particle": "block/magenta_stained_glass_inv"
+	}
+}

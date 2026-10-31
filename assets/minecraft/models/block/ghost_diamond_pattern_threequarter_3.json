@@ -1,0 +1,8 @@
+{
+    "parent": "block/piston_extended",
+    "textures": {
+        "bottom": "block/black_stained_glass_3",
+        "side": "block/black_stained_glass_3",
+        "inside": "block/black_stained_glass_3"
+    }
+}

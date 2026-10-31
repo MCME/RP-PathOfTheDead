@@ -1,0 +1,7 @@
+{
+  "parent": "block/half_pillar_ghost_parent",
+  "textures": {
+    "ghost": "block/red_stained_glass",
+    "pillar": "block/bricks"
+  }
+}

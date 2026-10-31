@@ -1,0 +1,8 @@
+{
+	"parent": "block/ghost_anvil_fade",
+	"textures": {
+		"particle": "block/magenta_stained_glass_inv",
+		"body": "block/magenta_stained_glass_inv",
+		"top": "block/magenta_stained_glass_inv"
+	}
+}

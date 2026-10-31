@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "powered=false": [
+					{ "model": "block/mace_ground" },
+					{ "model": "block/mace_ground", "y": 90 },
+					{ "model": "block/mace_ground", "y": 180 },
+					{ "model": "block/mace_ground", "y": 270 },
+					{ "model": "block/mace_ground_2" },
+					{ "model": "block/mace_ground_2", "y": 90 },
+					{ "model": "block/mace_ground_2", "y": 180 },
+					{ "model": "block/mace_ground_2", "y": 270 }
+				],
+    "powered=true": [
+					{ "model": "block/ghost_mace_ground" },
+					{ "model": "block/ghost_mace_ground", "y": 90 },
+					{ "model": "block/ghost_mace_ground", "y": 180 },
+					{ "model": "block/ghost_mace_ground", "y": 270 },
+					{ "model": "block/ghost_mace_ground_2" },
+					{ "model": "block/ghost_mace_ground_2", "y": 90 },
+					{ "model": "block/ghost_mace_ground_2", "y": 180 },
+					{ "model": "block/ghost_mace_ground_2", "y": 270 }
+				]
+  }
+}

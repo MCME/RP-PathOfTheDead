@@ -1,56 +1,77 @@
 {
-  "variants": {
-    "east=true,north=false,south=true,west=true": {
-      "model": "block/vertical_slab_ghost_stone"
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_post"
+      }
     },
-    "east=false,north=true,south=true,west=true": {
-      "model": "block/vertical_slab_ghost_stone",
-      "y": 90
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_side"
+      },
+      "when": {
+        "north": "true"
+      }
     },
-    "east=true,north=true,south=false,west=true": {
-      "model": "block/vertical_slab_ghost_stone",
-      "y": 180
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
     },
-    "east=true,north=true,south=true,west=false": {
-      "model": "block/vertical_slab_ghost_stone",
-      "y": 270
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_side_alt"
+      },
+      "when": {
+        "south": "true"
+      }
     },
-    "east=false,north=true,south=true,west=false": {
-      "model": "block/scaffolding_ghost_window_down",
-      "y": 90
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_side_alt",
+        "y": 90
+      },
+      "when": {
+        "west": "true"
+      }
     },
-    "east=true,north=false,south=false,west=true": {
-      "model": "block/scaffolding_ghost_window_down"
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_noside"
+      },
+      "when": {
+        "north": "false"
+      }
     },
-    "east=false,north=false,south=false,west=true": {
-      "model": "block/smooth_ghost_stone_vertical_thin_slab"
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_noside_alt"
+      },
+      "when": {
+        "east": "false"
+      }
     },
-    "east=false,north=true,south=false,west=false": {
-      "model": "block/smooth_ghost_stone_vertical_thin_slab",
-      "y": 90
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_noside_alt",
+        "y": 90
+      },
+      "when": {
+        "south": "false"
+      }
     },
-    "east=true,north=false,south=false,west=false": {
-      "model": "block/smooth_ghost_stone_vertical_thin_slab",
-      "y": 180
-    },
-    "east=false,north=false,south=true,west=false": {
-      "model": "block/smooth_ghost_stone_vertical_thin_slab",
-      "y": 270
-    },
-    "east=false,north=false,south=true,west=true": {
-      "model": "block/smooth_ghost_stone_quarter",
-      "y": 270
-    },
-    "east=false,north=true,south=false,west=true": {
-      "model": "block/smooth_ghost_stone_quarter"
-    },
-    "east=true,north=false,south=true,west=false": {
-      "model": "block/smooth_ghost_stone_quarter",
-      "y": 180
-    },
-    "east=true,north=true,south=false,west=false": {
-      "model": "block/smooth_ghost_stone_quarter",
-      "y": 90
+    {
+      "apply": {
+        "model": "minecraft:block/gray_stained_glass_pane_noside",
+        "y": 270
+      },
+      "when": {
+        "west": "false"
+      }
     }
-  }
+  ]
 }

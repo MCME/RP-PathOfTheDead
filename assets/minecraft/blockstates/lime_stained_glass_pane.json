@@ -6,7 +6,6 @@
     },
     "east=true,north=false,south=true,west=true": {
       "model": "block/ghost_architrave_half"
-
     },
     "east=false,north=true,south=true,west=true": {
       "model": "block/ghost_architrave_half",
@@ -38,13 +37,6 @@
       "model": "block/ghost_architrave_offset",
       "x": 180,
       "y": 270
-    },
-    "east=false,north=true,south=true,west=false": {
-      "model": "block/ghost_balustrade"
-    },
-    "east=true,north=false,south=false,west=true": {
-      "model": "block/ghost_balustrade",
-      "y": 90
     },
     "east=false,north=false,south=false,west=true": {
       "model": "block/ghost_architrave_thin",

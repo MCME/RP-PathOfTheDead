@@ -1,5 +1,5 @@
 {
-  "parent": "block/side_stairs",
+  "parent": "block/ghost_side_stairs",
   "textures": {
     "side": "block/ghost_bricks_weathered"
   }

@@ -3,14 +3,14 @@
 	  "east=none,north=none,south=none,up=true,west=none": { "model": "block/red_stained_glass_pane_nesw"},
 	  "east=none,north=low,south=low,up=true,west=none": { "model": "block/ghost_balustrade"},
 	  "east=low,north=none,south=none,up=true,west=low": { "model": "block/ghost_balustrade", "y": 90},
-	  "east=none,north=none,south=tall,up=true,west=tall": { "model": "block/mixed_ghost_brick_side_stairs"},
-	  "east=none,north=tall,south=none,up=true,west=tall": { "model": "block/mixed_ghost_brick_side_stairs", "y": 90},
-	  "east=tall,north=tall,south=none,up=true,west=none": { "model": "block/mixed_ghost_brick_side_stairs", "y": 180},
-	  "east=tall,north=none,south=tall,up=true,west=none": { "model": "block/mixed_ghost_brick_side_stairs", "y": 270},
-	  "east=none,north=none,south=low,up=true,west=low": { "model": "block/weathered_ghost_brick_side_stairs"},
-	  "east=none,north=low,south=none,up=true,west=low": { "model": "block/weathered_ghost_brick_side_stairs", "y": 90},
-	  "east=low,north=low,south=none,up=true,west=none": { "model": "block/weathered_ghost_brick_side_stairs", "y": 180},
-	  "east=low,north=none,south=low,up=true,west=none": { "model": "block/weathered_ghost_brick_side_stairs", "y": 270}
+	  "east=none,north=none,south=tall,up=true,west=tall": { "model": "block/mixed_ghost_brick_side_stairs", "y": 180},
+	  "east=none,north=tall,south=none,up=true,west=tall": { "model": "block/mixed_ghost_brick_side_stairs", "y": 270},
+	  "east=tall,north=tall,south=none,up=true,west=none": { "model": "block/mixed_ghost_brick_side_stairs"},
+	  "east=tall,north=none,south=tall,up=true,west=none": { "model": "block/mixed_ghost_brick_side_stairs", "y": 90},
+	  "east=none,north=none,south=low,up=true,west=low": { "model": "block/weathered_ghost_brick_side_stairs", "y": 180},
+	  "east=none,north=low,south=none,up=true,west=low": { "model": "block/weathered_ghost_brick_side_stairs", "y": 270},
+	  "east=low,north=low,south=none,up=true,west=none": { "model": "block/weathered_ghost_brick_side_stairs"},
+	  "east=low,north=none,south=low,up=true,west=none": { "model": "block/weathered_ghost_brick_side_stairs", "y": 90}
 
   }
 }

@@ -1,6 +1,18 @@
 {
   "variants": {
-	  "east=none,north=none,south=none,up=true,west=none": { "model": "block/purple_stained_glass_pane_nesw"}
+	  "east=none,north=none,south=none,up=true,west=none": { "model": "block/purple_stained_glass_pane_nesw"},
+	  "east=none,north=none,south=tall,up=true,west=tall": { "model": "block/ghost_brick_side_stairs", "y": 180, "uvlock": true},
+	  "east=none,north=tall,south=none,up=true,west=tall": { "model": "block/ghost_brick_side_stairs", "y": 270, "uvlock": true},
+	  "east=tall,north=tall,south=none,up=true,west=none": { "model": "block/ghost_brick_side_stairs"},
+	  "east=tall,north=none,south=tall,up=true,west=none": { "model": "block/ghost_brick_side_stairs", "y": 90, "uvlock": true},
+	  "east=none,north=none,south=low,up=true,west=low": { "model": "block/smooth_ghost_stone_side_stairs", "y": 180, "uvlock": true},
+	  "east=none,north=low,south=none,up=true,west=low": { "model": "block/smooth_ghost_stone_side_stairs", "y": 270, "uvlock": true},
+	  "east=low,north=low,south=none,up=true,west=none": { "model": "block/smooth_ghost_stone_side_stairs"},
+	  "east=low,north=none,south=low,up=true,west=none": { "model": "block/smooth_ghost_stone_side_stairs", "y": 90, "uvlock": true},
+	  "east=low,north=tall,south=low,up=false,west=low": { "model": "block/half_mud_bricks_smooth_ghost_stone"},
+	  "east=tall,north=low,south=low,up=false,west=low": { "model": "block/half_mud_bricks_smooth_ghost_stone", "y": 90, "uvlock": true},
+	  "east=low,north=low,south=tall,up=false,west=low": { "model": "block/half_mud_bricks_smooth_ghost_stone", "y": 180, "uvlock": true},
+	  "east=low,north=low,south=low,up=false,west=tall": { "model": "block/half_mud_bricks_smooth_ghost_stone", "y": 270, "uvlock": true}
 
   }
 }

@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/resin_block_offset_down",
+	"textures": {
+		"0": "minecraft:block/ghost_bricks_mixed_3",
+		"particle": "minecraft:block/ghost_bricks_mixed_3"
+	}
+}

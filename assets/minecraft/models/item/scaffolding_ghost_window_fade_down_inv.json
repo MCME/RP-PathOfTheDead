@@ -1,0 +1,6 @@
+{
+	"parent": "block/scaffolding_ghost_window_fade_down",
+	"textures": {
+		"particle": "block/magenta_stained_glass_inv"
+	}
+}

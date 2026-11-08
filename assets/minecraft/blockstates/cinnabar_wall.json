@@ -1,7 +1,16 @@
 {
   "variants": {
 	  "east=none,north=none,south=none,up=true,west=none": { "model": "block/magenta_stained_glass_pane_nesw"},
-	  "east=tall,north=tall,south=tall,up=true,west=tall": { "model": "block/ghost_pillar_thic_fade"}
+	  "east=tall,north=tall,south=tall,up=true,west=tall": { "model": "block/ghost_pillar_thic_fade"},
+	  "east=low,north=none,south=low,up=true,west=low": {"model": "block/smooth_ghost_stone_threequarter"},
+	  "east=none,north=low,south=low,up=true,west=low": {"model": "block/smooth_ghost_stone_threequarter", "y": 90, "uvlock": true},
+	  "east=low,north=low,south=none,up=true,west=low": {"model": "block/smooth_ghost_stone_threequarter", "y": 180, "uvlock": true},
+	  "east=low,north=low,south=low,up=true,west=none": {"model": "block/smooth_ghost_stone_threequarter", "y": 270, "uvlock": true},
+	  "east=low,north=none,south=low,up=false,west=low": [{"model": "block/ghost_cobblestone_threequarter"}, {"model": "block/ghost_cobblestone_threequarter_2"}, {"model": "block/ghost_cobblestone_threequarter_3"}, {"model": "block/ghost_cobblestone_threequarter_4"}, {"model": "block/ghost_cobblestone_threequarter_5"}],
+	  "east=none,north=low,south=low,up=false,west=low": [{"model": "block/ghost_cobblestone_threequarter", "y": 90, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_2", "y": 90, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_3", "y": 90, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_4", "y": 90, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_5", "y": 90, "uvlock": true}],
+	  "east=low,north=low,south=none,up=false,west=low": [{"model": "block/ghost_cobblestone_threequarter", "y": 180, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_2", "y": 180, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_3", "y": 180, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_4", "y": 180, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_5", "y": 180, "uvlock": true}],
+	  "east=low,north=low,south=low,up=false,west=none": [{"model": "block/ghost_cobblestone_threequarter", "y": 270, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_2", "y": 270, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_3", "y": 270, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_4", "y": 270, "uvlock": true}, {"model": "block/ghost_cobblestone_threequarter_5", "y": 270, "uvlock": true}]
+	 
 
   }
 }

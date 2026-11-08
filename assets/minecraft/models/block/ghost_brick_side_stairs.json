@@ -1,0 +1,6 @@
+{
+  "parent": "block/ghost_side_stairs",
+  "textures": {
+    "side": "block/red_stained_glass"
+  }
+}

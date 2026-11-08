@@ -1,0 +1,6 @@
+{
+	"parent": "block/trapdoor_ghost_stone_fade_bottom",
+	"textures": {
+		"texture": "block/magenta_stained_glass_inv"
+	}
+}

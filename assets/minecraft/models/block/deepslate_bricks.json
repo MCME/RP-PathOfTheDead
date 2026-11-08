@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all_no_cull",
+    "textures": {
+        "all": "block/deepslate_bricks"
+    }
+}

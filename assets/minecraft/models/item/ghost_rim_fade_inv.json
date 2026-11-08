@@ -1,0 +1,7 @@
+{
+	"parent": "block/ghost_rim_fade",
+	"textures": {
+		"1": "block/magenta_stained_glass_inv",
+		"particle": "block/magenta_stained_glass_inv"
+	}
+}

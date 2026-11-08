@@ -1,7 +1,10 @@
 {
-"variants": {
-"waterlogged=false": {
-      "model": "block/hanging_skull_cluster"
-    }
-  }
+	"variants": {
+		"waterlogged=false": [
+			{"model": "block/hanging_skull_cluster"},
+			{"model": "block/hanging_skull_cluster", "y": 90},
+			{"model": "block/hanging_skull_cluster", "y": 180},
+			{"model": "block/hanging_skull_cluster", "y": 270}
+		]
+	}
 }

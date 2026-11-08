@@ -1,0 +1,145 @@
+{
+  "variants": {
+    "type=bottom": [
+      {
+        "model": "block/green_concrete_slab"
+      },
+      {
+        "model": "block/green_concrete_slab",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_slab_2"
+      },
+      {
+        "model": "block/green_concrete_slab_2",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab_2",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab_2",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_slab_3"
+      },
+      {
+        "model": "block/green_concrete_slab_3",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab_3",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab_3",
+        "y": 270
+      }
+    ],
+    "type=double": [
+      {
+        "model": "block/green_concrete"
+      },
+      {
+        "model": "block/green_concrete",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_2"
+      },
+      {
+        "model": "block/green_concrete_2",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_2",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_2",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_3"
+      },
+      {
+        "model": "block/green_concrete_3",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_3",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_3",
+        "y": 270
+      }
+    ],
+    "type=top": [
+      {
+        "model": "block/green_concrete_slab_top"
+      },
+      {
+        "model": "block/green_concrete_slab_top",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab_top",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab_top",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_slab_top_2"
+      },
+      {
+        "model": "block/green_concrete_slab_top_2",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab_top_2",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab_top_2",
+        "y": 270
+      },
+      {
+        "model": "block/green_concrete_slab_top_3"
+      },
+      {
+        "model": "block/green_concrete_slab_top_3",
+        "y": 90
+      },
+      {
+        "model": "block/green_concrete_slab_top_3",
+        "y": 180
+      },
+      {
+        "model": "block/green_concrete_slab_top_3",
+        "y": 270
+      }
+    ]
+  }
+}

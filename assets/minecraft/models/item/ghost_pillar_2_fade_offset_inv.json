@@ -1,0 +1,6 @@
+{
+	"parent": "block/ghost_pillar_2_fade_offset",
+	"textures": {
+		"slab": "block/pale_oak_log_inv"
+	}
+}

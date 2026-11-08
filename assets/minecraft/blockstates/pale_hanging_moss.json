@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "tip=true": [
-      { "model": "block/halloween/bats", "weight": 3 },
-      { "model": "block/halloween/bats_2", "weight": 2 }
-    ]
-  }
-}

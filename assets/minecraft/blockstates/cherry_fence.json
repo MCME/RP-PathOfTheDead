@@ -3,19 +3,19 @@
         "north=true,east=false,south=true,west=true": [
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered",
-                "y": 90
+                "y": 90, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_2",
-                "y": 90
+                "y": 90, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_3",
-                "y": 90
+                "y": 90, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_4",
-                "y": 90
+                "y": 90, "uvlock": true
             }
         ],
         "north=false,east=true,south=true,west=true": [
@@ -35,37 +35,60 @@
         "north=true,east=true,south=true,west=false": [
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered",
-                "y": 270
+                "y": 270, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_2",
-                "y": 270
+                "y": 270, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_3",
-                "y": 270
+                "y": 270, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_4",
-                "y": 270
+                "y": 270, "uvlock": true
             }
         ],
         "north=true,east=true,south=false,west=true": [
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered",
-                "y": 180
+                "y": 180, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_2",
-                "y": 180
+                "y": 180, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_3",
-                "y": 180
+                "y": 180, "uvlock": true
             },
             {
                 "model": "block/vertical_slab_ghost_bricks_weathered_4",
+                "y": 180, "uvlock": true
+            }
+        ],
+        "north=true,east=false,south=false,west=false,waterlogged=false": [
+            {
+                "model": "block/pillar_fancy_ruined_leaning"
+            }
+        ],
+        "north=false,east=true,south=false,west=false,waterlogged=false": [
+            {
+                "model": "block/pillar_fancy_ruined_leaning",
+                "y": 90
+            }
+        ],
+        "north=false,east=false,south=true,west=false,waterlogged=false": [
+            {
+                "model": "block/pillar_fancy_ruined_leaning",
                 "y": 180
+            }
+        ],
+        "north=false,east=false,south=false,west=true,waterlogged=false": [
+            {
+                "model": "block/pillar_fancy_ruined_leaning",
+                "y": 270
             }
         ]
     }

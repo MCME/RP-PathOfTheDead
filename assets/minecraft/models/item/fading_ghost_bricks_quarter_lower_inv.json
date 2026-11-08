@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/fading_ghost_bricks_quarter_lower",
+	"textures": {
+		"0": "minecraft:block/blue_stained_glass_inv",
+		"particle": "minecraft:block/blue_stained_glass_inv"
+	}
+}

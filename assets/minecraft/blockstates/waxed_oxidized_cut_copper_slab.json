@@ -1,9 +1,9 @@
 {
     "variants": {
         "type=bottom": 
-			{ "model": "block/vertical_slab_ghost_stone_fade", "x":270 },
+			{ "model": "block/vertical_slab_ghost_stone_fade", "x":270, "uvlock": true },
         "type=top": 
-			{ "model": "block/vertical_slab_ghost_stone_fade", "x": 90 },
+			{ "model": "block/vertical_slab_ghost_stone_fade", "x": 90, "uvlock": true },
         "type=double": [
 			{ "model": "block/replace"}
 			]

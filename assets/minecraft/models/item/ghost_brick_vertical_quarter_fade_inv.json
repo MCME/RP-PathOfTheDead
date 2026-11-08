@@ -1,0 +1,7 @@
+{
+	"parent": "block/ghost_brick_vertical_quarter_fade",
+	"textures": {
+		"particle": "block/blue_stained_glass_inv",
+		"slab": "block/blue_stained_glass_inv"
+	}
+}

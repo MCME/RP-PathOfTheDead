@@ -264,6 +264,8 @@
     "mcme:block/spruce_twig_branch_up_3",
     "mcme:block/spruce_twig_branch_up_diagonal",
     "mcme:block/spruce_twig_branch_up_diagonal_2",
-    "mcme:block/spruce_twig_branch_up_diagonal_3"
+    "mcme:block/spruce_twig_branch_up_diagonal_3",
+    "mcme:block/pillar_ruined",
+    "mcme:block/pillar_ruined_2"
   ]
 }

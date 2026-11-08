@@ -30,7 +30,7 @@
     {
       "apply": {
         "model": "minecraft:block/ghost_bars_fade_cap",
-        "y": 90
+        "y": 90, "uvlock": true
       },
       "when": {
         "east": "true",
@@ -53,7 +53,7 @@
     {
       "apply": {
         "model": "minecraft:block/ghost_bars_fade_cap_alt",
-        "y": 90
+        "y": 90, "uvlock": true
       },
       "when": {
         "east": "false",
@@ -73,7 +73,7 @@
     {
       "apply": {
         "model": "minecraft:block/ghost_bars_fade_side",
-        "y": 90
+        "y": 90, "uvlock": true
       },
       "when": {
         "east": "true"
@@ -90,7 +90,7 @@
     {
       "apply": {
         "model": "minecraft:block/ghost_bars_fade_side_alt",
-        "y": 90
+        "y": 90, "uvlock": true
       },
       "when": {
         "west": "true"

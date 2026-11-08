@@ -50,6 +50,13 @@
                 }
             },
             {
+                "threshold": 7,
+                "model": {
+                    "type": "model",
+                    "model": "block/pillar_fancy_ruined_leaning"
+                }
+            },
+            {
                 "threshold": 8,
                 "model": {
                     "type": "model",
@@ -61,6 +68,13 @@
                 "model": {
                     "type": "model",
                     "model": "minecraft:item/clay_ball"
+                }
+            },
+            {
+                "threshold": 10,
+                "model": {
+                    "type": "model",
+                    "model": "mcme:block/pillar_ruined_2"
                 }
             },
             {
@@ -124,6 +138,13 @@
                 "model": {
                     "type": "model",
                     "model": "minecraft:item/clay_ball"
+                }
+            },
+            {
+                "threshold": 20,
+                "model": {
+                    "type": "model",
+                    "model": "block/pillar_fancy_ground"
                 }
             },
             {
@@ -2762,7 +2783,7 @@
                 "threshold": 733,
                 "model": {
                     "type": "model",
-                    "model": "block/waxed_oxidized_cut_copper_slab"
+                    "model": "item/waxed_oxidized_cut_copper_slab_inv"
                 }
             },
             {
@@ -3196,7 +3217,7 @@
                 "threshold": 803,
                 "model": {
                     "type": "model",
-                    "model": "block/waxed_oxidized_cut_copper_stairs"
+                    "model": "item/waxed_oxidized_cut_copper_stairs_inv"
                 }
             },
             {
@@ -4596,35 +4617,35 @@
                 "threshold": 1359,
                 "model": {
                     "type": "model",
-                    "model": "block/vertical_slab_ghost_brick_fade"
+                    "model": "item/vertical_slab_ghost_brick_fade_inv"
                 }
             },
             {
                 "threshold": 1360,
                 "model": {
                     "type": "model",
-                    "model": "block/vertical_slab_ghost_stone_fade"
+                    "model": "item/vertical_slab_ghost_stone_fade_inv"
                 }
             },
             {
                 "threshold": 1361,
                 "model": {
                     "type": "model",
-                    "model": "block/blue_stained_glass_pane_nesw"
+                    "model": "item/blue_stained_glass_pane_nesw_inv"
                 }
             },
             {
                 "threshold": 1362,
                 "model": {
                     "type": "model",
-                    "model": "block/purple_stained_glass_pane_nesw"
+                    "model": "item/purple_stained_glass_pane_nesw_inv"
                 }
             },
             {
                 "threshold": 1363,
                 "model": {
                     "type": "model",
-                    "model": "block/magenta_stained_glass_pane_nesw"
+                    "model": "item/magenta_stained_glass_pane_nesw_inv"
                 }
             },
             {
@@ -4687,14 +4708,14 @@
                 "threshold": 1372,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_architrave_fade"
+                    "model": "item/ghost_architrave_fade_inv"
                 }
             },
             {
                 "threshold": 1373,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_architrave_fade_thin"
+                    "model": "item/ghost_architrave_fade_thin_inv"
                 }
             },
             {
@@ -4708,49 +4729,49 @@
                 "threshold": 1375,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_pillar_fade_thin_corner"
+                    "model": "item/ghost_pillar_fade_thin_corner_inv"
                 }
             },
             {
                 "threshold": 1376,
                 "model": {
                     "type": "model",
-                    "model": "block/scaffolding_ghost_window_fade_down"
+                    "model": "item/scaffolding_ghost_window_fade_down_inv"
                 }
             },
             {
                 "threshold": 1377,
                 "model": {
                     "type": "model",
-                    "model": "block/scaffolding_ghost_window_fade"
+                    "model": "item/scaffolding_ghost_window_fade_inv"
                 }
             },
             {
                 "threshold": 1378,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_side_railing_fade"
+                    "model": "item/ghost_side_railing_fade_inv"
                 }
             },
             {
                 "threshold": 1379,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_balustrade_fade"
+                    "model": "item/ghost_balustrade_fade_inv"
                 }
             },
             {
                 "threshold": 1380,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_anvil_fade"
+                    "model": "item/ghost_anvil_fade_inv"
                 }
             },
             {
                 "threshold": 1381,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_pillar_thic_fade"
+                    "model": "item/ghost_pillar_thic_fade_inv"
                 }
             },
             {
@@ -4771,7 +4792,7 @@
                 "threshold": 1384,
                 "model": {
                     "type": "model",
-                    "model": "block/vertical_slab_ghost_pillar_1_fade"
+                    "model": "item/vertical_slab_ghost_pillar_1_fade_inv"
                 }
             },
             {
@@ -4785,21 +4806,21 @@
                 "threshold": 1386,
                 "model": {
                     "type": "model",
-                    "model": "block/vertical_slab_ghost_pillar_2_fade"
+                    "model": "item/vertical_slab_ghost_pillar_2_fade_inv"
                 }
             },
             {
                 "threshold": 1387,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_rim_fade"
+                    "model": "item/ghost_rim_fade_inv"
                 }
             },
             {
                 "threshold": 1388,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_architrave_fade_offset"
+                    "model": "item/ghost_architrave_fade_offset_inv"
                 }
             },
             {
@@ -4827,28 +4848,28 @@
                 "threshold": 1392,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_architrave_fade_half"
+                    "model": "item/ghost_architrave_fade_half_inv"
                 }
             },
             {
                 "threshold": 1393,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_rim_fade_corner"
+                    "model": "item/ghost_rim_fade_corner_inv"
                 }
             },
             {
                 "threshold": 1394,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_pillar_2_fade_offset"
+                    "model": "item/ghost_pillar_2_fade_offset_inv"
                 }
             },
             {
                 "threshold": 1395,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_pillar_fade_thin_corner"
+                    "model": "item/ghost_pillar_fade_thin_corner_inv"
                 }
             },
             {
@@ -4897,21 +4918,21 @@
                 "threshold": 1402,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_stone_vertical_quarter_fade"
+                    "model": "item/ghost_stone_vertical_quarter_fade_inv"
                 }
             },
             {
                 "threshold": 1403,
                 "model": {
                     "type": "model",
-                    "model": "block/ghost_brick_vertical_quarter_fade"
+                    "model": "item/ghost_brick_vertical_quarter_fade_inv"
                 }
             },
             {
                 "threshold": 1404,
                 "model": {
                     "type": "model",
-                    "model": "block/trapdoor_ghost_stone_fade_bottom"
+                    "model": "item/trapdoor_ghost_stone_fade_bottom_inv"
                 }
             },
             {
@@ -5034,129 +5055,234 @@
                 }
             },
             {
+                "threshold": 1422,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_brick_side_stairs"
+                }
+            },
+            {
+                "threshold": 1423,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1424,
+                "model": {
+                    "type": "model",
+                    "model": "block/small_ghost_brick_side_stairs"
+                }
+            },
+            {
+                "threshold": 1425,
+                "model": {
+                    "type": "model",
+                    "model": "block/small_ghost_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1426,
+                "model": {
+                    "type": "model",
+                    "model": "block/smooth_ghost_stone_side_stairs"
+                }
+            },
+            {
+                "threshold": 1427,
+                "model": {
+                    "type": "model",
+                    "model": "block/smooth_ghost_stone_threequarter"
+                }
+            },
+            {
+                "threshold": 1428,
+                "model": {
+                    "type": "model",
+                    "model": "block/mixed_ghost_brick_side_stairs"
+                }
+            },
+            {
+                "threshold": 1429,
+                "model": {
+                    "type": "model",
+                    "model": "block/mixed_ghost_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1430,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_cobblestone_side_stairs"
+                }
+            },
+            {
+                "threshold": 1431,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_cobblestone_threequarter"
+                }
+            },
+            {
+                "threshold": 1432,
+                "model": {
+                    "type": "model",
+                    "model": "block/weathered_ghost_brick_side_stairs"
+                }
+            },
+            {
+                "threshold": 1433,
+                "model": {
+                    "type": "model",
+                    "model": "block/weathered_ghost_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1434,
+                "model": {
+                    "type": "model",
+                    "model": "item/ghost_stone_fade_side_stairs_inv"
+                }
+            },
+            {
+                "threshold": 1435,
+                "model": {
+                    "type": "model",
+                    "model": "item/fading_ghost_stone_threequarter_inv"
+                }
+            },
+            {
+                "threshold": 1436,
+                "model": {
+                    "type": "model",
+                    "model": "item/ghost_brick_fade_side_stairs_inv"
+                }
+            },
+            {
+                "threshold": 1437,
+                "model": {
+                    "type": "model",
+                    "model": "item/fading_ghost_bricks_threequarter_inv"
+                }
+            },
+            {
+                "threshold": 1438,
+                "model": {
+                    "type": "model",
+                    "model": "block/darkest_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1439,
+                "model": {
+                    "type": "model",
+                    "model": "block/darker_bricks_threequarter"
+                }
+            },
+            {
+                "threshold": 1440,
+                "model": {
+                    "type": "model",
+                    "model": "block/sword_ground"
+                }
+            },
+            {
+                "threshold": 1441,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_sword_ground"
+                }
+            },
+            {
+                "threshold": 1442,
+                "model": {
+                    "type": "model",
+                    "model": "block/mace_ground"
+                }
+            },
+            {
+                "threshold": 1443,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_mace_ground"
+                }
+            },
+            {
+                "threshold": 1444,
+                "model": {
+                    "type": "model",
+                    "model": "item/ghost_pillar_1_fade_corner_inv"
+                }
+            },
+            {
+                "threshold": 1445,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_bricks_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1446,
+                "model": {
+                    "type": "model",
+                    "model": "block/small_ghost_bricks_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1447,
+                "model": {
+                    "type": "model",
+                    "model": "block/smooth_ghost_stone_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1448,
+                "model": {
+                    "type": "model",
+                    "model": "block/mixed_ghost_bricks_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1449,
+                "model": {
+                    "type": "model",
+                    "model": "block/ghost_cobblestone_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1450,
+                "model": {
+                    "type": "model",
+                    "model": "block/weathered_ghost_bricks_quarter_lower"
+                }
+            },
+            {
+                "threshold": 1451,
+                "model": {
+                    "type": "model",
+                    "model": "item/fading_ghost_stone_quarter_lower_inv"
+                }
+            },
+            {
+                "threshold": 1452,
+                "model": {
+                    "type": "model",
+                    "model": "item/fading_ghost_bricks_quarter_lower_inv"
+                }
+            },
+            {
                 "threshold": 2500,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/candy"
+                    "model": "minecraft:item/clay_ball"
                 }
             },
             {
-                "threshold": 2501,
+                "threshold": 2553,
                 "model": {
                     "type": "model",
-                    "model": "block/halloween/candy_bucket"
-                }
-            },
-            {
-                "threshold": 2502,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/potion"
-                }
-            },
-            {
-                "threshold": 2503,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/ghost_cauldron"
-                }
-            },
-            {
-                "threshold": 2504,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/bats"
-                }
-            },
-            {
-                "threshold": 2505,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/spider"
-                }
-            },
-            {
-                "threshold": 2506,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/candy_4"
-                }
-            },
-            {
-                "threshold": 2507,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/witch_broom"
-                }
-            },
-            {
-                "threshold": 2508,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_stone"
-                }
-            },
-            {
-                "threshold": 2509,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name"
-                }
-            },
-            {
-                "threshold": 2510,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_2"
-                }
-            },
-            {
-                "threshold": 2511,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_3"
-                }
-            },
-            {
-                "threshold": 2512,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_4"
-                }
-            },
-            {
-                "threshold": 2513,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_5"
-                }
-            },
-            {
-                "threshold": 2514,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_6"
-                }
-            },
-            {
-                "threshold": 2515,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_7"
-                }
-            },
-            {
-                "threshold": 2516,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_8"
-                }
-            },
-            {
-                "threshold": 2517,
-                "model": {
-                    "type": "model",
-                    "model": "block/halloween/grave_names/grave_name_9"
+                    "model": "block/half_mud_bricks_smooth_ghost_stone"
                 }
             }
         ]

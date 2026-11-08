@@ -1,0 +1,41 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#pillar"
+	},
+	"elements": [
+		{
+			"name": "ghost",
+			"from": [0, 0, 8],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#ghost", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#ghost", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#ghost", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#ghost", "cullface": "west"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#ghost", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#ghost", "cullface": "down"}
+			}
+		},
+		{
+			"name": "pillar",
+			"from": [0, 0, 0],
+			"to": [16, 16, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#pillar"},
+				"east": {"uv": [8, 0, 16, 16], "texture": "#pillar"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#pillar"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#pillar"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#pillar"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#pillar"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	}
+}

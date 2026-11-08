@@ -4,7 +4,8 @@
 	"ambientocclusion": true,
 	"textures": {
 		"4": "block/skulls",
-		"5": "block/mud_bricks_2"
+		"5": "block/mud_bricks_2",
+		"particle": "block/mud_bricks_2"
 	},
 	"elements": [
 		{

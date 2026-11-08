@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ghost_pillar_1_corner",
+  "textures": {
+    "particle": "minecraft:block/pale_oak_wood",
+    "slab": "minecraft:block/pale_oak_wood"
+  }
+}

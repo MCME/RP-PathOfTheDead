@@ -1,0 +1,7 @@
+{
+	"parent": "block/ghost_side_railing_fade",
+	"textures": {
+		"0": "block/magenta_stained_glass_inv",
+		"particle": "block/magenta_stained_glass_inv"
+	}
+}

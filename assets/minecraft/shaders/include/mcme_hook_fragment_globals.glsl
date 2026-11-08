@@ -8,3 +8,11 @@ flat in vec3 fogEye;
 in vec4 fogLight;
 #moj_import <minecraft:fog_block_config.glsl>
 #moj_import <minecraft:fog_block.glsl>
+// the ghost blocks' shimmer: clearer patches churning through them, built on
+// the fog's noise - the fading ones' the others', widened
+#moj_import <minecraft:stone_shimmer.glsl>
+#moj_import <minecraft:ghost_shimmer.glsl>
+// ...and the test ghost bricks', kept the same size on the screen
+#moj_import <minecraft:stone_screen.glsl>
+// ...and the fading ghost blocks' rising strips, on the same system
+#moj_import <minecraft:ghost_screen.glsl>

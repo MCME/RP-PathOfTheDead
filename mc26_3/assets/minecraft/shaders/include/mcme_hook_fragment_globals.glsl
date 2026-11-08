@@ -11,4 +11,12 @@ layout(location = 21) flat in vec3 fogEye;
 layout(location = 22) in vec4 fogLight;
 #include <minecraft:fog_block_config.glsl>
 #include <minecraft:fog_block.glsl>
+// the ghost blocks' shimmer: clearer patches churning through them, built on
+// the fog's noise - the fading ones' the others', widened
+#include <minecraft:stone_shimmer.glsl>
+#include <minecraft:ghost_shimmer.glsl>
+// ...and the test ghost bricks', kept the same size on the screen
+#include <minecraft:stone_screen.glsl>
+// ...and the fading ghost blocks' rising strips, on the same system
+#include <minecraft:ghost_screen.glsl>
 #endif

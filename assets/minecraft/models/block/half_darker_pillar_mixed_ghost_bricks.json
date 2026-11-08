@@ -1,0 +1,7 @@
+{
+  "parent": "block/half_pillar_ghost_parent",
+  "textures": {
+    "ghost": "block/ghost_bricks_mixed",
+    "pillar": "block/red_mushroom_block_nsu"
+  }
+}

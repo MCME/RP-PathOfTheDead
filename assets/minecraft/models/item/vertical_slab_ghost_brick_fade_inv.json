@@ -1,0 +1,8 @@
+{
+	"parent": "block/vertical_slab_ghost_brick_fade",
+	"textures": {
+		"bottom": "block/blue_stained_glass_inv",
+		"top": "block/blue_stained_glass_inv",
+		"side": "block/blue_stained_glass_inv"
+	}
+}

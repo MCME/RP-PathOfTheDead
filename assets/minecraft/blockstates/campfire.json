@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "facing=east,lit=false,signal_fire=false,waterlogged=false": { "model": "mcme:block/pillar_ruined", "y": 90 },
+    "facing=east,lit=false,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 270 },
+    "facing=east,lit=false,signal_fire=true,waterlogged=false": [
+	{ "model": "minecraft:block/pillar_fancy_ground", "y": 90 },
+	{ "model": "minecraft:block/pillar_fancy_ground_2", "y": 90 },
+	{ "model": "minecraft:block/pillar_fancy_ground_3", "y": 90 }
+	],
+    "facing=east,lit=false,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 270 },
+    "facing=east,lit=true,signal_fire=false,waterlogged=false": { "model": "minecraft:block/campfire", "y": 270 },
+    "facing=east,lit=true,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire", "y": 270 },
+    "facing=east,lit=true,signal_fire=true,waterlogged=false": { "model": "minecraft:block/campfire", "y": 270 },
+    "facing=east,lit=true,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire", "y": 270 },
+    "facing=north,lit=false,signal_fire=false,waterlogged=false": { "model": "mcme:block/pillar_ruined" },
+    "facing=north,lit=false,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 180 },
+    "facing=north,lit=false,signal_fire=true,waterlogged=false": [
+	{ "model": "minecraft:block/pillar_fancy_ground" },
+	{ "model": "minecraft:block/pillar_fancy_ground_2" },
+	{ "model": "minecraft:block/pillar_fancy_ground_3" }
+	],
+    "facing=north,lit=false,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 180 },
+    "facing=north,lit=true,signal_fire=false,waterlogged=false": { "model": "minecraft:block/campfire", "y": 180 },
+    "facing=north,lit=true,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire", "y": 180 },
+    "facing=north,lit=true,signal_fire=true,waterlogged=false": { "model": "minecraft:block/campfire", "y": 180 },
+    "facing=north,lit=true,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire", "y": 180 },
+    "facing=south,lit=false,signal_fire=false,waterlogged=false": { "model": "mcme:block/pillar_ruined", "y": 180 },
+    "facing=south,lit=false,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire_off" },
+    "facing=south,lit=false,signal_fire=true,waterlogged=false": [
+	{ "model": "minecraft:block/pillar_fancy_ground", "y": 180 },
+	{ "model": "minecraft:block/pillar_fancy_ground_2", "y": 180 },
+	{ "model": "minecraft:block/pillar_fancy_ground_3", "y": 180 }
+	],
+    "facing=south,lit=false,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire_off" },
+    "facing=south,lit=true,signal_fire=false,waterlogged=false": { "model": "minecraft:block/campfire" },
+    "facing=south,lit=true,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire" },
+    "facing=south,lit=true,signal_fire=true,waterlogged=false": { "model": "minecraft:block/campfire" },
+    "facing=south,lit=true,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire" },
+    "facing=west,lit=false,signal_fire=false,waterlogged=false": { "model": "mcme:block/pillar_ruined", "y": 270 },
+    "facing=west,lit=false,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 90 },
+    "facing=west,lit=false,signal_fire=true,waterlogged=false": [
+	{ "model": "minecraft:block/pillar_fancy_ground", "y": 270 },
+	{ "model": "minecraft:block/pillar_fancy_ground_2", "y": 270 },
+	{ "model": "minecraft:block/pillar_fancy_ground_3", "y": 270 }
+	],
+    "facing=west,lit=false,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire_off", "y": 90 },
+    "facing=west,lit=true,signal_fire=false,waterlogged=false": { "model": "minecraft:block/campfire", "y": 90 },
+    "facing=west,lit=true,signal_fire=false,waterlogged=true": { "model": "minecraft:block/campfire", "y": 90 },
+    "facing=west,lit=true,signal_fire=true,waterlogged=false": { "model": "minecraft:block/campfire", "y": 90 },
+    "facing=west,lit=true,signal_fire=true,waterlogged=true": { "model": "minecraft:block/campfire", "y": 90 }
+  }
+}

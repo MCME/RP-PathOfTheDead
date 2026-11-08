@@ -42,7 +42,7 @@
 #define STONE_FIRE_BRIGHT 0.95       // ...and above this as its texture is
 #define STONE_FIRE_WARP 0.525        // how far the slow noise pushes the layers about, in blocks
 #define STONE_FIRE_WARP_SIZE 0.671875 // ...and how fine that noise is, as STONE_FIRE_SIZE (43/64)
-#define STONE_FIRE_SPEED 1           // how fast it all moves, a whole number: 1 as tuned, 2 twice as fast...
+#define STONE_FIRE_SPEED 0.5         // how fast it all moves, every ghost block: 1 as tuned, 2 twice as fast, 0.5 half - a whole number or 0.5 (every drift is an even number of steps, so half of it still loops)
 
 // the flames: tongues rising from each block's foot, each as tall as a noise
 // along the block says, flickering, their tips bent and broken into wisps

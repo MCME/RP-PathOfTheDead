@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_all_no_cull",
+  "parent": "block/cube_all",
   "textures": {
     "all": "block/cracked_nether_bricks_2"
   }

@@ -1,11 +1,11 @@
 {
   "variants": {
 	  "facing=north,half=bottom,open=false,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom"},
-	  "facing=north,half=top,open=false,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "x": 180},
-	  "facing=north,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "x":90},
-	  "facing=east,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":90, "x":90},
-	  "facing=south,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":180, "x":90},
-	  "facing=west,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":270, "x":90}
+	  "facing=north,half=top,open=false,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "x": 180, "uvlock": true},
+	  "facing=north,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "x":90, "uvlock": true},
+	  "facing=east,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":90, "x":90, "uvlock": true},
+	  "facing=south,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":180, "x":90, "uvlock": true},
+	  "facing=west,half=bottom,open=true,powered=true": { "model": "block/trapdoor_ghost_brick_fade_bottom", "y":270, "x":90, "uvlock": true}
 
   }
 }

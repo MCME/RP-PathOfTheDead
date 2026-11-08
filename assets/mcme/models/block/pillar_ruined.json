@@ -1,0 +1,8 @@
+{
+  "parent": "special-model-loader:builtin/obj",
+  "particle": "minecraft:block/mud_bricks",
+  "flip_v": true,
+  "model": "mcme:models/block/pillar_ruined.obj",
+  "ambientocclusion": true
+  
+}

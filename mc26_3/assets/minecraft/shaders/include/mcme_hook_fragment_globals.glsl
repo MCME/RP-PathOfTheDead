@@ -15,4 +15,8 @@ layout(location = 22) in vec4 fogLight;
 // the fog's noise - the fading ones' the others', widened
 #include <minecraft:stone_shimmer.glsl>
 #include <minecraft:ghost_shimmer.glsl>
+// ...and the test ghost bricks', kept the same size on the screen
+#include <minecraft:stone_screen.glsl>
+// ...and the fading ghost blocks' rising strips, on the same system
+#include <minecraft:ghost_screen.glsl>
 #endif

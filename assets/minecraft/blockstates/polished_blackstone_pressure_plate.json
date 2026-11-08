@@ -12,13 +12,13 @@
 				],
     "powered=true": [
 					{ "model": "block/ghost_sword_ground" },
-					{ "model": "block/ghost_sword_ground", "y": 90 },
-					{ "model": "block/ghost_sword_ground", "y": 180 },
-					{ "model": "block/ghost_sword_ground", "y": 270 },
+					{ "model": "block/ghost_sword_ground", "y": 90, "uvlock": true },
+					{ "model": "block/ghost_sword_ground", "y": 180, "uvlock": true },
+					{ "model": "block/ghost_sword_ground", "y": 270, "uvlock": true },
 					{ "model": "block/ghost_sword_ground_2" },
-					{ "model": "block/ghost_sword_ground_2", "y": 90 },
-					{ "model": "block/ghost_sword_ground_2", "y": 180 },
-					{ "model": "block/ghost_sword_ground_2", "y": 270 }
+					{ "model": "block/ghost_sword_ground_2", "y": 90, "uvlock": true },
+					{ "model": "block/ghost_sword_ground_2", "y": 180, "uvlock": true },
+					{ "model": "block/ghost_sword_ground_2", "y": 270, "uvlock": true }
 				]
   }
 }

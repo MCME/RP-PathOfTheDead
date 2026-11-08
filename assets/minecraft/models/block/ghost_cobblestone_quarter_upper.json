@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/resin_block_offset_up",
+	"textures": {
+		"0": "minecraft:block/ghost_cobblestone",
+		"particle": "minecraft:block/ghost_cobblestone"
+	}
+}

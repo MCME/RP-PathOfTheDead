@@ -7,14 +7,23 @@ if (fluid == FOG_BLOCK) {
     vec4 fog = fogLook(fluidHere, fogEye, Sampler0, MCME_TEXCOORD, MCME_SECONDS, MCME_FOG_COLOR.rgb);
     color = vec4(fog.rgb * mix(lightColor.rgb, fogLight.rgb, FOG_OPEN), fog.a);
 }
+// the texture's derivatives, for the ghost blocks' glow (stone_screen.glsl) -
+// taken here, before branching, as they must be
+vec2 stoneScreenDu = dFdx(MCME_TEXCOORD);
+vec2 stoneScreenDv = dFdy(MCME_TEXCOORD);
 // the fading ghost blocks: their textures, lit as any block's, but clearer
-// where the shimmer's patches churn through them (ghost_shimmer.glsl)
+// along thin strips that rise and split, and glowing (ghost_screen.glsl)
 if (fluid == GHOST_SHIMMER && MCME_PASS_HAS(GHOST_SHIMMER)) {
-    color.a *= ghostShimmer(fluidHere, MCME_SECONDS);
+    float shimmer = ghostScreenShimmer(fluidHere, MCME_SECONDS);
+    color.rgb = ghostScreenGlow(color.rgb, Sampler0, MCME_TEXCOORD, stoneScreenDu, stoneScreenDv, shimmer);
+    color.a *= shimmer;
 }
-// ...and the other ghost blocks, the same patches, less widened and less clear (stone_shimmer.glsl)
+// ...and the other ghost blocks: churning fire, growing with distance and
+// glowing where it is opaque (stone_screen.glsl)
 if (fluid == STONE_SHIMMER && MCME_PASS_HAS(STONE_SHIMMER)) {
-    color.a *= stoneShimmer(fluidHere, MCME_SECONDS);
+    float shimmer = stoneScreenShimmer(fluidHere, MCME_SECONDS);
+    color.rgb = stoneScreenGlow(color.rgb, Sampler0, MCME_TEXCOORD, stoneScreenDu, stoneScreenDv, shimmer);
+    color.a *= shimmer;
 }
 // ...kept down to 1% opacity, as Sodium keeps every translucent face: vanilla
 // drops translucent terrain under 10% (its translucent_terrain pipeline's

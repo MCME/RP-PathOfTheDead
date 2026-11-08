@@ -2,15 +2,15 @@
   "variants": {
 	  "east=none,north=none,south=none,up=true,west=none": { "model": "block/blue_stained_glass_pane_nesw"},
 	  "east=none,north=low,south=low,up=true,west=none": { "model": "block/ghost_balustrade_fade"},
-	  "east=low,north=none,south=none,up=true,west=low": { "model": "block/ghost_balustrade_fade", "y": 90},
-	  "east=none,north=none,south=tall,up=true,west=tall": { "model": "block/small_ghost_brick_side_stairs", "y": 180},
-	  "east=none,north=tall,south=none,up=true,west=tall": { "model": "block/small_ghost_brick_side_stairs", "y": 270},
+	  "east=low,north=none,south=none,up=true,west=low": { "model": "block/ghost_balustrade_fade", "y": 90, "uvlock": true},
+	  "east=none,north=none,south=tall,up=true,west=tall": { "model": "block/small_ghost_brick_side_stairs", "y": 180, "uvlock": true},
+	  "east=none,north=tall,south=none,up=true,west=tall": { "model": "block/small_ghost_brick_side_stairs", "y": 270, "uvlock": true},
 	  "east=tall,north=tall,south=none,up=true,west=none": { "model": "block/small_ghost_brick_side_stairs"},
-	  "east=tall,north=none,south=tall,up=true,west=none": { "model": "block/small_ghost_brick_side_stairs", "y": 90},
-	  "east=none,north=none,south=low,up=true,west=low": { "model": "block/ghost_cobblestone_side_stairs", "y": 180},
-	  "east=none,north=low,south=none,up=true,west=low": { "model": "block/ghost_cobblestone_side_stairs", "y": 270},
+	  "east=tall,north=none,south=tall,up=true,west=none": { "model": "block/small_ghost_brick_side_stairs", "y": 90, "uvlock": true},
+	  "east=none,north=none,south=low,up=true,west=low": { "model": "block/ghost_cobblestone_side_stairs", "y": 180, "uvlock": true},
+	  "east=none,north=low,south=none,up=true,west=low": { "model": "block/ghost_cobblestone_side_stairs", "y": 270, "uvlock": true},
 	  "east=low,north=low,south=none,up=true,west=none": { "model": "block/ghost_cobblestone_side_stairs"},
-	  "east=low,north=none,south=low,up=true,west=none": { "model": "block/ghost_cobblestone_side_stairs", "y": 90}
+	  "east=low,north=none,south=low,up=true,west=none": { "model": "block/ghost_cobblestone_side_stairs", "y": 90, "uvlock": true}
 
   }
 }

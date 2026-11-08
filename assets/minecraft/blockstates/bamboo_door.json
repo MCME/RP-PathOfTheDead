@@ -19,25 +19,25 @@
       "model": "minecraft:block/ghost_side_railing_fade"
     },
     "facing=west,half=lower,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing_fade", "y":90
+      "model": "minecraft:block/ghost_side_railing_fade", "y":90, "uvlock": true
     },
     "facing=north,half=lower,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing_fade", "y":180
+      "model": "minecraft:block/ghost_side_railing_fade", "y":180, "uvlock": true
     },
     "facing=east,half=lower,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing_fade", "y":270
+      "model": "minecraft:block/ghost_side_railing_fade", "y":270, "uvlock": true
     },
     "facing=south,half=upper,hinge=left,open=false,powered=false": {
       "model": "minecraft:block/ghost_side_railing"
     },
     "facing=west,half=upper,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing", "y":90
+      "model": "minecraft:block/ghost_side_railing", "y":90, "uvlock": true
     },
     "facing=north,half=upper,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing", "y":180
+      "model": "minecraft:block/ghost_side_railing", "y":180, "uvlock": true
     },
     "facing=east,half=upper,hinge=left,open=false,powered=false": {
-      "model": "minecraft:block/ghost_side_railing", "y":270
+      "model": "minecraft:block/ghost_side_railing", "y":270, "uvlock": true
     }
   }
 }
